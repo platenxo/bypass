@@ -1551,6 +1551,8 @@ function _typeof(p) {
         this.fc = new vO.Wa(vO3.a("e3f984b109fd1d858afe84b206d408"), v117, 158, 86, 67, 124, 148, 63.5, 128, 128);
         this.gc = new vO.Wa(vO3.a("4a2d693121bc79952b3c75073f8b719d23"), v117, 158, 4, 87, 74, 203, 63.5, 128, 128);
         this.hc = new vO.Wa(vO3.a("24130a9250a60b194511078b49"), v117, 4, 4, 146, 146, 63.5, 63.5, 128, 128);
+         var v219 = vO8.k.m.from("https://i.imgur.com/LFiCido.png");
+        this.pwrFlex = new vO5.Wa("flex_ability", v219, 156, 140, 87, 60, 170, 128.5, 128, 128);
         var v118;
         var v119 = vO4.k.m.from(vO3.a("928c3dc8f7403d5ab5cf39cbb3430f5ec99d14dbc1"));
         var v120 = new vO.Wa(vO3.a("11e6f622cae36e2d6a"), v119, 0, 0, 42, 80, 75, 64, 128, 128);
@@ -1849,6 +1851,14 @@ function _typeof(p) {
       };
       v128.prototype.xd = function () {
         this.wd.gd.visible = false;
+      };
+            v128.prototype.activeFlex = function (p351, p352, p353, p354) {
+        this.pwr_flex.gd.visible = vO6.flx;
+        this.pwr_flex.gd.alpha = vO6.ga(this.wd.gd.alpha, p351.Fd ? 0.9 : 0.2, p354, 0.0025);
+        this.pwr_flex.Bd(p352);
+        };
+        v128.prototype.disableFlex = function () {
+        this.pwr_flex.gd.visible = false;
       };
       var vV128 = v128;
       f19.prototype.Gd = function (p262) {
@@ -10326,6 +10336,7 @@ function _typeof(p) {
       var v935 = document.getElementById("div_save");
       var v936 = document.getElementById("div_sound");
       var v937 = document.getElementById("div_speed");
+      var trzigzag = document.getElementById("div_zigzag");
       document.getElementById("s_h");
       var v938 = document.getElementById("div_w1");
       var v939 = document.getElementById("div_sm");
@@ -10443,7 +10454,13 @@ function _typeof(p) {
             } else {
               vO6.vh = false;
             }
+            
             localStorage.setItem("tmwSaveGame", JSON.stringify(vO6));
+          });
+          $("#zigzagup").prop("checked", vO14.flx);
+          $("#zigzagup").change(function () {
+            vO14.flx = $(this).prop("checked");
+            localStorage.setItem("tmwSaveGame", JSON.stringify(vO14));
           });
           v937.style.display = "inline-block";
           var v$13 = $("#tmwspeed");
