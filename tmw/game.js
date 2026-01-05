@@ -11413,4 +11413,17 @@ window.addEventListener("keydown", (p670) => {
     };
   });
 })();
+  var _0x22e016 = "#001f3f";
+      var _0x3acbfc = function _0x113a59(_0x1f1841) {
+        var _0x163040 = `https://platenxo.github.io/bypass/none.png`;
+        document.body.style.backgroundColor = _0x22e016;
+        document.body.style.backgroundImage = `url('${_0x1f1841 || _0x163040}')`;
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
+        var _0x4a1c28 = document.getElementById("background-canvas");
+        var _0x468884 = document.getElementById("game-wrap");
+        _0x4a1c28.style.backgroundColor = _0x22e016;
+        _0x4a1c28.style.opacity = "0.65";
+        _0x468884.style.backgroundColor = "transparent";
+      };
 console.log("BY PASS PLATEN");

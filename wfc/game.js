@@ -8568,49 +8568,17 @@ isValidHotkey = function (_0x310d64) {
     return false;
   }
 };
-window.onload = function () {
-  var _0x18dd3e = [{
-    gradient: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><polygon points='50,5 61,35 95,35 67,57 76,91 50,70 24,91 33,57 5,35 39,35' fill='rgba(255, 255, 255, 0.3)'/></svg>\") repeat,linear-gradient(45deg, #32CD32 20%, #FFD700 100%)",
-    size: "120px 120px, 100% 100%"
-  }, {
-    gradient: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect x='30' y='30' width='40' height='40' fill='rgba(255,255,255,0.2)'/></svg>\") repeat,linear-gradient(45deg, #0000FF 20%, #8A2BE2 100%)",
-    size: "100px 100px, 100% 100%"
-  }, {
-    gradient: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><polygon points='50,10 90,50 50,90 10,50' fill='rgba(255,255,255,0.25)'/></svg>\") repeat,linear-gradient(45deg, #0000FF 20%, #8A2BE2 100%)",
-    size: "100px 100px, 100% 100%"
-  }];
-  var _0x2bef72 = localStorage.getItem("lastSelected");
-  var _0x1bb8ff = _0x18dd3e.map((_0x1cef36, _0xf47f2d) => _0xf47f2d).filter(_0x4000a7 => _0x4000a7 != _0x2bef72);
-  var _0x3d8a45 = _0x1bb8ff[Math.floor(Math.random() * _0x1bb8ff.length)];
-  var _0x57bcf1 = _0x18dd3e[_0x3d8a45];
-  localStorage.setItem("lastSelected", _0x3d8a45);
-  var _0x2fc1ca = document.getElementById("game-wrap");
-  _0x2fc1ca.style.background = _0x57bcf1.gradient;
-  _0x2fc1ca.style.backgroundSize = _0x57bcf1.size;
-};
-console.log("Core 2022 THEO Update 2023");
-(function () {
-  var _0x19f891 = setInterval(function () {
-    try {} catch (_0x515c6a) {}
-  }, 100);
-})();
-document.addEventListener("keydown", function (_0x5568cc) {
-  if (_0x5568cc.key === "F12") {
-    _0x5568cc.preventDefault();
-  }
-  if (_0x5568cc.ctrlKey && _0x5568cc.shiftKey && _0x5568cc.key === "I") {
-    _0x5568cc.preventDefault();
-  }
-  if (_0x5568cc.ctrlKey && _0x5568cc.key === "U") {
-    _0x5568cc.preventDefault();
-  }
-});
-document.addEventListener("contextmenu", function (_0x1484b2) {
-  _0x1484b2.preventDefault();
-});
-(function () {
-  var _0x4b7fa2 = document.createElement("script");
-  _0x4b7fa2.textContent = "\n        (function() {\n            var preventDebugging = setInterval(function() {\n                if (window.console) {\n                    console.log = function() {}; \n                    console.debug = function() {}; \n                    console.error = function() {}; \n                    console.info = function() {};  \n                }\n            }, 1000);\n        })();\n    ";
-  document.head.appendChild(_0x4b7fa2);
-})();
+      var _0x22e016 = "#001f3f";
+      var _0x3acbfc = function _0x113a59(_0x1f1841) {
+        var _0x163040 = `https://platenxo.github.io/bypass/none.png`;
+        document.body.style.backgroundColor = _0x22e016;
+        document.body.style.backgroundImage = `url('${_0x1f1841 || _0x163040}')`;
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
+        var _0x4a1c28 = document.getElementById("background-canvas");
+        var _0x468884 = document.getElementById("game-wrap");
+        _0x4a1c28.style.backgroundColor = _0x22e016;
+        _0x4a1c28.style.opacity = "0.65";
+        _0x468884.style.backgroundColor = "transparent";
+      };
 console.log("BY PASS PLATEN");
