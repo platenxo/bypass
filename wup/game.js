@@ -552,7 +552,7 @@ function f3(_0x75c76a) {
     };
     var _0x5b37ef = {
       id_user: "",
-      nickname: "wup",
+      nickname: "wft",
       enemyNameHs: "No Name Player",
       teamCode: "",
       playerX: 0,
@@ -806,9 +806,9 @@ function f3(_0x75c76a) {
       pk6: "",
       z: 1,
       c_v: 222,
-      c_1: "wup",
-      c_2: "Teamwup",
-      c_3: "teamwup",
+      c_1: "wft",
+      c_2: "Teamwft",
+      c_3: "teamwft",
       c_4: "wormate.io",
       c_5: "please don't copy my code",
       d_1: "VlZBPQ==",
@@ -871,7 +871,7 @@ function f3(_0x75c76a) {
       re: false,
       dg: null
     };
-    let _0x458b72 = localStorage.getItem("SaveGamewup");
+    let _0x458b72 = localStorage.getItem("SaveGamewft");
     if (_0x458b72 && _0x458b72 !== "null") {
       let _0x50c605 = JSON.parse(_0x458b72);
       for (let _0x31e3de in _0x50c605) {
@@ -881,19 +881,19 @@ function f3(_0x75c76a) {
     ;
     if (!_0x1a98d3.favoriteSkins) {
       _0x1a98d3.favoriteSkins = [];
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
     }
     if (_0x1a98d3.currentFavSkinIndex === undefined) {
       _0x1a98d3.currentFavSkinIndex = 0;
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
     }
     if (!_0x1a98d3.selectedHats) {
       _0x1a98d3.selectedHats = [];
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
     }
     if (_0x1a98d3.currentHatIndex === undefined) {
       _0x1a98d3.currentHatIndex = 0;
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
     }
     if (!window.globalHatTextureCache) {
       window.globalHatTextureCache = {};
@@ -902,8 +902,8 @@ function f3(_0x75c76a) {
       if (localStorage.SaveGameXT) {
         const _0x56cfcb = JSON.parse(localStorage.SaveGameXT);
         for (const _0x5216cf in _0x56cfcb) {
-          if (wupObjects.hasOwnProperty(_0x5216cf)) {
-            wupObjects[_0x5216cf] = _0x56cfcb[_0x5216cf];
+          if (wftObjects.hasOwnProperty(_0x5216cf)) {
+            wftObjects[_0x5216cf] = _0x56cfcb[_0x5216cf];
           }
         }
       }
@@ -917,13 +917,13 @@ function f3(_0x75c76a) {
           console.error("Wormx Error 3");
           return false;
         }
-        var _0x128dc0 = localStorage.getItem("wupi");
-        var _0x33960e = localStorage.getItem("wupit");
+        var _0x128dc0 = localStorage.getItem("wfti");
+        var _0x33960e = localStorage.getItem("wftit");
         if (_0x128dc0 && _0x33960e) {
           if (typeof _0x1a98d3 !== "undefined") {
             _0x1a98d3.v_z = _0x33960e;
             _0x1a98d3.forceUseLocalImages = true;
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           }
           return true;
         } else {
@@ -963,17 +963,17 @@ function f3(_0x75c76a) {
     let _0x3f8263 = function (_0x520871) {
       _0x1a98d3.joystick ||= _0x2cbd14.joystick;
       _0x1a98d3.joystick.checked = _0x520871.checked;
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
     };
     let _0x2e0292 = function (_0x256a66) {
       _0x1a98d3.joystick ||= _0x2cbd14.joystick;
       _0x1a98d3.joystick.color = _0x256a66.value;
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
     };
     let _0x227252 = function (_0x34ca94) {
       _0x1a98d3.joystick ||= _0x2cbd14.joystick;
       _0x1a98d3.joystick.mode = _0x34ca94.value;
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
     };
     let _0x59e7a9 = function (_0x3b00f8) {
       _0x1a98d3.joystick ||= _0x2cbd14.joystick;
@@ -988,7 +988,7 @@ function f3(_0x75c76a) {
         };
       }
       _0x1a98d3.joystick.positionMode = _0x3b00f8.value;
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
     };
     let _0x42ce38 = function (_0x32424c) {
       _0x1a98d3.joystick ||= _0x2cbd14.joystick;
@@ -1003,12 +1003,12 @@ function f3(_0x75c76a) {
         };
       }
       _0x1a98d3.joystick.pxy = _0x32424c.value;
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
     };
     let _0x51f831 = function (_0x1a1141) {
       _0x1a98d3.joystick ||= _0x2cbd14.joystick;
       _0x1a98d3.joystick.size = _0x1a1141.value;
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
     };
     let _0x3f33d6 = function (_0x3c6576, _0x11b427, _0x236bbc, _0x2900f5, _0x2257b2, _0x5bcc2b) {
       let _0x538813 = {
@@ -1293,9 +1293,9 @@ function f3(_0x75c76a) {
     localStorage.setItem("ccg_0", "Kill and Headshot stats will be removed?");
     localStorage.setItem("ccg_1", "There was a problem connecting!");
     localStorage.setItem("ccg_2", "Your account has been locked.");
-    var _0x193eb2 = localStorage.getItem("wupsw");
-    var _0x3271a1 = localStorage.getItem("wupi") != null ? localStorage.getItem("wupi").split(",") : localStorage.getItem("wupi");
-    var _0x3f4d06 = localStorage.getItem("wupit");
+    var _0x193eb2 = localStorage.getItem("wftsw");
+    var _0x3271a1 = localStorage.getItem("wfti") != null ? localStorage.getItem("wfti").split(",") : localStorage.getItem("wfti");
+    var _0x3f4d06 = localStorage.getItem("wftit");
     var _0x308d60 = localStorage.getItem("custom_wear");
     var _0x18b6dd = localStorage.getItem("custom_skin");
     $("<input type=\"hidden\" id=\"port_id\" value=\"\">").insertAfter(".description-text");
@@ -1335,8 +1335,8 @@ function f3(_0x75c76a) {
         })
       }).then(async function (_0x36a9e8) {
         _0x3271a1 = (_0x36a9e8 = await _0x36a9e8.json()).i.split(".");
-        localStorage.setItem("wupi", _0x3271a1);
-        localStorage.setItem("wupit", _0x36a9e8.vs);
+        localStorage.setItem("wfti", _0x3271a1);
+        localStorage.setItem("wftit", _0x36a9e8.vs);
         _0x1a98d3.v_z = _0x36a9e8.vs;
         window.location.reload();
       }).catch(function (_0x522568) {});
@@ -1390,7 +1390,7 @@ function f3(_0x75c76a) {
     _0x423a56.alpha = 0.25;
     _0x53d535.alpha = 0.25;
     _0x23edd9.alpha = 0.25;
-    var _0x29b35c = new PIXI.Text("SRV wup", {
+    var _0x29b35c = new PIXI.Text("SRV wft", {
       fontFamily: "PTSans",
       fill: "#fff009",
       fontSize: 12
@@ -1730,7 +1730,7 @@ function f3(_0x75c76a) {
             _0x181ac0 = Math.max(0, Math.min(32767, (_0x5585b9.l.coords.latitude + 90) / 180 * 32768)) << 1 | 1 | Math.max(0, Math.min(65535, (_0x5585b9.l.coords.longitude + 180) / 360 * 65536)) << 16;
           }
           _wrmxt.testSkinCustom(_0x454094);
-          let _0x3cf4f2 = "wup_" + (_0x454094 > 9999 ? "0000" : _0x454094.toString().padStart(4, 0)) + (_0x1727e2 > 99999 ? "00000" : _0x1727e2.toString().padStart(5, 0));
+          let _0x3cf4f2 = "wft_" + (_0x454094 > 9999 ? "0000" : _0x454094.toString().padStart(4, 0)) + (_0x1727e2 > 99999 ? "00000" : _0x1727e2.toString().padStart(5, 0));
           _0x2a006b = (_0x2a006b = (_0x2a006b.length >= 32 ? _0x2a006b.substr(0, 16) : _0x2a006b.substr(0, 16).padEnd(16)) + _0x3cf4f2).trim().replace(/\s/g, "_");
           console.log(_0x2a006b);
           if (theoKzObjects.Incognito) {
@@ -3356,7 +3356,7 @@ function f3(_0x75c76a) {
                 }
               }
               ;
-              localStorage.setItem("wupit", _0x1a98d3.v_z);
+              localStorage.setItem("wftit", _0x1a98d3.v_z);
               if (_0x18b6dd || _0x308d60 || Array.isArray(_0x1a98d3.dg) && _0x1a98d3.dg.length > 0) {
                 _0x2dc354 = await Ysw(_0x2dc354);
               }
@@ -4043,7 +4043,7 @@ function f3(_0x75c76a) {
         }
       };
       window.playMonsterSound = function () {
-        if (wupObjects.soundEnabled) {
+        if (wftObjects.soundEnabled) {
           const _0x1d35d6 = document.getElementById("s_h");
           if (_0x1d35d6) {
             _0x1d35d6.pause();
@@ -4051,7 +4051,7 @@ function f3(_0x75c76a) {
           }
           const _0x18c116 = document.getElementById("monster_kill_sound");
           if (_0x18c116) {
-            _0x18c116.volume = wupObjects.soundVolume / 100;
+            _0x18c116.volume = wftObjects.soundVolume / 100;
             _0x18c116.currentTime = 0;
             _0x18c116.play();
           }
@@ -4305,7 +4305,7 @@ function f3(_0x75c76a) {
           }
           this.nh = _0x239c2a.oa(_0x174404 / 1200 * _0x2171ac.S);
           var _0x6e62c = _0x1e0b9d.Oh();
-          this.Fh.x = _0x239c2a.ja(this.Fh.x, _0x6e62c._a, _0x371695, window.wupObjects.smoothCamera, 33.333);
+          this.Fh.x = _0x239c2a.ja(this.Fh.x, _0x6e62c._a, _0x371695, window.wftObjects.smoothCamera, 33.333);
           this.Fh.y = _0x239c2a.ja(this.Fh.y, _0x6e62c.ab, _0x371695, 0.5, 33.333);
           var _0x40d62c = _0x45de52 / _0x338a08 / 2;
           var _0x4afbd1 = _0xa630c7 / _0x338a08 / 2;
@@ -5444,7 +5444,7 @@ function f3(_0x75c76a) {
         this.Lj = _0x239c2a.ga(this.Lj, this.rj, _0x418f49, 0.0025);
       };
       _0x1cd16d.prototype.Qj = function (_0x3307b5, _0x115823, _0x5aaf34) {
-        this.Hj = _0x239c2a.ga(this.Hj, this.Fj, _0x115823, window.wupObjects.eat_animation);
+        this.Hj = _0x239c2a.ga(this.Hj, this.Fj, _0x115823, window.wftObjects.eat_animation);
         this.Ij = _0x239c2a.ga(this.Ij, this.Gj, _0x115823, 0.0025);
         this.Nj.Bg(this, _0x3307b5, _0x115823, _0x5aaf34);
       };
@@ -5482,9 +5482,9 @@ function f3(_0x75c76a) {
         }
         var _0x1e8194 = _0x48cf0d.Kj * (1 + _0x239c2a.pa(_0x48cf0d.Mj + _0x46b35b / 200) * 0.3);
         if (_0x48cf0d.Ej) {
-          this.Wh.Ad(_0x48cf0d.Hj, _0x48cf0d.Ij, window.wupObjects.PortionSize * _0x48cf0d.Jj, _0x48cf0d.Lj * 1, window.wupObjects.PortionAura * _0x1e8194, window.wupObjects.PortionTransparent * _0x48cf0d.Lj);
+          this.Wh.Ad(_0x48cf0d.Hj, _0x48cf0d.Ij, window.wftObjects.PortionSize * _0x48cf0d.Jj, _0x48cf0d.Lj * 1, window.wftObjects.PortionAura * _0x1e8194, window.wftObjects.PortionTransparent * _0x48cf0d.Lj);
         } else {
-          this.Wh.Ad(_0x48cf0d.Hj, _0x48cf0d.Ij, window.wupObjects.FoodSize * _0x48cf0d.Jj, _0x48cf0d.Lj * 1, window.wupObjects.FoodShadow * _0x1e8194, window.wupObjects.FoodTransparent * _0x48cf0d.Lj);
+          this.Wh.Ad(_0x48cf0d.Hj, _0x48cf0d.Ij, window.wftObjects.FoodSize * _0x48cf0d.Jj, _0x48cf0d.Lj * 1, window.wftObjects.FoodShadow * _0x1e8194, window.wftObjects.FoodTransparent * _0x48cf0d.Lj);
         }
       };
       var _0x528c33 = function () {
@@ -5534,7 +5534,7 @@ function f3(_0x75c76a) {
           _0x1a98d3.pm = {
             ...this
           };
-          localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+          localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
         }
         switch (_0x473343) {
           case _0x158a86._j.$j:
@@ -7278,7 +7278,7 @@ function f3(_0x75c76a) {
         var _0x4c5421 = _0x4b3429[_0x54e84a].url;
         var _0xdfe0b4 = _0x1a98d3.s_l + "/get_store.phpitem=" + _0x4c5421;
         _0x1a98d3.background = _0xdfe0b4;
-        localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+        localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
         try {
           if (PIXI.utils.TextureCache[_0xdfe0b4]) {
             PIXI.utils.TextureCache[_0xdfe0b4].destroy(true);
@@ -7341,7 +7341,7 @@ function f3(_0x75c76a) {
               _0x1a98d3.currentHatIndex = (_0x1a98d3.currentHatIndex + 1) % _0x1a98d3.selectedHats.length;
               let _0x155f11 = _0x1a98d3.selectedHats[_0x1a98d3.currentHatIndex];
               _0x46c8a6(_0x155f11);
-              localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+              localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
             }
           }
         }
@@ -9263,7 +9263,7 @@ function f3(_0x75c76a) {
           $(".clear-all-favorites").click(function () {
             if (confirm("Are you sure you want to remove all favorite skins?")) {
               _0x1a98d3.favoriteSkins = [];
-              localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+              localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
               _0x5b3699();
               if (_0x3831b1 && _0x3831b1.is(":visible")) {
                 _0x3831b1.text("★ Add").css("background-color", "#4CAF50");
@@ -9288,12 +9288,12 @@ function f3(_0x75c76a) {
             }
             if (!_0x7d62eb) {
               _0x1a98d3.favoriteSkins.push(_0x4b0e4f);
-              localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+              localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
               $(this).text("X").css("background-color", "#f44336");
             } else {
               var _0x6f5302 = _0x1a98d3.favoriteSkins.indexOf(_0x4b0e4f);
               _0x1a98d3.favoriteSkins.splice(_0x6f5302, 1);
-              localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+              localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
               $(this).text("★ Add").css("background-color", "#4CAF50");
             }
           });
@@ -9342,7 +9342,7 @@ function f3(_0x75c76a) {
     function _0x4bd7db() {
       if (!_0x1a98d3.favoriteSkins) {
         _0x1a98d3.favoriteSkins = [];
-        localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+        localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
       }
       if (_0x1a98d3.favoriteSkins.length > 0) {
         if (_0x1a98d3.currentFavSkinIndex === undefined) {
@@ -9352,7 +9352,7 @@ function f3(_0x75c76a) {
         }
         var _0x101400 = _0x1a98d3.favoriteSkins[_0x1a98d3.currentFavSkinIndex];
         _0x2af8ec(_0x101400);
-        localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+        localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
       }
     }
     function _0x2af8ec(_0x110e4f) {
@@ -9405,7 +9405,7 @@ function f3(_0x75c76a) {
       }
       if (!_0x12a987) {
         _0x1a98d3.favoriteSkins.push(_0x3511b8);
-        localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+        localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
       }
     }
     function _0x49d8d5() {
@@ -9425,7 +9425,7 @@ function f3(_0x75c76a) {
     function _0x3c9ecf(_0x327d6d) {
       if (_0x1a98d3.favoriteSkins && _0x327d6d >= 0 && _0x327d6d < _0x1a98d3.favoriteSkins.length) {
         _0x1a98d3.favoriteSkins.splice(_0x327d6d, 1);
-        localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+        localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
         _0x5b3699();
       }
     }
@@ -9434,7 +9434,7 @@ function f3(_0x75c76a) {
       _0x5945c3.empty();
       if (!_0x1a98d3.favoriteSkins) {
         _0x1a98d3.favoriteSkins = [];
-        localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+        localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
       }
       try {
         if (_0x1a98d3.favoriteSkins.length > 0) {
@@ -9483,7 +9483,7 @@ function f3(_0x75c76a) {
               var _0xfda687 = parseInt(_0x59597e.attr("data-index"));
               if (_0x1a98d3.favoriteSkins && _0xfda687 >= 0 && _0xfda687 < _0x1a98d3.favoriteSkins.length) {
                 _0x1a98d3.favoriteSkins.splice(_0xfda687, 1);
-                localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+                localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
                 _0x59597e.fadeOut(300, function () {
                   $(this).remove();
                   _0x5945c3.find("[data-index]").each(function (_0x190d4c) {
@@ -9522,7 +9522,7 @@ function f3(_0x75c76a) {
           }
         }
         if (!_0x24f49b) {
-          const _0x521820 = localStorage.getItem("wupsw");
+          const _0x521820 = localStorage.getItem("wftsw");
           if (_0x521820) {
             try {
               _0x24f49b = JSON.parse(_0x521820);
@@ -10018,7 +10018,7 @@ function f3(_0x75c76a) {
           _0x1a98d3.selectedHats.push(_0x1560ee);
           $(this).text("X").css("background-color", "#f44336");
         }
-        localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+        localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
       });
       this.hatButtonContainer.show();
       this.hatInfoText.show();
@@ -10233,7 +10233,7 @@ function f3(_0x75c76a) {
       _0x3326b6.on("click", function () {
         if (confirm("Are you sure you want to remove all favorite hats?")) {
           _0x1a98d3.selectedHats = [];
-          localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+          localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           _0x39b379.empty();
           $("<div>").css({
             "text-align": "center",
@@ -10310,7 +10310,7 @@ function f3(_0x75c76a) {
             var _0x418d28 = _0x1b5dec.attr("data-hat-id");
             if (_0x1a98d3.selectedHats && _0x4358e1 >= 0 && _0x4358e1 < _0x1a98d3.selectedHats.length) {
               _0x1a98d3.selectedHats.splice(_0x4358e1, 1);
-              localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+              localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
               _0x1b5dec.fadeOut(300, function () {
                 $(this).remove();
                 _0x39b379.find("[data-index]").each(function (_0x2cc084) {
@@ -10399,7 +10399,7 @@ function f3(_0x75c76a) {
     function _0x19a16c() {
       if (!_0x1a98d3.selectedHats) {
         _0x1a98d3.selectedHats = [];
-        localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+        localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
         return;
       }
       if (_0x1a98d3.selectedHats.length > 0) {
@@ -10410,7 +10410,7 @@ function f3(_0x75c76a) {
         }
         let _0x18cca1 = _0x1a98d3.selectedHats[_0x1a98d3.currentHatIndex];
         const _0x654d5 = _0x46c8a6(_0x18cca1);
-        localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+        localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
       }
     }
     function _0x5e7a12() {
@@ -11046,7 +11046,7 @@ function f3(_0x75c76a) {
                 $("#port_name_s").val(_0x1dee37);
                 _0x1a98d3.pi = _0x2e968f;
                 _0x1a98d3.pn = _0x1dee37;
-                localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+                localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
                 _0x29b35c.text = "" + _0x1dee37;
                 vF3();
                 _0x27dee6.Mh.Dq(_0x2e968f, _0x43f59a);
@@ -11055,7 +11055,7 @@ function f3(_0x75c76a) {
                 $("#port_name_s").val($("#port_name").val());
                 _0x1a98d3.pi = $("#port_id").val();
                 _0x1a98d3.pn = $("#port_name").val();
-                localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+                localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
                 _0x29b35c.text = "" + $("#port_name").val();
                 vF3();
                 _0x27dee6.Mh.Dq($("#port_id").val(), _0x43f59a);
@@ -11085,7 +11085,7 @@ function f3(_0x75c76a) {
                 $("#port_name_s").val(_0x58cc80);
                 _0x1a98d3.pi = _0x5a96da;
                 _0x1a98d3.pn = _0x58cc80;
-                localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+                localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
                 _0x29b35c.text = "" + _0x58cc80;
                 vF3();
                 _0x27dee6.Mh.Eq(_0x5a96da, _0x21f4e7, _0x13466e);
@@ -11094,7 +11094,7 @@ function f3(_0x75c76a) {
                 $("#port_name_s").val($("#port_name").val());
                 _0x1a98d3.pi = $("#port_id").val();
                 _0x1a98d3.pn = $("#port_name").val();
-                localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+                localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
                 _0x29b35c.text = "" + $("#port_name").val();
                 vF3();
                 _0x27dee6.Mh.Eq($("#port_id").val(), _0x21f4e7, _0x13466e);
@@ -11592,7 +11592,7 @@ function f3(_0x75c76a) {
         _0x10b0e0.saveGame = this.checked;
         _0xabdb9.value2_hs.alpha = this.checked ? 1 : 0;
         _0xabdb9.value2_kill.alpha = this.checked ? 1 : 0;
-        localStorage.setItem("SaveGamewup", this.checked ? JSON.stringify(_0x10b0e0) : null);
+        localStorage.setItem("SaveGamewft", this.checked ? JSON.stringify(_0x10b0e0) : null);
       });
     };
     let _0x2ae5f5 = function (_0x435a85, _0x8d661f, _0x6c9095, _0x1363d7) {
@@ -11608,7 +11608,7 @@ function f3(_0x75c76a) {
         _0x435a85.s_kill += _0x1363d7 ? 0 : 1;
         _0x435a85.s_headshot += _0x1363d7 ? 1 : 0;
         _0x3b335a(_0x435a85.kill, _0x435a85.headshot, _0x435a85.s_headshot, _0x435a85.s_kill);
-        if (_0x1363d7 && wupObjects && wupObjects.soundEnabled) {
+        if (_0x1363d7 && wftObjects && wftObjects.soundEnabled) {
           if (_0x435a85.headshot % 10 === 0 && _0x435a85.headshot > 0) {
             window.playMonsterSound();
           }
@@ -11664,17 +11664,17 @@ function f3(_0x75c76a) {
         _0x435a85.s_headshot = 0;
         _0x435a85.died = 0;
       }
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x435a85));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x435a85));
     };
     window.pulseEnabled = true;
     function _0x375984() {
-      const _0x30aa38 = localStorage.getItem("wupPulseEnabled");
+      const _0x30aa38 = localStorage.getItem("wftPulseEnabled");
       if (_0x30aa38 !== null) {
         window.pulseEnabled = _0x30aa38 === "true";
       }
     }
     function _0x309568() {
-      localStorage.setItem("wupPulseEnabled", window.pulseEnabled.toString());
+      localStorage.setItem("wftPulseEnabled", window.pulseEnabled.toString());
     }
     function _0x43d174() {
       _0x375984();
@@ -12218,7 +12218,7 @@ function f3(_0x75c76a) {
         _0x32c139.pk6 = "";
         _0x27a47a(_0x32c139.pk0, _0x32c139.pk1, _0x32c139.pk2, _0x32c139.pk3, _0x32c139.pk4, _0x32c139.pk5, _0x32c139.pk6);
       }
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x32c139));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x32c139));
     };
     let _0x13d32a = function () {
       clearInterval(_0xd66ce6);
@@ -12702,7 +12702,7 @@ function f3(_0x75c76a) {
       if (_0x17fd6c != null) {
         _0x17fd6c.remove();
       }
-      var _0x276610 = document.getElementById("modal_wup");
+      var _0x276610 = document.getElementById("modal_wft");
       if (_0x276610 != null) {
         _0x276610.remove();
       }
@@ -12710,7 +12710,7 @@ function f3(_0x75c76a) {
       if (_0x47bf94 != null) {
         _0x47bf94.remove();
       }
-      var _0x30f388 = document.getElementById("op_wup");
+      var _0x30f388 = document.getElementById("op_wft");
       if (_0x30f388 != null) {
         _0x30f388.remove();
       }
@@ -14320,14 +14320,14 @@ function f3(_0x75c76a) {
       } catch (e59) {}
       _0x1a98d3.pL = [];
       _0x1a98d3.v_z = _0x2c9ba1.vs;
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
       if (_0x1a98d3.dg != null && _0x2c9ba1.dsg.join() != _0x1a98d3.dg.join() || _0x1a98d3.dg == null && _0x2c9ba1.dsg.join() != "") {
         _0x1a98d3.dg = _0x2c9ba1.dsg;
-        localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+        localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
         window.location.reload();
       }
       if (_0x3f4d06 != _0x1a98d3.v_z) {
-        localStorage.removeItem("wupsw");
+        localStorage.removeItem("wftsw");
         window.location.reload();
       }
       document.getElementById("loa831pibur0w4gv");
@@ -14577,9 +14577,9 @@ function f3(_0x75c76a) {
                     $("#port_id").val($("#port_id_s").val());
                     $("#port_name").val($("#port_name_s").val());
                     try {
-                      const _0x204811 = JSON.parse(localStorage.getItem("SaveGamewup") || "{}");
+                      const _0x204811 = JSON.parse(localStorage.getItem("SaveGamewft") || "{}");
                       _0x204811.realServerName = _0xbcf504;
-                      localStorage.setItem("SaveGamewup", JSON.stringify(_0x204811));
+                      localStorage.setItem("SaveGamewft", JSON.stringify(_0x204811));
                     } catch (_0x5f4f5f) {
                       console.error("خطأ في حفظ اسم السيرفر:", _0x5f4f5f);
                     }
@@ -14644,7 +14644,7 @@ function f3(_0x75c76a) {
                   try {
                     const _0x44abd1 = window.realServerName || function () {
                       try {
-                        const _0x141e76 = JSON.parse(localStorage.getItem("SaveGamewup") || "{}");
+                        const _0x141e76 = JSON.parse(localStorage.getItem("SaveGamewft") || "{}");
                         return _0x141e76.realServerName || "";
                       } catch (_0x3a7b43) {
                         return "";
@@ -15180,8 +15180,8 @@ function f3(_0x75c76a) {
           document.getElementById("mm-action-play").click();
         });
       }
-      if (!window.wupObjects) {
-        window.wupObjects = {
+      if (!window.wftObjects) {
+        window.wftObjects = {
           eat_animation: 0.0025,
           smoothCamera: 0.5,
           PortionSize: 2,
@@ -15197,42 +15197,42 @@ function f3(_0x75c76a) {
         };
       }
       try {
-        const _0x16f5f8 = JSON.parse(localStorage.getItem("wupSettings"));
+        const _0x16f5f8 = JSON.parse(localStorage.getItem("wftSettings"));
         if (_0x16f5f8) {
           for (const _0x4891d9 in _0x16f5f8) {
-            if (wupObjects.hasOwnProperty(_0x4891d9)) {
-              wupObjects[_0x4891d9] = _0x16f5f8[_0x4891d9];
+            if (wftObjects.hasOwnProperty(_0x4891d9)) {
+              wftObjects[_0x4891d9] = _0x16f5f8[_0x4891d9];
             }
           }
         }
       } catch (_0x53d4d6) {
-        console.error("Error loading wup settings:", _0x53d4d6);
+        console.error("Error loading wft settings:", _0x53d4d6);
       }
       function _0x19922f() {
         try {
-          localStorage.setItem("wupSettings", JSON.stringify(wupObjects));
+          localStorage.setItem("wftSettings", JSON.stringify(wftObjects));
         } catch (_0x1ef8d9) {
-          console.error("Error saving wup settings:", _0x1ef8d9);
+          console.error("Error saving wft settings:", _0x1ef8d9);
         }
       }
-      $("#op_wup").remove();
-      $("#modal_wup").remove();
+      $("#op_wft").remove();
+      $("#modal_wft").remove();
       if (_0x1a98d3.s_w) {
-        $("<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n<button id=\"btn_crsw\" style=\"display: none;\">💡</button> \n<button id=\"op_wup\" class=\"op_wup\">⚙️ Settings</button> \n<div id=\"modal_wup\" class=\"modal\"> \n  <div class=\"modal-content\"> \n    <div class=\"modal-header\"> \n      <span class=\"close\">&times;</span> \n      <h2 class=\"modal-title\">GAME SETTINGS</h2>\n    </div>\n    \n    <div id=\"modal_wup_body\" class=\"modal-body\">\n      <!-- Settings layout with sidebar and content -->\n      <div class=\"settings-layout\">\n        <!-- Sidebar -->\n        <div class=\"settings-sidebar\">\n          <div class=\"sidebar-item active\" data-tab=\"game-settings\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"></path>\n            </svg>\n            <span>Game Settings</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"mobile-settings\" id=\"mobile-tab-item\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <rect x=\"5\" y=\"2\" width=\"14\" height=\"20\" rx=\"2\" ry=\"2\"></rect>\n              <line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"18\"></line>\n            </svg>\n            <span>Mobile Controls</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"sound-laser-settings\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"></path>\n            </svg>\n            <span>Laser Settings</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"power-ups\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n              <polyline points=\"12 6 12 12 16 14\"></polyline>\n            </svg>\n            <span>Power-ups & Zoom</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"messages\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"></path>\n            </svg>\n            <span>Messages</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"backgrounds\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect>\n              <circle cx=\"8.5\" cy=\"8.5\" r=\"1.5\"></circle>\n              <polyline points=\"21 15 16 10 5 21\"></polyline>\n            </svg>\n            <span>Backgrounds</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"cursors\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z\"></path>\n              <path d=\"M13 13l6 6\"></path>\n            </svg>\n            <span>Cursors</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"about\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n              <line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"12\"></line>\n              <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"8\"></line>\n            </svg>\n            <span>About</span>\n          </div>\n        </div>\n        \n        <!-- Content Area -->\n        <div class=\"settings-content\">\n          <!-- Game Settings Tab -->\n          <div id=\"game-settings-tab\" class=\"tab-content\">\n            <h3>Game Settings</h3>\n            \n            <div id=\"div_server\" style=\"position: absolute; opacity: 0; top: -9999px; left: -9999px; pointer-events: auto;\">\n              <label for=\"sel_server\">Country</label> \n              <select id=\"sel_country\"></select>\n            </div>\n            \n            <!-- Game Options Section -->\n            <div class=\"section-title\">Game Options</div>\n            <div class=\"settings-grid\">\n              <!-- Fast Eating -->\n              <div class=\"setting-item\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-bolt\" style=\"color: #ffbb00;\"></i>\n                  <label>Fast Eating</label>\n                </span>\n                <label class=\"switch\">\n                  <input type=\"checkbox\" id=\"eating_speed_toggle\">\n                  <span class=\"slider\"></span>\n                </label>\n              </div>\n              \n              <!-- ZigZag -->\n              <div class=\"setting-item\" id=\"div_zigzag\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-eye\" style=\"color: #ffbb00;\"></i>\n                  <label>ZigZag Type</label>\n                  <img style=\"height: 18px;\" src=\"https://wormx.store/images/cors-proxy.phpimg=img/zigzag.png\">\n                </span>\n                <select id=\"zigzag_selector\">\n                  <option value=\"0\">None</option>\n                  <option value=\"1\">Type 1</option>\n                  <option value=\"2\">Type 2</option>\n                  <option value=\"3\">Type 3</option>\n                </select>\n              </div>\n              \n              <!-- Show Speed -->\n              <div class=\"setting-item\" id=\"div_speed\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-tachometer-alt\" style=\"color: #ffbb00;\"></i>\n                  <label>Show Speed</label>\n                  <img style=\"height: 18px;\" src=\"https://wormx.store/images/cors-proxy.phpimg=img/speed.png\">\n                </span>\n                <label class=\"switch\">\n                  <input type=\"checkbox\" id=\"wupspeed\" value=\"true\" checked>\n                  <span class=\"slider\"></span>\n                </label>\n              </div>\n              \n              <!-- Total Kill-Headshot -->\n              <div class=\"setting-item\" id=\"div_save\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-crosshairs\" style=\"color: #ffbb00;\"></i>\n                  <label for=\"saveGame\">Total Kill/Headshot</label>\n                </span>\n                <label class=\"switch\">\n                  <input type=\"checkbox\" id=\"saveGame\" value=\"true\" checked>\n                  <span class=\"slider\"></span>\n                </label>\n              </div>\n              \n              <!-- Show FPS/CPU -->\n              <div class=\"setting-item\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-microchip\" style=\"color: #ffbb00;\"></i>\n                  <label>Show FPS/CPU</label>\n                </span>\n                <label class=\"switch\">\n                  <input type=\"checkbox\" id=\"performance-monitor-toggle\">\n                  <span class=\"slider\"></span>\n                </label>\n              </div>\n              \n              <!-- Visual Pulse Effects -->\n              <div class=\"setting-item\" id=\"div_pulse_effects\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-wave-square\" style=\"color: #ffbb00;\"></i>\n                  <label>Visual Pulse Effects</label>\n                </span>\n                <label class=\"switch\">\n                  <input type=\"checkbox\" id=\"pulse_effects_enabled\" checked>\n                  <span class=\"slider\"></span>\n                </label>\n              </div>\n              \n              <!-- Screen Mode -->\n              <div class=\"setting-item\" id=\"div_w1\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-desktop\" style=\"color: #ffbb00;\"></i>\n                  <label>Screen Mode</label>\n                </span>\n                <select id=\"sel_sc\">\n                  <option value=\"0\">100%</option>\n                  <option value=\"1\">75%</option>\n                  <option value=\"2\">Center</option>\n                </select>\n              </div>\n              \n              <!-- Smooth Level -->\n              <div class=\"setting-item\" id=\"div_sm\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-sliders-h\" style=\"color: #ffbb00;\"></i>\n                  <label>Smooth movement</label>\n                </span>\n                <select id=\"sel_sm\">\n                  <option value=\"20\">Normal</option>\n                  <option value=\"10\">High</option>\n                </select>\n              </div>\n              \n              <!-- Top -->\n              <div class=\"setting-item\" id=\"div_top\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-trophy\" style=\"color: #ffbb00;\"></i>\n                  <label>Top</label>\n                </span>\n                <select id=\"sel_top\">\n                  <option value=\"0\">0</option>\n                  <option value=\"1\">1</option>\n                  <option value=\"2\">2</option>\n                  <option value=\"3\">3</option>\n                  <option value=\"4\">4</option>\n                  <option value=\"5\">5</option>\n                  <option value=\"6\">6</option>\n                  <option value=\"7\">7</option>\n                  <option value=\"8\">8</option>\n                  <option value=\"9\">9</option>\n                  <option value=\"10\">10</option>\n                </select>\n              </div>\n            </div>\n            \n            <!-- Sound Settings -->\n            <div class=\"sound-settings-container\">\n              <div class=\"setting-group\">\n                <div class=\"settings-row\">\n                  <!-- Sound Effects Label on Left -->\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-volume-up\" style=\"color: #ffbb00;\"></i>\n                    <div class=\"sound-effects-title\">Sound Effects</div>\n                  </span>\n                  \n                <!-- Headshot Sound Selector -->\n                <select id=\"sound_effect_selector\">\n                  <option value=\"https://wormx.store/video/hs_2.mp3\">Default Headshot</option>\n                  <option value=\"https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3\">Headshot Sound</option>\n                  <option value=\"https://wormx.store/video/emaat.mp3\">Emaat</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/sniper-shot.mp3\">Sniper Shot</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/headshot_6.mp3\">Headshot 2</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/999_Z871W0o.mp3\">Alqm</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/bye-bye-mikey-tokyo-revengers.mp3\">Bye Bye</option>\n                  <option value=\"https://wormx.store/video/Aelo-Adi.MP3\">Adelo Adi</option>\n                  <option value=\"https://wormx.store/video/alalobee.mp3\">Ala Loby</option>\n                  <option value=\"https://wormx.store/video/laugh.mp3\">Laugh</option>\n                  <option value=\"https://wormx.store/video/mario-jump.mp3\">Mario Jump</option>\n                  <option value=\"https://wormx.store/video/pew.mp3\">Pew</option>\n                  <option value=\"https://wormx.store/video/pingo.mp3\">Pingo</option>\n                  <option value=\"https://wormx.store/video/wak-wak.mp3\">Wak Wak</option>\n                </select>\n                \n                <!-- 10th Headshot Sound -->\n                <select id=\"monster_kill_selector\">\n                  <option value=\"https://wormx.store/video/monster-kill-hahaha.MP3\">Monster Kill</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/mk.mp3\">Monster Kill 2</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/hea-hea-headshot.mp3\">Monster Kill 3</option>\n                </select>\n                  \n                  <!-- Volume Control without label -->\n                  <div class=\"volume-slider-container\">\n                    <input type=\"range\" id=\"volume_slider\" min=\"0\" max=\"100\" step=\"1\" value=\"40\">\n                    <span id=\"volume_value\" class=\"slider-value\">40</span>\n                  </div>\n                  \n                  <!-- Toggle Switch on far right -->\n                <div class=\"sound-toggle\">\n                  <label class=\"switch\">\n                    <input type=\"checkbox\" id=\"wupsound\" value=\"true\">\n                    <span class=\"slider round\"></span>\n                  </label>\n                </div>\n                </div>\n              </div>\n            </div>\n            \n            <!-- Custom Skin Upload Section -->\n            <div class=\"section-title\">Custom Skin</div>\n            <div class=\"setting-group\" id=\"div_crsw\">\n              <div class=\"setting-group-content\">\n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-file-image\" style=\"color: #ffbb00;\"></i>\n                    <label>Skin File.... Only (skin.json)</label>\n                  </span>\n                  <div style=\"display: flex; flex-grow: 1; gap: 10px;\">\n                    <input type=\"file\" accept=\".json\" id=\"fileSkin\" style=\"flex-grow: 1;\" />\n                    <button id=\"btn_clear_file\">Clear</button>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n            <!-- Audio elements -->\n            <audio id=\"s_h\"><source src=\"https://wormx.store/video/hs_2.mp3\" type=\"audio/mpeg\"></audio>\n            <audio id=\"monster_kill_sound\"><source src=\"https://wormx.store/video/monster-kill-hahaha.MP3\" type=\"audio/mpeg\"></audio>\n            <audio id=\"sound_test_audio\"></audio>\n          </div>\n          \n          <!-- Mobile Settings Tab -->\n          <div id=\"mobile-settings-tab\" class=\"tab-content\">\n            <h3>Mobile Controls</h3>\n            \n            <div class=\"setting-group\">\n              <div class=\"setting-group-header\">Joystick Settings</div>\n              <div class=\"setting-group-content\">\n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-gamepad\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_checked\">Enable Joystick</label>\n                  </span>\n                  <label class=\"switch\">\n                    <input type=\"checkbox\" id=\"joystick_checked\" checked>\n                    <span class=\"slider\"></span>\n                  </label>\n                </div>\n                \n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-palette\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_color\">Joystick Color</label>\n                  </span>\n                  <select id=\"joystick_color\">\n                    <option value=\"red\">Red</option>\n                    <option value=\"blue\">Blue</option>\n                    <option value=\"green\">Green</option>\n                    <option value=\"yellow\">Yellow</option>\n                    <option value=\"purple\">Purple</option>\n                    <option value=\"orange\">Orange</option>\n                  </select>\n                </div>\n                \n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-cog\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_mode\">Joystick Mode</label>\n                  </span>\n                  <select id=\"joystick_mode\">\n                    <option value=\"static\">Static</option>\n                    <option value=\"dynamic\">Dynamic</option>\n                  </select>\n                </div>\n                \n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-map-marker-alt\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_position\">Position</label>\n                  </span>\n                  <select id=\"joystick_position\">\n                    <option value=\"L\">Left</option>\n                    <option value=\"R\">Right</option>\n                  </select>\n                </div>\n                \n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-expand-arrows-alt\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_size\">Size</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"joystick_size\" min=\"50\" max=\"150\" step=\"10\" value=\"100\">\n                    <span id=\"joystick_size_value\" class=\"slider-value\">100</span>\n                  </div>\n                </div>\n                \n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-adjust\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_pxy\">Opacity</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"joystick_pxy\" min=\"50\" max=\"150\" step=\"10\" value=\"100\">\n                    <span id=\"joystick_pxy_value\" class=\"slider-value\">100</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n            <div id=\"config_mobile\">\n              <!-- Additional mobile settings will be loaded here -->\n            </div>\n          </div>\n          \n          <!-- Laser Settings Tab -->\n          <div id=\"sound-laser-settings-tab\" class=\"tab-content\">\n            <h3>Laser Settings</h3>\n            \n            <div class=\"section-title\">Laser Settings</div>\n            <div class=\"setting-group\" id=\"div_Laser\">\n              <div class=\"setting-group-content\">\n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-bullseye\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"Laserup\">Enable Laser</label>\n                  </span>\n                  <label class=\"switch\">\n                    <input type=\"checkbox\" id=\"Laserup\" value=\"true\">\n                    <span class=\"slider\"></span>\n                  </label>\n                </div>\n                \n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-palette\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"laser_color_picker\">Color</label>\n                  </span>\n                  <input type=\"color\" id=\"laser_color_picker\" value=\"#FFD700\">\n                </div>\n                \n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-adjust\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"laser_opacity_slider\">Opacity</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"laser_opacity_slider\" min=\"10\" max=\"100\" step=\"10\" value=\"50\">\n                    <span id=\"laser_opacity_value\" class=\"slider-value\">50</span>\n                    <button id=\"reset_laser_settings\" class=\"reset-btn\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n                \n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-keyboard\" style=\"color: #ffbb00;\"></i>\n                    <label>Keyboard Shortcuts:</label>\n                  </span>\n                  <div style=\"flex-grow: 1; text-align: right;\">\n                    <span style=\"display: inline-block; margin-left: 10px;\"><strong>L</strong> - Toggle laser</span>\n                    <span style=\"display: inline-block; margin-left: 10px;\"><strong>O</strong> - Increase opacity</span>\n                    <span style=\"display: inline-block; margin-left: 10px;\"><strong>P</strong> - Decrease opacity</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          \n          <!-- Power-ups Tab -->\n          <div id=\"power-ups-tab\" class=\"tab-content\">\n            <h3>Power-ups & Zoom Settings</h3>\n            \n            <div class=\"section-title\">Advanced Controls</div>\n            <div class=\"setting-group\">\n              <div class=\"setting-group-content\">\n                <!-- Spin Fast -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-sync-alt\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"spin_fast_slider\">Spin Fast</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"spin_fast_slider\" min=\"0.3\" max=\"0.6\" step=\"0.1\" value=\"0.5\">\n                    <span id=\"spin_fast_value\" class=\"slider-value\">0.5</span>\n                    <button class=\"reset-btn\" data-reset=\"spin_fast\" data-default=\"0.5\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n                \n                <!-- Power-ups Size -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-expand\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"portion_size_slider\">Power-ups Size</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"portion_size_slider\" min=\"1\" max=\"6\" step=\"1\" value=\"2\">\n                    <span id=\"portion_size_value\" class=\"slider-value\">2</span>\n                    <button class=\"reset-btn\" data-reset=\"portion_size\" data-default=\"2\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n                \n                <!-- Power-ups Aura -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-radiation-alt\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"portion_aura_slider\">Power-ups Aura</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"portion_aura_slider\" min=\"1.2\" max=\"3.2\" step=\"0.2\" value=\"1.2\">\n                    <span id=\"portion_aura_value\" class=\"slider-value\">1.2</span>\n                    <button class=\"reset-btn\" data-reset=\"portion_aura\" data-default=\"1.2\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n                \n                <!-- Food Size -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-apple-alt\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"food_size_slider\">Food Size</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"food_size_slider\" min=\"0.5\" max=\"3\" step=\"0.5\" value=\"2\">\n                    <span id=\"food_size_value\" class=\"slider-value\">2</span>\n                    <button class=\"reset-btn\" data-reset=\"food_size\" data-default=\"2\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n                \n                <!-- Food Shadow -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-moon\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"food_shadow_slider\">Food Shadow</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"food_shadow_slider\" min=\"0.5\" max=\"3\" step=\"0.5\" value=\"2\">\n                    <span id=\"food_shadow_value\" class=\"slider-value\">2</span>\n                    <button class=\"reset-btn\" data-reset=\"food_shadow\" data-default=\"2\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n            <div class=\"section-title\">Zoom Controls</div>\n            <div class=\"setting-group\">\n              <div class=\"setting-group-content\">\n                <!-- Zoom Speed -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-search-plus\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"zoom_speed_slider\">Zoom Speed</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"zoom_speed_slider\" min=\"0.001\" max=\"0.01\" step=\"0.001\" value=\"0.003\">\n                    <span id=\"zoom_speed_value\" class=\"slider-value\">0.003</span>\n                    <button class=\"reset-btn\" data-reset=\"zoom_speed\" data-default=\"0.003\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n            <div id=\"div_game_enhancements\"></div>\n          </div>\n          \n          <!-- Messages Tab -->\n            <div id=\"messages-tab\" class=\"tab-content\">\n              <h3>Messages</h3>\n              \n              <!-- Default Kill&Headshot Toggle -->\n              <div class=\"setting-group\">\n                <div class=\"setting-group-header\">\n                  <div class=\"header-with-toggle\">\n                    <span>Kill&Headshot Settings</span>\n                    <div class=\"toggle-container\">\n                      <span class=\"theo-game-label\">\n                        <i class=\"fas fa-skull\" style=\"color: #ffbb00;\"></i>\n                        <label>Default Kill&Headshot</label>\n                      </span>\n                      <label class=\"switch\">\n                        <input type=\"checkbox\" id=\"wupiq\" value=\"true\">\n                        <span class=\"slider\"></span>\n                      </label>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              \n              <!-- New Messages Layout -->\n              <div class=\"setting-group\">\n                <div class=\"setting-group-header\">Messages</div>\n                <div class=\"setting-group-content\">\n                  <div class=\"messages-container\" id=\"custom-messages-container\">\n                    <!-- Left side: Kill Messages -->\n                    <div class=\"message-column\">\n                      <div class=\"message-header\">\n                        <i class=\"fas fa-crosshairs\" style=\"color: #ffbb00;\"></i>\n                        <span>Kill Messages</span>\n                      </div>\n                      \n                      <div class=\"message-select-container\">\n                        <select id=\"kill_msg\" class=\"message-select\">\n                          <option value=\"KILLED\">KILLED</option>\n                          <option value=\"WASTED\">WASTED</option>\n                          <option value=\"ELIMINATED\">ELIMINATED</option>\n                          <option value=\"DESTROYED\">DESTROYED</option>\n                          <option value=\"FINISHED\">FINISHED</option>\n                          <option value=\"Well Done!\">Well Done!</option>\n                        </select>\n                      </div>\n                      \n                      <div class=\"message-option\">\n                        <span>Show Player Name</span>\n                        <label class=\"switch small-switch\">\n                          <input type=\"checkbox\" id=\"kill_show_name\" checked>\n                          <span class=\"slider\"></span>\n                        </label>\n                      </div>\n                      \n                      <div class=\"message-option\">\n                        <select id=\"kill_name_position\" class=\"message-select\">\n                          <option value=\"after\">After Message</option>\n                          <option value=\"before\">Before Message</option>\n                        </select>\n                      </div>\n                      \n                      <div class=\"message-custom\">\n                        <label for=\"kill_custom_text\" class=\"custom-label\">Custom Message</label>\n                        <input type=\"text\" id=\"kill_custom_text\" maxlength=\"20\" placeholder=\"Maximum 20 characters\" class=\"custom-input\">\n                      </div>\n                    </div>\n                    \n                    <!-- Right side: Headshot Messages -->\n                    <div class=\"message-column\">\n                      <div class=\"message-header\">\n                        <i class=\"fas fa-bullseye\" style=\"color: #ffbb00;\"></i>\n                        <span>Headshot Messages</span>\n                      </div>\n                      \n                      <div class=\"message-select-container\">\n                        <select id=\"headshot_msg\" class=\"message-select\">\n                          <option value=\"HEADSHOT\">HEADSHOT</option>\n                          <option value=\"BOOM! HEADSHOT\">BOOM! HEADSHOT</option>\n                          <option value=\"PERFECT AIM\">PERFECT AIM</option>\n                          <option value=\"CRITICAL HIT\">CRITICAL HIT</option>\n                          <option value=\"BULLSEYE\">BULLSEYE</option>\n                        </select>\n                      </div>\n                      \n                      <div class=\"message-option\">\n                        <span>Show Player Name</span>\n                        <label class=\"switch small-switch\">\n                          <input type=\"checkbox\" id=\"headshot_show_name\" checked>\n                          <span class=\"slider\"></span>\n                        </label>\n                      </div>\n                      \n                      <div class=\"message-option\">\n                        <select id=\"headshot_name_position\" class=\"message-select\">\n                          <option value=\"after\">After Message</option>\n                          <option value=\"before\">Before Message</option>\n                        </select>\n                      </div>\n                      \n                      <div class=\"message-custom\">\n                        <label for=\"headshot_custom_text\" class=\"custom-label\">Custom Message</label>\n                        <input type=\"text\" id=\"headshot_custom_text\" maxlength=\"20\" placeholder=\"Maximum 20 characters\" class=\"custom-input\">\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              \n              <div id=\"div_messages\"></div>\n            </div>\n          \n          <!-- Backgrounds Tab -->\n          <div id=\"backgrounds-tab\" class=\"tab-content\">\n            <h3>Game Backgrounds</h3>\n            \n            <!-- Sector System Section -->\n            <div class=\"section-title\">Sector System</div>\n            <div class=\"sector-system-container\">\n              <div class=\"sector-toggle-row\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-th-large\" style=\"color: #ffbb00;\"></i>\n                  <div class=\"toggle-label\">Enable Sector System</div>\n                </span>\n                <label class=\"toggle-switch\">\n                  <input type=\"checkbox\" id=\"sector_system_toggle\">\n                  <span class=\"toggle-slider\"></span>\n                </label>\n              </div>\n              \n              <!-- Settings Panel - Hidden until enabled -->\n              <div id=\"sector_settings_panel\" class=\"sector-settings-panel\" style=\"display: none;\">\n                <div class=\"sector-main-settings\">\n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-grip-horizontal\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Display Mode</div>\n                    </span>\n                    <div class=\"setting-control\">\n                      <select id=\"sector_display_mode\" class=\"sector-select\">\n                        <option value=\"sectors\">Sectors (12)</option>\n                        <option value=\"quarters\">Quarters (4)</option>\n                      </select>\n                    </div>\n                  </div>\n            \n                  <!-- Background Settings -->\n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-fill-drip\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Background Color</div>\n                    </span>\n                    <div class=\"setting-control\">\n                      <input type=\"color\" id=\"sector_bg_color\" value=\"#000000\" class=\"color-picker\">\n                    </div>\n                  </div>\n                  \n                  <!-- Background Opacity - Always visible -->\n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-adjust\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Background Opacity</div>\n                    </span>\n                    <div class=\"setting-control opacity-control\">\n                      <input type=\"range\" id=\"sector_bg_opacity\" min=\"0\" max=\"100\" step=\"5\" value=\"60\" class=\"small-slider\">\n                      <div class=\"slider-value\" id=\"sector_bg_opacity_value\">60%</div>\n                    </div>\n                  </div>\n            \n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-border-style\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Show Lines</div>\n                    </span>\n                    <div class=\"setting-control\">\n                      <label class=\"toggle-switch\">\n                        <input type=\"checkbox\" id=\"sector_show_lines\" checked>\n                        <span class=\"toggle-slider\"></span>\n                      </label>\n                    </div>\n                  </div>\n                </div>\n            \n                <!-- Lines Options - Hidden when Show Lines is off -->\n                <div id=\"sector_lines_options\" class=\"sector-lines-options\">\n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-palette\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Line Color</div>\n                    </span>\n                    <div class=\"setting-control\">\n                      <input type=\"color\" id=\"sector_line_color\" value=\"#FF0000\" class=\"color-picker\">\n                    </div>\n                  </div>\n            \n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-low-vision\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Line Opacity</div>\n                    </span>\n                    <div class=\"setting-control opacity-control\">\n                      <input type=\"range\" id=\"sector_line_opacity\" min=\"0\" max=\"100\" step=\"5\" value=\"30\" class=\"small-slider\">\n                      <div class=\"slider-value\" id=\"sector_line_opacity_value\">30%</div>\n                    </div>\n                  </div>\n                </div>\n            \n                <div class=\"sector-shortcuts\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-keyboard\" style=\"color: #ffbb00;\"></i>\n                    <div class=\"shortcuts-title\">Keyboard Shortcuts:</div>\n                  </span>\n                  <div class=\"shortcuts-content\">\n                    <span class=\"shortcut-item\"><strong>S</strong> or <strong>=</strong> - Toggle Sectors</span>\n                    <span class=\"shortcut-item\"><strong>X</strong> - Toggle Quarters</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n            <div class=\"background-grid\">\n              <!-- Background items will be added dynamically -->\n            </div>\n          </div>\n          \n        <!-- Cursors Tab -->\n        <div id=\"cursors-tab\" class=\"tab-content\">\n          <h3>Game Cursors</h3>\n          \n          <!-- العنوان في سطر -->\n          <div class=\"setting-row\">\n            <span class=\"theo-game-label\">\n              <i class=\"fas fa-mouse-pointer\" style=\"color: #ffbb00;\"></i>\n              <label>Cursor Selection</label>\n            </span>\n          </div>\n          \n          <!-- الزر في سطر منفصل -->\n          <div class=\"setting-row cursor-controls\">\n            <button id=\"default-cursor-btn\" class=\"secondary-button\">Default Cursor</button>\n            <span id=\"current-cursor-name\">Current: Electrical Plug Cursor</span>\n          </div>\n          \n          <div class=\"cursor-container\">\n            <!-- المؤشرات ستضاف ديناميكياً هنا -->\n          </div>\n          \n          <div id=\"div_cursors\"></div>\n        </div>\n          \n          <!-- About Tab -->\n          <div id=\"about-tab\" class=\"tab-content\">\n            <h3>About WKQ</h3>\n            \n            <div class=\"about-content\">\n              <p>\n                <i class=\"fas fa-info-circle\" style=\"color: #ffbb00;\"></i>\n                Platen: Enhance Your Wormate.io Experience\n                [WKQ] is a Chrome extension designed to improve your wormate.io gameplay. Quickly select rooms, customize your worm with vibrant skin colors, and enjoy extra features to enhance your experience.\n              </p>\n              <p>\n                <i class=\"fas fa-calendar-alt\" style=\"color: #ffbb00;\"></i>\n                Release Date: 30/03/2025.\n              </p>\n              <p>\n                <i class=\"fas fa-code-branch\" style=\"color: #ffbb00;\"></i>\n                Version: 2.0.1\n                  <div class=\"button-group\">\n               <button id=\"resetScript\" class=\"reset-button\">Versiyon Change</button>\n              </p>\n              <p>\n                <i class=\"fas fa-users\" style=\"color: #ffbb00;\"></i>\n                Designed by:  TR-Team ⚡ !\n              </p>\n              \n              <p style=\"margin-top: 20px;\">\n                <i class=\"fas fa-keyboard\" style=\"color: #ffbb00;\"></i>\n                <strong>Keyboard Shortcuts:</strong><br>\n                <span style=\"display: inline-block; margin-right: 15px; margin-top: 5px;\"><strong>L</strong> - Toggle laser</span>\n                <span style=\"display: inline-block; margin-right: 15px; margin-top: 5px;\"><strong>O</strong> - Increase laser opacity</span>\n                <span style=\"display: inline-block; margin-right: 15px; margin-top: 5px;\"><strong>P</strong> - Decrease laser opacity</span>\n              </p>\n              \n              <!-- User ID Section -->\n              <div class=\"setting-group\">\n                <div class=\"setting-group-content\">\n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-id-card\" style=\"color: #ffbb00;\"></i>\n                      <label for=\"id_customer\">ID: </label>\n                    </span>\n                    <input value=\"" + _0x1e5104.userId + "\" style=\"max-width: 220px;\" type=\"text\" id=\"id_customer\" readonly>\n                    <button id=\"btn_copy\">\n                      <span class=\"tooltiptext\" id=\"myTooltip\">id copy</span>Copy\n                    </button>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n    \n<!-- Headshot Message Display -->\n<div id=\"headshot-message\"></div>\n").insertAfter("#mm-store");
+        $("<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n<button id=\"btn_crsw\" style=\"display: none;\">💡</button> \n<button id=\"op_wft\" class=\"op_wft\">⚙️ Settings</button> \n<div id=\"modal_wft\" class=\"modal\"> \n  <div class=\"modal-content\"> \n    <div class=\"modal-header\"> \n      <span class=\"close\">&times;</span> \n      <h2 class=\"modal-title\">GAME SETTINGS</h2>\n    </div>\n    \n    <div id=\"modal_wft_body\" class=\"modal-body\">\n      <!-- Settings layout with sidebar and content -->\n      <div class=\"settings-layout\">\n        <!-- Sidebar -->\n        <div class=\"settings-sidebar\">\n          <div class=\"sidebar-item active\" data-tab=\"game-settings\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"></path>\n            </svg>\n            <span>Game Settings</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"mobile-settings\" id=\"mobile-tab-item\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <rect x=\"5\" y=\"2\" width=\"14\" height=\"20\" rx=\"2\" ry=\"2\"></rect>\n              <line x1=\"12\" y1=\"18\" x2=\"12\" y2=\"18\"></line>\n            </svg>\n            <span>Mobile Controls</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"sound-laser-settings\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"></path>\n            </svg>\n            <span>Laser Settings</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"power-ups\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n              <polyline points=\"12 6 12 12 16 14\"></polyline>\n            </svg>\n            <span>Power-ups & Zoom</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"messages\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"></path>\n            </svg>\n            <span>Messages</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"backgrounds\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect>\n              <circle cx=\"8.5\" cy=\"8.5\" r=\"1.5\"></circle>\n              <polyline points=\"21 15 16 10 5 21\"></polyline>\n            </svg>\n            <span>Backgrounds</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"cursors\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z\"></path>\n              <path d=\"M13 13l6 6\"></path>\n            </svg>\n            <span>Cursors</span>\n          </div>\n          \n          <div class=\"sidebar-item\" data-tab=\"about\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n              <line x1=\"12\" y1=\"16\" x2=\"12\" y2=\"12\"></line>\n              <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"8\"></line>\n            </svg>\n            <span>About</span>\n          </div>\n        </div>\n        \n        <!-- Content Area -->\n        <div class=\"settings-content\">\n          <!-- Game Settings Tab -->\n          <div id=\"game-settings-tab\" class=\"tab-content\">\n            <h3>Game Settings</h3>\n            \n            <div id=\"div_server\" style=\"position: absolute; opacity: 0; top: -9999px; left: -9999px; pointer-events: auto;\">\n              <label for=\"sel_server\">Country</label> \n              <select id=\"sel_country\"></select>\n            </div>\n            \n            <!-- Game Options Section -->\n            <div class=\"section-title\">Game Options</div>\n            <div class=\"settings-grid\">\n              <!-- Fast Eating -->\n              <div class=\"setting-item\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-bolt\" style=\"color: #ffbb00;\"></i>\n                  <label>Fast Eating</label>\n                </span>\n                <label class=\"switch\">\n                  <input type=\"checkbox\" id=\"eating_speed_toggle\">\n                  <span class=\"slider\"></span>\n                </label>\n              </div>\n              \n              <!-- ZigZag -->\n              <div class=\"setting-item\" id=\"div_zigzag\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-eye\" style=\"color: #ffbb00;\"></i>\n                  <label>ZigZag Type</label>\n                  <img style=\"height: 18px;\" src=\"https://wormx.store/images/cors-proxy.phpimg=img/zigzag.png\">\n                </span>\n                <select id=\"zigzag_selector\">\n                  <option value=\"0\">None</option>\n                  <option value=\"1\">Type 1</option>\n                  <option value=\"2\">Type 2</option>\n                  <option value=\"3\">Type 3</option>\n                </select>\n              </div>\n              \n              <!-- Show Speed -->\n              <div class=\"setting-item\" id=\"div_speed\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-tachometer-alt\" style=\"color: #ffbb00;\"></i>\n                  <label>Show Speed</label>\n                  <img style=\"height: 18px;\" src=\"https://wormx.store/images/cors-proxy.phpimg=img/speed.png\">\n                </span>\n                <label class=\"switch\">\n                  <input type=\"checkbox\" id=\"wftspeed\" value=\"true\" checked>\n                  <span class=\"slider\"></span>\n                </label>\n              </div>\n              \n              <!-- Total Kill-Headshot -->\n              <div class=\"setting-item\" id=\"div_save\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-crosshairs\" style=\"color: #ffbb00;\"></i>\n                  <label for=\"saveGame\">Total Kill/Headshot</label>\n                </span>\n                <label class=\"switch\">\n                  <input type=\"checkbox\" id=\"saveGame\" value=\"true\" checked>\n                  <span class=\"slider\"></span>\n                </label>\n              </div>\n              \n              <!-- Show FPS/CPU -->\n              <div class=\"setting-item\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-microchip\" style=\"color: #ffbb00;\"></i>\n                  <label>Show FPS/CPU</label>\n                </span>\n                <label class=\"switch\">\n                  <input type=\"checkbox\" id=\"performance-monitor-toggle\">\n                  <span class=\"slider\"></span>\n                </label>\n              </div>\n              \n              <!-- Visual Pulse Effects -->\n              <div class=\"setting-item\" id=\"div_pulse_effects\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-wave-square\" style=\"color: #ffbb00;\"></i>\n                  <label>Visual Pulse Effects</label>\n                </span>\n                <label class=\"switch\">\n                  <input type=\"checkbox\" id=\"pulse_effects_enabled\" checked>\n                  <span class=\"slider\"></span>\n                </label>\n              </div>\n              \n              <!-- Screen Mode -->\n              <div class=\"setting-item\" id=\"div_w1\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-desktop\" style=\"color: #ffbb00;\"></i>\n                  <label>Screen Mode</label>\n                </span>\n                <select id=\"sel_sc\">\n                  <option value=\"0\">100%</option>\n                  <option value=\"1\">75%</option>\n                  <option value=\"2\">Center</option>\n                </select>\n              </div>\n              \n              <!-- Smooth Level -->\n              <div class=\"setting-item\" id=\"div_sm\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-sliders-h\" style=\"color: #ffbb00;\"></i>\n                  <label>Smooth movement</label>\n                </span>\n                <select id=\"sel_sm\">\n                  <option value=\"20\">Normal</option>\n                  <option value=\"10\">High</option>\n                </select>\n              </div>\n              \n              <!-- Top -->\n              <div class=\"setting-item\" id=\"div_top\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-trophy\" style=\"color: #ffbb00;\"></i>\n                  <label>Top</label>\n                </span>\n                <select id=\"sel_top\">\n                  <option value=\"0\">0</option>\n                  <option value=\"1\">1</option>\n                  <option value=\"2\">2</option>\n                  <option value=\"3\">3</option>\n                  <option value=\"4\">4</option>\n                  <option value=\"5\">5</option>\n                  <option value=\"6\">6</option>\n                  <option value=\"7\">7</option>\n                  <option value=\"8\">8</option>\n                  <option value=\"9\">9</option>\n                  <option value=\"10\">10</option>\n                </select>\n              </div>\n            </div>\n            \n            <!-- Sound Settings -->\n            <div class=\"sound-settings-container\">\n              <div class=\"setting-group\">\n                <div class=\"settings-row\">\n                  <!-- Sound Effects Label on Left -->\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-volume-up\" style=\"color: #ffbb00;\"></i>\n                    <div class=\"sound-effects-title\">Sound Effects</div>\n                  </span>\n                  \n                <!-- Headshot Sound Selector -->\n                <select id=\"sound_effect_selector\">\n                  <option value=\"https://wormx.store/video/hs_2.mp3\">Default Headshot</option>\n                  <option value=\"https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3\">Headshot Sound</option>\n                  <option value=\"https://wormx.store/video/emaat.mp3\">Emaat</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/sniper-shot.mp3\">Sniper Shot</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/headshot_6.mp3\">Headshot 2</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/999_Z871W0o.mp3\">Alqm</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/bye-bye-mikey-tokyo-revengers.mp3\">Bye Bye</option>\n                  <option value=\"https://wormx.store/video/Aelo-Adi.MP3\">Adelo Adi</option>\n                  <option value=\"https://wormx.store/video/alalobee.mp3\">Ala Loby</option>\n                  <option value=\"https://wormx.store/video/laugh.mp3\">Laugh</option>\n                  <option value=\"https://wormx.store/video/mario-jump.mp3\">Mario Jump</option>\n                  <option value=\"https://wormx.store/video/pew.mp3\">Pew</option>\n                  <option value=\"https://wormx.store/video/pingo.mp3\">Pingo</option>\n                  <option value=\"https://wormx.store/video/wak-wak.mp3\">Wak Wak</option>\n                </select>\n                \n                <!-- 10th Headshot Sound -->\n                <select id=\"monster_kill_selector\">\n                  <option value=\"https://wormx.store/video/monster-kill-hahaha.MP3\">Monster Kill</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/mk.mp3\">Monster Kill 2</option>\n                  <option value=\"https://www.myinstants.com/media/sounds/hea-hea-headshot.mp3\">Monster Kill 3</option>\n                </select>\n                  \n                  <!-- Volume Control without label -->\n                  <div class=\"volume-slider-container\">\n                    <input type=\"range\" id=\"volume_slider\" min=\"0\" max=\"100\" step=\"1\" value=\"40\">\n                    <span id=\"volume_value\" class=\"slider-value\">40</span>\n                  </div>\n                  \n                  <!-- Toggle Switch on far right -->\n                <div class=\"sound-toggle\">\n                  <label class=\"switch\">\n                    <input type=\"checkbox\" id=\"wftsound\" value=\"true\">\n                    <span class=\"slider round\"></span>\n                  </label>\n                </div>\n                </div>\n              </div>\n            </div>\n            \n            <!-- Custom Skin Upload Section -->\n            <div class=\"section-title\">Custom Skin</div>\n            <div class=\"setting-group\" id=\"div_crsw\">\n              <div class=\"setting-group-content\">\n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-file-image\" style=\"color: #ffbb00;\"></i>\n                    <label>Skin File.... Only (skin.json)</label>\n                  </span>\n                  <div style=\"display: flex; flex-grow: 1; gap: 10px;\">\n                    <input type=\"file\" accept=\".json\" id=\"fileSkin\" style=\"flex-grow: 1;\" />\n                    <button id=\"btn_clear_file\">Clear</button>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n            <!-- Audio elements -->\n            <audio id=\"s_h\"><source src=\"https://wormx.store/video/hs_2.mp3\" type=\"audio/mpeg\"></audio>\n            <audio id=\"monster_kill_sound\"><source src=\"https://wormx.store/video/monster-kill-hahaha.MP3\" type=\"audio/mpeg\"></audio>\n            <audio id=\"sound_test_audio\"></audio>\n          </div>\n          \n          <!-- Mobile Settings Tab -->\n          <div id=\"mobile-settings-tab\" class=\"tab-content\">\n            <h3>Mobile Controls</h3>\n            \n            <div class=\"setting-group\">\n              <div class=\"setting-group-header\">Joystick Settings</div>\n              <div class=\"setting-group-content\">\n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-gamepad\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_checked\">Enable Joystick</label>\n                  </span>\n                  <label class=\"switch\">\n                    <input type=\"checkbox\" id=\"joystick_checked\" checked>\n                    <span class=\"slider\"></span>\n                  </label>\n                </div>\n                \n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-palette\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_color\">Joystick Color</label>\n                  </span>\n                  <select id=\"joystick_color\">\n                    <option value=\"red\">Red</option>\n                    <option value=\"blue\">Blue</option>\n                    <option value=\"green\">Green</option>\n                    <option value=\"yellow\">Yellow</option>\n                    <option value=\"purple\">Purple</option>\n                    <option value=\"orange\">Orange</option>\n                  </select>\n                </div>\n                \n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-cog\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_mode\">Joystick Mode</label>\n                  </span>\n                  <select id=\"joystick_mode\">\n                    <option value=\"static\">Static</option>\n                    <option value=\"dynamic\">Dynamic</option>\n                  </select>\n                </div>\n                \n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-map-marker-alt\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_position\">Position</label>\n                  </span>\n                  <select id=\"joystick_position\">\n                    <option value=\"L\">Left</option>\n                    <option value=\"R\">Right</option>\n                  </select>\n                </div>\n                \n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-expand-arrows-alt\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_size\">Size</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"joystick_size\" min=\"50\" max=\"150\" step=\"10\" value=\"100\">\n                    <span id=\"joystick_size_value\" class=\"slider-value\">100</span>\n                  </div>\n                </div>\n                \n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-adjust\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"joystick_pxy\">Opacity</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"joystick_pxy\" min=\"50\" max=\"150\" step=\"10\" value=\"100\">\n                    <span id=\"joystick_pxy_value\" class=\"slider-value\">100</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n            <div id=\"config_mobile\">\n              <!-- Additional mobile settings will be loaded here -->\n            </div>\n          </div>\n          \n          <!-- Laser Settings Tab -->\n          <div id=\"sound-laser-settings-tab\" class=\"tab-content\">\n            <h3>Laser Settings</h3>\n            \n            <div class=\"section-title\">Laser Settings</div>\n            <div class=\"setting-group\" id=\"div_Laser\">\n              <div class=\"setting-group-content\">\n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-bullseye\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"Laserup\">Enable Laser</label>\n                  </span>\n                  <label class=\"switch\">\n                    <input type=\"checkbox\" id=\"Laserup\" value=\"true\">\n                    <span class=\"slider\"></span>\n                  </label>\n                </div>\n                \n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-palette\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"laser_color_picker\">Color</label>\n                  </span>\n                  <input type=\"color\" id=\"laser_color_picker\" value=\"#FFD700\">\n                </div>\n                \n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-adjust\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"laser_opacity_slider\">Opacity</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"laser_opacity_slider\" min=\"10\" max=\"100\" step=\"10\" value=\"50\">\n                    <span id=\"laser_opacity_value\" class=\"slider-value\">50</span>\n                    <button id=\"reset_laser_settings\" class=\"reset-btn\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n                \n                <div class=\"setting-row\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-keyboard\" style=\"color: #ffbb00;\"></i>\n                    <label>Keyboard Shortcuts:</label>\n                  </span>\n                  <div style=\"flex-grow: 1; text-align: right;\">\n                    <span style=\"display: inline-block; margin-left: 10px;\"><strong>L</strong> - Toggle laser</span>\n                    <span style=\"display: inline-block; margin-left: 10px;\"><strong>O</strong> - Increase opacity</span>\n                    <span style=\"display: inline-block; margin-left: 10px;\"><strong>P</strong> - Decrease opacity</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          \n          <!-- Power-ups Tab -->\n          <div id=\"power-ups-tab\" class=\"tab-content\">\n            <h3>Power-ups & Zoom Settings</h3>\n            \n            <div class=\"section-title\">Advanced Controls</div>\n            <div class=\"setting-group\">\n              <div class=\"setting-group-content\">\n                <!-- Spin Fast -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-sync-alt\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"spin_fast_slider\">Spin Fast</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"spin_fast_slider\" min=\"0.3\" max=\"0.6\" step=\"0.1\" value=\"0.5\">\n                    <span id=\"spin_fast_value\" class=\"slider-value\">0.5</span>\n                    <button class=\"reset-btn\" data-reset=\"spin_fast\" data-default=\"0.5\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n                \n                <!-- Power-ups Size -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-expand\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"portion_size_slider\">Power-ups Size</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"portion_size_slider\" min=\"1\" max=\"6\" step=\"1\" value=\"2\">\n                    <span id=\"portion_size_value\" class=\"slider-value\">2</span>\n                    <button class=\"reset-btn\" data-reset=\"portion_size\" data-default=\"2\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n                \n                <!-- Power-ups Aura -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-radiation-alt\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"portion_aura_slider\">Power-ups Aura</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"portion_aura_slider\" min=\"1.2\" max=\"3.2\" step=\"0.2\" value=\"1.2\">\n                    <span id=\"portion_aura_value\" class=\"slider-value\">1.2</span>\n                    <button class=\"reset-btn\" data-reset=\"portion_aura\" data-default=\"1.2\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n                \n                <!-- Food Size -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-apple-alt\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"food_size_slider\">Food Size</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"food_size_slider\" min=\"0.5\" max=\"3\" step=\"0.5\" value=\"2\">\n                    <span id=\"food_size_value\" class=\"slider-value\">2</span>\n                    <button class=\"reset-btn\" data-reset=\"food_size\" data-default=\"2\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n                \n                <!-- Food Shadow -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-moon\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"food_shadow_slider\">Food Shadow</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"food_shadow_slider\" min=\"0.5\" max=\"3\" step=\"0.5\" value=\"2\">\n                    <span id=\"food_shadow_value\" class=\"slider-value\">2</span>\n                    <button class=\"reset-btn\" data-reset=\"food_shadow\" data-default=\"2\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n            <div class=\"section-title\">Zoom Controls</div>\n            <div class=\"setting-group\">\n              <div class=\"setting-group-content\">\n                <!-- Zoom Speed -->\n                <div class=\"slider-control\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-search-plus\" style=\"color: #ffbb00;\"></i>\n                    <label for=\"zoom_speed_slider\">Zoom Speed</label>\n                  </span>\n                  <div class=\"slider-container\">\n                    <input type=\"range\" id=\"zoom_speed_slider\" min=\"0.001\" max=\"0.01\" step=\"0.001\" value=\"0.003\">\n                    <span id=\"zoom_speed_value\" class=\"slider-value\">0.003</span>\n                    <button class=\"reset-btn\" data-reset=\"zoom_speed\" data-default=\"0.003\">\n                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                        <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"></path>\n                        <path d=\"M3 3v5h5\"></path>\n                      </svg>\n                    </button>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n            <div id=\"div_game_enhancements\"></div>\n          </div>\n          \n          <!-- Messages Tab -->\n            <div id=\"messages-tab\" class=\"tab-content\">\n              <h3>Messages</h3>\n              \n              <!-- Default Kill&Headshot Toggle -->\n              <div class=\"setting-group\">\n                <div class=\"setting-group-header\">\n                  <div class=\"header-with-toggle\">\n                    <span>Kill&Headshot Settings</span>\n                    <div class=\"toggle-container\">\n                      <span class=\"theo-game-label\">\n                        <i class=\"fas fa-skull\" style=\"color: #ffbb00;\"></i>\n                        <label>Default Kill&Headshot</label>\n                      </span>\n                      <label class=\"switch\">\n                        <input type=\"checkbox\" id=\"wftiq\" value=\"true\">\n                        <span class=\"slider\"></span>\n                      </label>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              \n              <!-- New Messages Layout -->\n              <div class=\"setting-group\">\n                <div class=\"setting-group-header\">Messages</div>\n                <div class=\"setting-group-content\">\n                  <div class=\"messages-container\" id=\"custom-messages-container\">\n                    <!-- Left side: Kill Messages -->\n                    <div class=\"message-column\">\n                      <div class=\"message-header\">\n                        <i class=\"fas fa-crosshairs\" style=\"color: #ffbb00;\"></i>\n                        <span>Kill Messages</span>\n                      </div>\n                      \n                      <div class=\"message-select-container\">\n                        <select id=\"kill_msg\" class=\"message-select\">\n                          <option value=\"KILLED\">KILLED</option>\n                          <option value=\"WASTED\">WASTED</option>\n                          <option value=\"ELIMINATED\">ELIMINATED</option>\n                          <option value=\"DESTROYED\">DESTROYED</option>\n                          <option value=\"FINISHED\">FINISHED</option>\n                          <option value=\"Well Done!\">Well Done!</option>\n                        </select>\n                      </div>\n                      \n                      <div class=\"message-option\">\n                        <span>Show Player Name</span>\n                        <label class=\"switch small-switch\">\n                          <input type=\"checkbox\" id=\"kill_show_name\" checked>\n                          <span class=\"slider\"></span>\n                        </label>\n                      </div>\n                      \n                      <div class=\"message-option\">\n                        <select id=\"kill_name_position\" class=\"message-select\">\n                          <option value=\"after\">After Message</option>\n                          <option value=\"before\">Before Message</option>\n                        </select>\n                      </div>\n                      \n                      <div class=\"message-custom\">\n                        <label for=\"kill_custom_text\" class=\"custom-label\">Custom Message</label>\n                        <input type=\"text\" id=\"kill_custom_text\" maxlength=\"20\" placeholder=\"Maximum 20 characters\" class=\"custom-input\">\n                      </div>\n                    </div>\n                    \n                    <!-- Right side: Headshot Messages -->\n                    <div class=\"message-column\">\n                      <div class=\"message-header\">\n                        <i class=\"fas fa-bullseye\" style=\"color: #ffbb00;\"></i>\n                        <span>Headshot Messages</span>\n                      </div>\n                      \n                      <div class=\"message-select-container\">\n                        <select id=\"headshot_msg\" class=\"message-select\">\n                          <option value=\"HEADSHOT\">HEADSHOT</option>\n                          <option value=\"BOOM! HEADSHOT\">BOOM! HEADSHOT</option>\n                          <option value=\"PERFECT AIM\">PERFECT AIM</option>\n                          <option value=\"CRITICAL HIT\">CRITICAL HIT</option>\n                          <option value=\"BULLSEYE\">BULLSEYE</option>\n                        </select>\n                      </div>\n                      \n                      <div class=\"message-option\">\n                        <span>Show Player Name</span>\n                        <label class=\"switch small-switch\">\n                          <input type=\"checkbox\" id=\"headshot_show_name\" checked>\n                          <span class=\"slider\"></span>\n                        </label>\n                      </div>\n                      \n                      <div class=\"message-option\">\n                        <select id=\"headshot_name_position\" class=\"message-select\">\n                          <option value=\"after\">After Message</option>\n                          <option value=\"before\">Before Message</option>\n                        </select>\n                      </div>\n                      \n                      <div class=\"message-custom\">\n                        <label for=\"headshot_custom_text\" class=\"custom-label\">Custom Message</label>\n                        <input type=\"text\" id=\"headshot_custom_text\" maxlength=\"20\" placeholder=\"Maximum 20 characters\" class=\"custom-input\">\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              \n              <div id=\"div_messages\"></div>\n            </div>\n          \n          <!-- Backgrounds Tab -->\n          <div id=\"backgrounds-tab\" class=\"tab-content\">\n            <h3>Game Backgrounds</h3>\n            \n            <!-- Sector System Section -->\n            <div class=\"section-title\">Sector System</div>\n            <div class=\"sector-system-container\">\n              <div class=\"sector-toggle-row\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-th-large\" style=\"color: #ffbb00;\"></i>\n                  <div class=\"toggle-label\">Enable Sector System</div>\n                </span>\n                <label class=\"toggle-switch\">\n                  <input type=\"checkbox\" id=\"sector_system_toggle\">\n                  <span class=\"toggle-slider\"></span>\n                </label>\n              </div>\n              \n              <!-- Settings Panel - Hidden until enabled -->\n              <div id=\"sector_settings_panel\" class=\"sector-settings-panel\" style=\"display: none;\">\n                <div class=\"sector-main-settings\">\n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-grip-horizontal\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Display Mode</div>\n                    </span>\n                    <div class=\"setting-control\">\n                      <select id=\"sector_display_mode\" class=\"sector-select\">\n                        <option value=\"sectors\">Sectors (12)</option>\n                        <option value=\"quarters\">Quarters (4)</option>\n                      </select>\n                    </div>\n                  </div>\n            \n                  <!-- Background Settings -->\n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-fill-drip\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Background Color</div>\n                    </span>\n                    <div class=\"setting-control\">\n                      <input type=\"color\" id=\"sector_bg_color\" value=\"#000000\" class=\"color-picker\">\n                    </div>\n                  </div>\n                  \n                  <!-- Background Opacity - Always visible -->\n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-adjust\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Background Opacity</div>\n                    </span>\n                    <div class=\"setting-control opacity-control\">\n                      <input type=\"range\" id=\"sector_bg_opacity\" min=\"0\" max=\"100\" step=\"5\" value=\"60\" class=\"small-slider\">\n                      <div class=\"slider-value\" id=\"sector_bg_opacity_value\">60%</div>\n                    </div>\n                  </div>\n            \n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-border-style\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Show Lines</div>\n                    </span>\n                    <div class=\"setting-control\">\n                      <label class=\"toggle-switch\">\n                        <input type=\"checkbox\" id=\"sector_show_lines\" checked>\n                        <span class=\"toggle-slider\"></span>\n                      </label>\n                    </div>\n                  </div>\n                </div>\n            \n                <!-- Lines Options - Hidden when Show Lines is off -->\n                <div id=\"sector_lines_options\" class=\"sector-lines-options\">\n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-palette\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Line Color</div>\n                    </span>\n                    <div class=\"setting-control\">\n                      <input type=\"color\" id=\"sector_line_color\" value=\"#FF0000\" class=\"color-picker\">\n                    </div>\n                  </div>\n            \n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-low-vision\" style=\"color: #ffbb00;\"></i>\n                      <div class=\"setting-label\">Line Opacity</div>\n                    </span>\n                    <div class=\"setting-control opacity-control\">\n                      <input type=\"range\" id=\"sector_line_opacity\" min=\"0\" max=\"100\" step=\"5\" value=\"30\" class=\"small-slider\">\n                      <div class=\"slider-value\" id=\"sector_line_opacity_value\">30%</div>\n                    </div>\n                  </div>\n                </div>\n            \n                <div class=\"sector-shortcuts\">\n                  <span class=\"theo-game-label\">\n                    <i class=\"fas fa-keyboard\" style=\"color: #ffbb00;\"></i>\n                    <div class=\"shortcuts-title\">Keyboard Shortcuts:</div>\n                  </span>\n                  <div class=\"shortcuts-content\">\n                    <span class=\"shortcut-item\"><strong>S</strong> or <strong>=</strong> - Toggle Sectors</span>\n                    <span class=\"shortcut-item\"><strong>X</strong> - Toggle Quarters</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n            <div class=\"background-grid\">\n              <!-- Background items will be added dynamically -->\n            </div>\n          </div>\n          \n        <!-- Cursors Tab -->\n        <div id=\"cursors-tab\" class=\"tab-content\">\n          <h3>Game Cursors</h3>\n          \n          <!-- العنوان في سطر -->\n          <div class=\"setting-row\">\n            <span class=\"theo-game-label\">\n              <i class=\"fas fa-mouse-pointer\" style=\"color: #ffbb00;\"></i>\n              <label>Cursor Selection</label>\n            </span>\n          </div>\n          \n          <!-- الزر في سطر منفصل -->\n          <div class=\"setting-row cursor-controls\">\n            <button id=\"default-cursor-btn\" class=\"secondary-button\">Default Cursor</button>\n            <span id=\"current-cursor-name\">Current: Electrical Plug Cursor</span>\n          </div>\n          \n          <div class=\"cursor-container\">\n            <!-- المؤشرات ستضاف ديناميكياً هنا -->\n          </div>\n          \n          <div id=\"div_cursors\"></div>\n        </div>\n          \n          <!-- About Tab -->\n          <div id=\"about-tab\" class=\"tab-content\">\n            <h3>About WKQ</h3>\n            \n            <div class=\"about-content\">\n              <p>\n                <i class=\"fas fa-info-circle\" style=\"color: #ffbb00;\"></i>\n                Platen: Enhance Your Wormate.io Experience\n                [WKQ] is a Chrome extension designed to improve your wormate.io gameplay. Quickly select rooms, customize your worm with vibrant skin colors, and enjoy extra features to enhance your experience.\n              </p>\n              <p>\n                <i class=\"fas fa-calendar-alt\" style=\"color: #ffbb00;\"></i>\n                Release Date: 30/03/2025.\n              </p>\n              <p>\n                <i class=\"fas fa-code-branch\" style=\"color: #ffbb00;\"></i>\n                Version: 2.0.1\n                  <div class=\"button-group\">\n               <button id=\"resetScript\" class=\"reset-button\">Versiyon Change</button>\n              </p>\n              <p>\n                <i class=\"fas fa-users\" style=\"color: #ffbb00;\"></i>\n                Designed by:  TR-Team ⚡ !\n              </p>\n              \n              <p style=\"margin-top: 20px;\">\n                <i class=\"fas fa-keyboard\" style=\"color: #ffbb00;\"></i>\n                <strong>Keyboard Shortcuts:</strong><br>\n                <span style=\"display: inline-block; margin-right: 15px; margin-top: 5px;\"><strong>L</strong> - Toggle laser</span>\n                <span style=\"display: inline-block; margin-right: 15px; margin-top: 5px;\"><strong>O</strong> - Increase laser opacity</span>\n                <span style=\"display: inline-block; margin-right: 15px; margin-top: 5px;\"><strong>P</strong> - Decrease laser opacity</span>\n              </p>\n              \n              <!-- User ID Section -->\n              <div class=\"setting-group\">\n                <div class=\"setting-group-content\">\n                  <div class=\"setting-row\">\n                    <span class=\"theo-game-label\">\n                      <i class=\"fas fa-id-card\" style=\"color: #ffbb00;\"></i>\n                      <label for=\"id_customer\">ID: </label>\n                    </span>\n                    <input value=\"" + _0x1e5104.userId + "\" style=\"max-width: 220px;\" type=\"text\" id=\"id_customer\" readonly>\n                    <button id=\"btn_copy\">\n                      <span class=\"tooltiptext\" id=\"myTooltip\">id copy</span>Copy\n                    </button>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n    \n<!-- Headshot Message Display -->\n<div id=\"headshot-message\"></div>\n").insertAfter("#mm-store");
       } else {
-        $("    <button id=\"op_wup\" class=\"op_wup\">" + _0x2c9ba1.ccg[6] + "</button> \n    <div id=\"modal_wup\" class=\"modal\"> \n      <div class=\"modal-content wup-modal\" style=\"max-width: 360px !important; width: 360px !important;\"> \n        <div class=\"center wup-header\" style=\"background-color: #ff8a18; background: linear-gradient(145deg, rgb(255, 141, 0), rgb(255, 102, 0)); padding: 0 15px; height: 36px; line-height: 36px; border-radius: 8px 8px 0 0; position: relative; text-align: center;\"> \n          <span class=\"close\" style=\"position: absolute; left: 15px; top: 6px; color: white; font-size: 24px; font-weight: bold; cursor: pointer;\">×</span> \n          <h2 class=\"modal-title\" style=\"margin: 0; font-size: 18px; color: white;\">Settings</h2>\n        </div> \n        <div id=\"modal_wup_body\" class=\"modal-body wup-body\" style=\"padding: 15px; background-color: #1e2339; color: #fff; border-radius: 0 0 8px 8px;\">\n          <!-- سيتم تحديث المحتوى -->\n        </div> \n      </div>\n    </div>\n  ").insertAfter("#mm-store");
+        $("    <button id=\"op_wft\" class=\"op_wft\">" + _0x2c9ba1.ccg[6] + "</button> \n    <div id=\"modal_wft\" class=\"modal\"> \n      <div class=\"modal-content wft-modal\" style=\"max-width: 360px !important; width: 360px !important;\"> \n        <div class=\"center wft-header\" style=\"background-color: #ff8a18; background: linear-gradient(145deg, rgb(255, 141, 0), rgb(255, 102, 0)); padding: 0 15px; height: 36px; line-height: 36px; border-radius: 8px 8px 0 0; position: relative; text-align: center;\"> \n          <span class=\"close\" style=\"position: absolute; left: 15px; top: 6px; color: white; font-size: 24px; font-weight: bold; cursor: pointer;\">×</span> \n          <h2 class=\"modal-title\" style=\"margin: 0; font-size: 18px; color: white;\">Settings</h2>\n        </div> \n        <div id=\"modal_wft_body\" class=\"modal-body wft-body\" style=\"padding: 15px; background-color: #1e2339; color: #fff; border-radius: 0 0 8px 8px;\">\n          <!-- سيتم تحديث المحتوى -->\n        </div> \n      </div>\n    </div>\n  ").insertAfter("#mm-store");
       }
       function _0x113b83() {
         const _0x293435 = _0x2c9ba1.e === "not_empty" || _0x137a00;
         if (!_0x293435) {
-          $("#modal_wup .modal-content").addClass("wup-modal").css({
+          $("#modal_wft .modal-content").addClass("wft-modal").css({
             "max-width": "360px",
             width: "360px"
           });
           $(".settings-sidebar, .settings-layout, .settings-content").hide();
-          $("#modal_wup_body").html("\n        <div style=\"text-align: center; margin: 10px auto;\">\n          <label for=\"id_customer\" style=\"display: block; margin-bottom: 5px; font-weight: bold; color: #ddd; text-align: center;\">User ID</label> \n          <div style=\"display: flex; margin: 0 auto; justify-content: center;\">\n            <input value=\"" + _0x1e5104.userId + "\" style=\"max-width: 200px; width: 200px !important; height: 22px !important; border-radius: 6px; font-size: 14px; text-align: center; background-color: #fff; color: #0a6928; font-weight: 630; margin-right: 10px;\" type=\"text\" id=\"id_customer\" readonly>\n           <button id=\"btn_copy\" style=\"width: 100px; height: 35px; border-radius: 6px; font-size: 15px; background-color: #fff; color: white; border: none; cursor: pointer;\" onclick=\"navigator.clipboard.writeText('" + _0x1e5104.userId + "').then(()=> alert('Your ID " + _0x1e5104.userId + " copied!'));\">Copy</button>\n          </div>\n        </div>\n        \n        <!-- الخط الفاصل الأول فقط -->\n        <div style=\"border-top: 1px solid #3a4061; margin: 15px 0;\"></div>\n        \n        <!-- طريقة تفعيل الاشتراك الرئيسية - رابط الاتصال -->\n        <div style=\"text-align: center; padding: 10px 0;\">\n          <h3 style=\"color: white; margin: 0 0 8px 0; font-size: 16px;\">Premium Activation - تفعيل الاشتراك المميز</h3>\n          <a href=\"https://wormatefriendsturkey.com/contact\" target=\"_blank\" style=\"display: block; background-color: #4CAF50; color: white; padding: 12px; text-decoration: none; border-radius: 6px; font-weight: bold; margin: 10px auto; width: 80%; max-width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: all 0.3s; border: 2px solid #65d269;\">\n            <span style=\"display: block; font-size: 16px;\">🔗 Click Here To Activate</span>\n            <span style=\"display: block; font-size: 14px; margin-top: 4px;\">اضغط هنا للتفعيل</span>\n          </a>\n        </div>\n        \n        <!-- صورة البريميم قبل زر الديسكورد -->\n        <div style=\"text-align: center; margin: 15px auto 10px;\">\n            <img src=\"https://wormx.store/premium_features.png\" alt=\"Premium Features\" style=\"max-width: 150px; height: auto; border-radius: 4px; display: block; margin: 0 auto;\">\n        </div>\n        \n        <!-- خيار الانضمام للديسكورد كخيار ثانوي -->\n        <div style=\"text-align: center; padding: 10px 0;\">\n          <a href=\"https://discord.gg/NHWXgJpE\" target=\"_blank\" style=\"display: inline-block; background-color: #5865F2; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: background-color 0.3s;\">\n            <svg style=\"width: 16px; height: 16px; margin-right: 6px; display: inline-block; vertical-align: middle;\" viewBox=\"0 0 24 24\" fill=\"white\">\n              <path d=\"M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914a.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z\"/>\n            </svg>\n            Join Our Discord\n            <span style=\"display: block; font-size: 0.8em; margin-top: 2px;\">انضم إلى مجتمعنا على Discord</span>\n          </a>\n          <p style=\"margin-top: 8px; color: #aaa; font-size: 12px;\">\n            Get premium features by joining our Discord server\n            <span style=\"display: block; font-size: 0.9em; margin-top: 2px;\">للحصول على الميزات المميزة عبر Discord</span>\n          </p>\n        </div>\n        \n        <div style=\"text-align: center;\">\n          <p style=\"color: #ddd; font-size: 14px; margin: 5px 0;\">\n            <i class=\"fas fa-crown\" style=\"color: #ffbb00;\"></i> Premium\n          </p>\n        </div>\n        ");
+          $("#modal_wft_body").html("\n        <div style=\"text-align: center; margin: 10px auto;\">\n          <label for=\"id_customer\" style=\"display: block; margin-bottom: 5px; font-weight: bold; color: #ddd; text-align: center;\">User ID</label> \n          <div style=\"display: flex; margin: 0 auto; justify-content: center;\">\n            <input value=\"" + _0x1e5104.userId + "\" style=\"max-width: 200px; width: 200px !important; height: 22px !important; border-radius: 6px; font-size: 14px; text-align: center; background-color: #fff; color: #0a6928; font-weight: 630; margin-right: 10px;\" type=\"text\" id=\"id_customer\" readonly>\n           <button id=\"btn_copy\" style=\"width: 100px; height: 35px; border-radius: 6px; font-size: 15px; background-color: #fff; color: white; border: none; cursor: pointer;\" onclick=\"navigator.clipboard.writeText('" + _0x1e5104.userId + "').then(()=> alert('Your ID " + _0x1e5104.userId + " copied!'));\">Copy</button>\n          </div>\n        </div>\n        \n        <!-- الخط الفاصل الأول فقط -->\n        <div style=\"border-top: 1px solid #3a4061; margin: 15px 0;\"></div>\n        \n        <!-- طريقة تفعيل الاشتراك الرئيسية - رابط الاتصال -->\n        <div style=\"text-align: center; padding: 10px 0;\">\n          <h3 style=\"color: white; margin: 0 0 8px 0; font-size: 16px;\">Premium Activation - تفعيل الاشتراك المميز</h3>\n          <a href=\"https://wormatefriendsturkey.com/contact\" target=\"_blank\" style=\"display: block; background-color: #4CAF50; color: white; padding: 12px; text-decoration: none; border-radius: 6px; font-weight: bold; margin: 10px auto; width: 80%; max-width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: all 0.3s; border: 2px solid #65d269;\">\n            <span style=\"display: block; font-size: 16px;\">🔗 Click Here To Activate</span>\n            <span style=\"display: block; font-size: 14px; margin-top: 4px;\">اضغط هنا للتفعيل</span>\n          </a>\n        </div>\n        \n        <!-- صورة البريميم قبل زر الديسكورد -->\n        <div style=\"text-align: center; margin: 15px auto 10px;\">\n            <img src=\"https://wormx.store/premium_features.png\" alt=\"Premium Features\" style=\"max-width: 150px; height: auto; border-radius: 4px; display: block; margin: 0 auto;\">\n        </div>\n        \n        <!-- خيار الانضمام للديسكورد كخيار ثانوي -->\n        <div style=\"text-align: center; padding: 10px 0;\">\n          <a href=\"https://discord.gg/NHWXgJpE\" target=\"_blank\" style=\"display: inline-block; background-color: #5865F2; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: background-color 0.3s;\">\n            <svg style=\"width: 16px; height: 16px; margin-right: 6px; display: inline-block; vertical-align: middle;\" viewBox=\"0 0 24 24\" fill=\"white\">\n              <path d=\"M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914a.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z\"/>\n            </svg>\n            Join Our Discord\n            <span style=\"display: block; font-size: 0.8em; margin-top: 2px;\">انضم إلى مجتمعنا على Discord</span>\n          </a>\n          <p style=\"margin-top: 8px; color: #aaa; font-size: 12px;\">\n            Get premium features by joining our Discord server\n            <span style=\"display: block; font-size: 0.9em; margin-top: 2px;\">للحصول على الميزات المميزة عبر Discord</span>\n          </p>\n        </div>\n        \n        <div style=\"text-align: center;\">\n          <p style=\"color: #ddd; font-size: 14px; margin: 5px 0;\">\n            <i class=\"fas fa-crown\" style=\"color: #ffbb00;\"></i> Premium\n          </p>\n        </div>\n        ");
         } else {
-          $("#modal_wup .modal-content").removeClass("wup-modal");
+          $("#modal_wft .modal-content").removeClass("wft-modal");
           $(".settings-sidebar, .settings-layout, .settings-content").show();
           const _0x555052 = $(".sidebar-item.active").data("tab");
           if (_0x555052) {
@@ -15249,14 +15249,14 @@ function f3(_0x75c76a) {
       window.openSettingsModal = function () {
         _0x113b83();
         $("#modal_backdrop").show();
-        $("#modal_wup").css({
+        $("#modal_wft").css({
           "z-index": "9999",
           display: "block"
         });
         $("body").css("overflow", "hidden");
       };
       window.closeSettingsModal = function () {
-        $("#modal_wup").css("display", "none");
+        $("#modal_wft").css("display", "none");
         $("#modal_backdrop").hide();
         $("body").css("overflow", "");
       };
@@ -15266,7 +15266,7 @@ function f3(_0x75c76a) {
         if (!_0x5c51f2) {
           $(".settings-sidebar, .settings-layout, .settings-content, .settings-grid, .tab-content, .sidebar-item").hide();
           $("[id^=\"div_\"]").not("#div_customer").hide();
-          $("#eating_speed_toggle, #performance-monitor-toggle, #wupspeed, #saveGame, #pulse_effects_enabled").closest(".setting-item").hide();
+          $("#eating_speed_toggle, #performance-monitor-toggle, #wftspeed, #saveGame, #pulse_effects_enabled").closest(".setting-item").hide();
           $("[id^=\"sel_\"]").hide();
           $(".switch, .slider-control, .section-title").hide();
           $("#backgrounds-tab, .background-grid, .background-item").hide();
@@ -15276,7 +15276,7 @@ function f3(_0x75c76a) {
         } else {
           $(".settings-sidebar, .settings-layout, .settings-content, .settings-grid, .tab-content, .sidebar-item").show();
           $("[id^=\"div_\"]").show();
-          $("#eating_speed_toggle, #performance-monitor-toggle, #wupspeed, #saveGame, #pulse_effects_enabled").closest(".setting-item").show();
+          $("#eating_speed_toggle, #performance-monitor-toggle, #wftspeed, #saveGame, #pulse_effects_enabled").closest(".setting-item").show();
           $("[id^=\"sel_\"]").show();
           $(".switch, .slider-control, .section-title").show();
           $("#backgrounds-tab, .background-grid, .background-item").show();
@@ -15350,12 +15350,12 @@ function f3(_0x75c76a) {
           return;
         }
         window.modalFixed = true;
-        $("#op_wup").off("click").on("click", function (_0x31d50b) {
+        $("#op_wft").off("click").on("click", function (_0x31d50b) {
           _0x31d50b.preventDefault();
           window.openSettingsModal();
           return false;
         });
-        var _0x44ce8c = $("#modal_wup");
+        var _0x44ce8c = $("#modal_wft");
         var _0x15a52a = _0x44ce8c.css("display");
         $("body").append(_0x44ce8c.detach());
         var _0x2c98f6 = $("<div id='modal_backdrop'></div>").css({
@@ -15370,8 +15370,8 @@ function f3(_0x75c76a) {
         });
         _0x44ce8c.before(_0x2c98f6);
         function _0x10eaa5() {
-          if ($("#op_wup").length && !$("#op_wup").data("hasClickHandler")) {
-            $("#op_wup").off("click").on("click", function (_0x21a68e) {
+          if ($("#op_wft").length && !$("#op_wft").data("hasClickHandler")) {
+            $("#op_wft").off("click").on("click", function (_0x21a68e) {
               _0x21a68e.preventDefault();
               window.openSettingsModal();
               return false;
@@ -15476,7 +15476,7 @@ function f3(_0x75c76a) {
             method: "POST",
             body: JSON.stringify(_0x2ac083)
           });
-          localStorage.removeItem("wupsw");
+          localStorage.removeItem("wftsw");
           window.location.reload();
         };
       }
@@ -15509,12 +15509,12 @@ function f3(_0x75c76a) {
             $("#zigzag_selector").val(_0x1a98d3.zigzag);
           } else {
             _0x1a98d3.zigzag = 0;
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           }
           $("#zigzag_selector").val(_0x1a98d3.zigzag);
           $("#zigzag_selector").change(function () {
             _0x1a98d3.zigzag = parseInt($(this).val());
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
             if (window.bbs && window.bbsConfig) {
               window.bbsConfig.zigzag = _0x1a98d3.zigzag;
               window.bbs.zigzag = _0x1a98d3.zigzag;
@@ -15536,15 +15536,15 @@ function f3(_0x75c76a) {
               }
             }
           });
-          $("#wupspeed").prop("checked", true);
-          $("#wupspeed").change(function () {
+          $("#wftspeed").prop("checked", true);
+          $("#wftspeed").change(function () {
             _0x1a98d3.vp = $(this).prop("checked");
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           $("#saveGame").prop("checked", _0x1a98d3.cs);
           $("#saveGame").change(function () {
             _0x1a98d3.cs = $(this).prop("checked");
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           if (_0x1a98d3.mobile) {
             if (_0x5a2204) {
@@ -15566,7 +15566,7 @@ function f3(_0x75c76a) {
                 if (_0x1a98d3.sc == 2) {
                   _0x1a98d3.wi = 0;
                 }
-                localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+                localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
               };
             }
           }
@@ -15577,7 +15577,7 @@ function f3(_0x75c76a) {
             sel_sm.value = _0x1a98d3.sm;
             sel_sm.onchange = function () {
               _0x1a98d3.sm = parseInt(sel_sm.value);
-              localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+              localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
             };
           }
           if (_0x535fe8) {
@@ -15587,12 +15587,12 @@ function f3(_0x75c76a) {
             _0x16509f.value = _0x1a98d3.to;
             _0x16509f.onchange = function () {
               _0x1a98d3.to = parseInt(_0x16509f.value);
-              localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+              localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
             };
           }
           if (_0x54ce18 && _0x54ce18.value == "iq" && _0x23e7c0) {
             _0x23e7c0.style.display = "inline-block";
-            var _0x3cb827 = $("#wupiq");
+            var _0x3cb827 = $("#wftiq");
             _0x3cb827.prop("checked", _0x1a98d3.iq);
             _0x3cb827.change(function () {
               if (this.checked) {
@@ -15600,7 +15600,7 @@ function f3(_0x75c76a) {
               } else {
                 _0x1a98d3.iq = false;
               }
-              localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+              localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
             });
           } else {
             _0x1a98d3.iq = false;
@@ -15620,12 +15620,12 @@ function f3(_0x75c76a) {
           if (window.PerformanceMonitor) {
             window.PerformanceMonitor.init();
           }
-          const _0x255792 = localStorage.getItem("wupPulseEnabled") === "true" || localStorage.getItem("wupPulseEnabled") === null;
+          const _0x255792 = localStorage.getItem("wftPulseEnabled") === "true" || localStorage.getItem("wftPulseEnabled") === null;
           $("#pulse_effects_enabled").prop("checked", _0x255792);
           window.pulseEnabled = _0x255792;
           $("#pulse_effects_enabled").change(function () {
             window.pulseEnabled = $(this).prop("checked");
-            localStorage.setItem("wupPulseEnabled", window.pulseEnabled.toString());
+            localStorage.setItem("wftPulseEnabled", window.pulseEnabled.toString());
           });
           _0x1a98d3.c_1 = _0x2c9ba1.streamer;
           if (_0x44df67) {
@@ -15692,7 +15692,7 @@ function f3(_0x75c76a) {
                 const _0xaddec = $(this).data("bg");
                 const _0x372cb4 = $(this).data("bg-name");
                 _0x1a98d3.background = _0xaddec;
-                localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+                localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
                 if (ooo && ooo.ef && ooo.ef.F_bg && ooo.ef.fn_o) {
                   ooo.ef.F_bg = new PIXI.Texture(ooo.ef.fn_o(_0xaddec));
                 }
@@ -15713,11 +15713,11 @@ function f3(_0x75c76a) {
             }
             _0x1a98d3.c_3 = _0x2c9ba1.extension;
             _0x151872.value = _0x1a98d3.background || _0x315fe7[0].uri;
-            if ($.fn.wupsle) {
-              $("#backgroundArena").wupsle({
+            if ($.fn.wftsle) {
+              $("#backgroundArena").wftsle({
                 onSelected: function () {
                   _0x1a98d3.background = $("#backgroundArena-value").val();
-                  localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+                  localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
                   if (ooo && ooo.ef && ooo.ef.F_bg && ooo.ef.fn_o) {
                     ooo.ef.F_bg = new PIXI.Texture(ooo.ef.fn_o(_0x1a98d3.background));
                   }
@@ -15853,7 +15853,7 @@ function f3(_0x75c76a) {
           if (_0x1a98d3.hz) {
             _0x4103df.onwheel = function (_0x18453f) {
               if (!_0x1a98d3.ctrl && (_0x1a98d3.z >= 0.5 && _0x1a98d3.z <= 25 || _0x1a98d3.z < 0.5 && _0x18453f.deltaY < 0 || _0x1a98d3.z > 25 && _0x18453f.deltaY > 0)) {
-                _0x1a98d3.z = _0x1a98d3.z + _0x18453f.deltaY * -wupObjects.zoomSpeed;
+                _0x1a98d3.z = _0x1a98d3.z + _0x18453f.deltaY * -wftObjects.zoomSpeed;
                 if (_0x1a98d3.z < 0.5) {
                   _0x1a98d3.z = 0.5;
                 }
@@ -15968,7 +15968,7 @@ function f3(_0x75c76a) {
             }
             _0x1a98d3.joystick.size = parseInt(_0x5c0b74.value);
             $("#joystick_size_value").text(_0x5c0b74.value);
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           }
           function _0x74a750(_0x4dc1a1) {
             if (!_0x1a98d3.joystick) {
@@ -15976,7 +15976,7 @@ function f3(_0x75c76a) {
             }
             _0x1a98d3.joystick.pxy = parseInt(_0x4dc1a1.value);
             $("#joystick_pxy_value").text(_0x4dc1a1.value);
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           }
           if (typeof _0x2add7a !== "undefined" && typeof _0x2da668 !== "undefined" && typeof _0x423a56 !== "undefined") {
             if (typeof _0x48f412 === "function") {
@@ -15995,14 +15995,14 @@ function f3(_0x75c76a) {
         }
         if (_0x2c9ba1.ccc && _0x2c9ba1.ccc != "iq" && _0x2c9ba1.ccc != _0x3be6af) {
           localStorage.setItem("oco", _0x2c9ba1.ccc);
-          localStorage.removeItem("wupsw");
+          localStorage.removeItem("wftsw");
           window.location.reload();
         }
         if (!_0x3be6af) {
           localStorage.setItem("oco", "iq");
         }
       }
-      localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+      localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
       $(document).ready(function () {
         if ($(".settings-sidebar").length > 0) {
           $(".sidebar-item").click(function () {
@@ -16018,7 +16018,7 @@ function f3(_0x75c76a) {
             $("#mobile-tab-item").hide();
           }
           function _0x1059ea() {
-            if ($("#wupiq").prop("checked")) {
+            if ($("#wftiq").prop("checked")) {
               $("#custom-messages-container").addClass("messages-disabled");
             } else {
               $("#custom-messages-container").removeClass("messages-disabled");
@@ -16035,34 +16035,34 @@ function f3(_0x75c76a) {
             $("#joystick_pxy_value").text(_0x5b6910);
             _0x42ce38(this);
           });
-          $("#wupiq").change(function () {
+          $("#wftiq").change(function () {
             _0x1059ea();
             _0x1a98d3.iq = $(this).prop("checked");
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           $("#kill_msg").change(function () {
             _0x1a98d3.killMsg = $(this).val();
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           $("#headshot_msg").change(function () {
             _0x1a98d3.headshotMsg = $(this).val();
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           $("#kill_show_name").change(function () {
             _0x1a98d3.showKillName = $(this).prop("checked");
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           $("#headshot_show_name").change(function () {
             _0x1a98d3.showHeadshotName = $(this).prop("checked");
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           $("#kill_name_position").change(function () {
             _0x1a98d3.killNamePos = $(this).val();
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           $("#headshot_name_position").change(function () {
             _0x1a98d3.headshotNamePos = $(this).val();
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           $("#kill_custom_text").on("input", function () {
             if ($(this).val() !== "") {
@@ -16071,7 +16071,7 @@ function f3(_0x75c76a) {
             } else {
               _0x1a98d3.killMsgType = "preset";
             }
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           $("#headshot_custom_text").on("input", function () {
             if ($(this).val() !== "") {
@@ -16080,7 +16080,7 @@ function f3(_0x75c76a) {
             } else {
               _0x1a98d3.headshotMsgType = "preset";
             }
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           if (_0x1a98d3.killMsg) {
             $("#kill_msg").val(_0x1a98d3.killMsg);
@@ -16098,10 +16098,10 @@ function f3(_0x75c76a) {
           $("#headshot_show_name").prop("checked", _0x1a98d3.showHeadshotName !== false);
           $("#kill_name_position").val(_0x1a98d3.killNamePos || "after");
           $("#headshot_name_position").val(_0x1a98d3.headshotNamePos || "after");
-          $("#wupsound").prop("checked", wupObjects.soundEnabled || _0x1a98d3.vh);
-          $("#sound_effect_selector").val(wupObjects.soundEffect || "https://wormx.store/video/hs_2.mp3");
-          $("#volume_slider").val(wupObjects.soundVolume || 50);
-          $("#volume_value").text(wupObjects.soundVolume || 50);
+          $("#wftsound").prop("checked", wftObjects.soundEnabled || _0x1a98d3.vh);
+          $("#sound_effect_selector").val(wftObjects.soundEffect || "https://wormx.store/video/hs_2.mp3");
+          $("#volume_slider").val(wftObjects.soundVolume || 50);
+          $("#volume_value").text(wftObjects.soundVolume || 50);
           let _0x411f3e = null;
           function _0x751e0c(_0x338956, _0x440026) {
             if (_0x411f3e) {
@@ -16113,31 +16113,31 @@ function f3(_0x75c76a) {
             _0x338956.play();
             _0x411f3e = _0x338956;
           }
-          $("#wupsound").prop("checked", true);
-          $("#wupsound").change(function () {
-            wupObjects.soundEnabled = $(this).prop("checked");
+          $("#wftsound").prop("checked", true);
+          $("#wftsound").change(function () {
+            wftObjects.soundEnabled = $(this).prop("checked");
             _0x1a98d3.vh = $(this).prop("checked");
             _0x19922f();
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
-            if (wupObjects.soundEnabled) {
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
+            if (wftObjects.soundEnabled) {
               const _0x2521f7 = document.getElementById("s_h");
               if (_0x2521f7) {
-                _0x751e0c(_0x2521f7, wupObjects.soundVolume);
+                _0x751e0c(_0x2521f7, wftObjects.soundVolume);
               }
             }
           });
           $("#sound_effect_selector").change(function () {
-            wupObjects.soundEffect = $(this).val();
+            wftObjects.soundEffect = $(this).val();
             _0x19922f();
             const _0x511e95 = document.getElementById("s_h");
             if (_0x511e95) {
               const _0xc0b631 = _0x511e95.querySelector("source");
               if (_0xc0b631) {
-                _0xc0b631.src = wupObjects.soundEffect;
+                _0xc0b631.src = wftObjects.soundEffect;
                 _0x511e95.load();
-                if (wupObjects.soundEnabled) {
+                if (wftObjects.soundEnabled) {
                   setTimeout(() => {
-                    _0x751e0c(_0x511e95, wupObjects.soundVolume);
+                    _0x751e0c(_0x511e95, wftObjects.soundVolume);
                   }, 100);
                 }
               }
@@ -16151,30 +16151,30 @@ function f3(_0x75c76a) {
               if (_0xe2e22a) {
                 _0xe2e22a.src = _0x1135b6;
                 _0x2a9c32.load();
-                if (wupObjects.soundEnabled) {
+                if (wftObjects.soundEnabled) {
                   setTimeout(() => {
-                    _0x751e0c(_0x2a9c32, wupObjects.soundVolume);
+                    _0x751e0c(_0x2a9c32, wftObjects.soundVolume);
                   }, 100);
                 }
               }
             }
-            if (!wupObjects.monsterKillSound) {
-              wupObjects.monsterKillSound = {};
+            if (!wftObjects.monsterKillSound) {
+              wftObjects.monsterKillSound = {};
             }
-            wupObjects.monsterKillSound = _0x1135b6;
+            wftObjects.monsterKillSound = _0x1135b6;
             _0x19922f();
           });
           $("#volume_slider").on("input", function () {
-            wupObjects.soundVolume = parseInt($(this).val());
-            $("#volume_value").text(wupObjects.soundVolume);
+            wftObjects.soundVolume = parseInt($(this).val());
+            $("#volume_value").text(wftObjects.soundVolume);
             const _0x5994b6 = document.querySelectorAll("audio");
             _0x5994b6.forEach(_0x4dc72e => {
-              _0x4dc72e.volume = wupObjects.soundVolume / 100;
+              _0x4dc72e.volume = wftObjects.soundVolume / 100;
             });
-            if (wupObjects.soundEnabled) {
+            if (wftObjects.soundEnabled) {
               const _0x59e80a = document.getElementById("s_h");
               if (_0x59e80a) {
-                _0x751e0c(_0x59e80a, wupObjects.soundVolume);
+                _0x751e0c(_0x59e80a, wftObjects.soundVolume);
               }
             }
             _0x19922f();
@@ -16204,7 +16204,7 @@ function f3(_0x75c76a) {
             window.laserOptions.enabled = $(this).prop("checked");
             _0x1a98d3.ls = $(this).prop("checked");
             localStorage.setItem("laserOptions", JSON.stringify(window.laserOptions));
-            localStorage.setItem("SaveGamewup", JSON.stringify(_0x1a98d3));
+            localStorage.setItem("SaveGamewft", JSON.stringify(_0x1a98d3));
           });
           $("#laser_color_picker").change(function () {
             const _0x272d41 = $(this).val();
@@ -16246,56 +16246,56 @@ function f3(_0x75c76a) {
               }
             }
           });
-          $("#eating_speed_toggle").prop("checked", wupObjects.eat_animation >= 1);
-          $("#spin_fast_slider").val(wupObjects.smoothCamera);
-          $("#spin_fast_value").text(wupObjects.smoothCamera);
-          $("#zoom_speed_slider").val(wupObjects.zoomSpeed);
-          $("#zoom_speed_value").text(wupObjects.zoomSpeed);
-          $("#portion_size_slider").val(wupObjects.PortionSize);
-          $("#portion_size_value").text(wupObjects.PortionSize);
-          $("#portion_aura_slider").val(wupObjects.PortionAura);
-          $("#portion_aura_value").text(wupObjects.PortionAura);
-          $("#food_size_slider").val(wupObjects.FoodSize);
-          $("#food_size_value").text(wupObjects.FoodSize);
-          $("#food_shadow_slider").val(wupObjects.FoodShadow);
-          $("#food_shadow_value").text(wupObjects.FoodShadow);
+          $("#eating_speed_toggle").prop("checked", wftObjects.eat_animation >= 1);
+          $("#spin_fast_slider").val(wftObjects.smoothCamera);
+          $("#spin_fast_value").text(wftObjects.smoothCamera);
+          $("#zoom_speed_slider").val(wftObjects.zoomSpeed);
+          $("#zoom_speed_value").text(wftObjects.zoomSpeed);
+          $("#portion_size_slider").val(wftObjects.PortionSize);
+          $("#portion_size_value").text(wftObjects.PortionSize);
+          $("#portion_aura_slider").val(wftObjects.PortionAura);
+          $("#portion_aura_value").text(wftObjects.PortionAura);
+          $("#food_size_slider").val(wftObjects.FoodSize);
+          $("#food_size_value").text(wftObjects.FoodSize);
+          $("#food_shadow_slider").val(wftObjects.FoodShadow);
+          $("#food_shadow_value").text(wftObjects.FoodShadow);
           $("#eating_speed_toggle").change(function () {
-            wupObjects.eat_animation = $(this).prop("checked") ? 1 : 0.0025;
+            wftObjects.eat_animation = $(this).prop("checked") ? 1 : 0.0025;
             _0x19922f();
           });
           $("#spin_fast_slider").on("input", function () {
             const _0xeb5c2a = parseFloat($(this).val());
-            wupObjects.smoothCamera = _0xeb5c2a;
+            wftObjects.smoothCamera = _0xeb5c2a;
             $("#spin_fast_value").text(_0xeb5c2a);
             _0x19922f();
           });
           $("#zoom_speed_slider").on("input", function () {
             const _0x52e55e = parseFloat($(this).val());
-            wupObjects.zoomSpeed = _0x52e55e;
+            wftObjects.zoomSpeed = _0x52e55e;
             $("#zoom_speed_value").text(_0x52e55e);
             _0x19922f();
           });
           $("#portion_size_slider").on("input", function () {
             const _0xad1b33 = parseFloat($(this).val());
-            wupObjects.PortionSize = _0xad1b33;
+            wftObjects.PortionSize = _0xad1b33;
             $("#portion_size_value").text(_0xad1b33);
             _0x19922f();
           });
           $("#portion_aura_slider").on("input", function () {
             const _0x40ceff = parseFloat($(this).val());
-            wupObjects.PortionAura = _0x40ceff;
+            wftObjects.PortionAura = _0x40ceff;
             $("#portion_aura_value").text(_0x40ceff);
             _0x19922f();
           });
           $("#food_size_slider").on("input", function () {
             const _0x3e8dd5 = parseFloat($(this).val());
-            wupObjects.FoodSize = _0x3e8dd5;
+            wftObjects.FoodSize = _0x3e8dd5;
             $("#food_size_value").text(_0x3e8dd5);
             _0x19922f();
           });
           $("#food_shadow_slider").on("input", function () {
             const _0x445372 = parseFloat($(this).val());
-            wupObjects.FoodShadow = _0x445372;
+            wftObjects.FoodShadow = _0x445372;
             $("#food_shadow_value").text(_0x445372);
             _0x19922f();
           });
@@ -16331,7 +16331,7 @@ function f3(_0x75c76a) {
                 clearInterval(_0x2909b2);
                 const _0x14f6ab = window.utils.prototype.Qj;
                 window.utils.prototype.Qj = function (_0x2979ca, _0x4cb403, _0x11a9bb) {
-                  this.Hj = window.decoder.ga(this.Hj, this.Fj, _0x4cb403, window.wupObjects.eat_animation);
+                  this.Hj = window.decoder.ga(this.Hj, this.Fj, _0x4cb403, window.wftObjects.eat_animation);
                   this.Ij = window.decoder.ga(this.Ij, this.Gj, _0x4cb403, 0.0025);
                   this.Nj.Bg(this, _0x2979ca, _0x4cb403, _0x11a9bb);
                 };
@@ -16343,9 +16343,9 @@ function f3(_0x75c76a) {
                   }
                   var _0x13fd5c = _0x51bfb4.Kj * (1 + window.decoder.pa(_0x51bfb4.Mj + _0x5cc8e / 200) * 0.3);
                   if (_0x51bfb4.Ej) {
-                    this.Wh.Ad(_0x51bfb4.Hj, _0x51bfb4.Ij, window.wupObjects.PortionSize * _0x51bfb4.Jj, _0x51bfb4.Lj * 1, window.wupObjects.PortionAura * _0x13fd5c, window.wupObjects.PortionTransparent * _0x51bfb4.Lj);
+                    this.Wh.Ad(_0x51bfb4.Hj, _0x51bfb4.Ij, window.wftObjects.PortionSize * _0x51bfb4.Jj, _0x51bfb4.Lj * 1, window.wftObjects.PortionAura * _0x13fd5c, window.wftObjects.PortionTransparent * _0x51bfb4.Lj);
                   } else {
-                    this.Wh.Ad(_0x51bfb4.Hj, _0x51bfb4.Ij, window.wupObjects.FoodSize * _0x51bfb4.Jj, _0x51bfb4.Lj * 1, window.wupObjects.FoodShadow * _0x13fd5c, window.wupObjects.FoodTransparent * _0x51bfb4.Lj);
+                    this.Wh.Ad(_0x51bfb4.Hj, _0x51bfb4.Ij, window.wftObjects.FoodSize * _0x51bfb4.Jj, _0x51bfb4.Lj * 1, window.wftObjects.FoodShadow * _0x13fd5c, window.wftObjects.FoodTransparent * _0x51bfb4.Lj);
                   }
                 };
                 const _0x62abe9 = window.savedGame.prototype.ug;
@@ -16354,7 +16354,7 @@ function f3(_0x75c76a) {
                   if (this.Fh && typeof this.Fh.x !== "undefined" && window.ooo && window.ooo.Mh) {
                     const _0x35950a = window.ooo.Mh.Oh();
                     if (_0x35950a && typeof _0x35950a._a !== "undefined") {
-                      this.Fh.x = window.decoder.ja(this.Fh.x, _0x35950a._a, _0xd8bf5e, window.wupObjects.smoothCamera, 33.333);
+                      this.Fh.x = window.decoder.ja(this.Fh.x, _0x35950a._a, _0xd8bf5e, window.wftObjects.smoothCamera, 33.333);
                     }
                   }
                   return _0x93ed9;
@@ -16397,10 +16397,10 @@ function f3(_0x75c76a) {
                     _0x2c0d36.textContent = _0xf690b0;
                     _0x2c0d36.style.color = _0x2b40d6 ? "#ff2222" : "#ffcc00";
                     _0x2c0d36.style.opacity = "1";
-                    if (_0x2b40d6 && wupObjects.soundEnabled) {
+                    if (_0x2b40d6 && wftObjects.soundEnabled) {
                       const _0xf5f435 = document.getElementById("s_h");
                       if (_0xf5f435) {
-                        _0xf5f435.volume = wupObjects.soundVolume / 100;
+                        _0xf5f435.volume = wftObjects.soundVolume / 100;
                         _0xf5f435.currentTime = 0;
                         _0xf5f435.play();
                       }
@@ -16410,16 +16410,16 @@ function f3(_0x75c76a) {
                     }, 2000);
                   };
                 }
-                console.log("wup Game modifications applied successfully!");
+                console.log("wft Game modifications applied successfully!");
               }
             }, 1000);
           }
           setTimeout(_0x41c510, 1000);
           window.playHeadshotSound = function () {
-            if (wupObjects.soundEnabled) {
+            if (wftObjects.soundEnabled) {
               const _0x23dea4 = document.getElementById("s_h");
               if (_0x23dea4) {
-                _0x23dea4.volume = wupObjects.soundVolume / 100;
+                _0x23dea4.volume = wftObjects.soundVolume / 100;
                 _0x23dea4.currentTime = 0;
                 _0x23dea4.play();
               }
@@ -16497,7 +16497,7 @@ function f3(_0x75c76a) {
             var _0x16cc0b = 0;
             for (var _0x30e169 in _0x18b6dd.csg["0"]) {
               for (var _0x57ec93 = _0x18b6dd.csg["1"][_0x30e169].split("|"), _0x424211 = 0; _0x424211 < _0x57ec93.length; _0x424211++) {
-                _0x561cc1.textureDict["t_wup_" + (_0x1a98d3.g / 9 * 1000 + _0x16cc0b)] = {
+                _0x561cc1.textureDict["t_wft_" + (_0x1a98d3.g / 9 * 1000 + _0x16cc0b)] = {
                   custom: true,
                   file: "data:image/png;base64," + _0x57ec93[_0x424211].substr(_0x57ec93[_0x424211].length - _0x1a98d3.c_v, _0x1a98d3.c_v) + _0x57ec93[_0x424211].substr(0, _0x57ec93[_0x424211].length - _0x1a98d3.c_v)
                 };
@@ -16527,7 +16527,7 @@ function f3(_0x75c76a) {
                     glow: _0x10eded[_0x5b7c19]
                   };
                   for (var _0x424211 = 0; _0x424211 < _0x10eded[_0x5b7c19].length; _0x424211++) {
-                    _0x45c1a2.base.push("s_wup_" + (_0x1a98d3.g / 9 * 1000 + _0x566478) + "_" + (_0x10eded[_0x5b7c19].length - _0x424211));
+                    _0x45c1a2.base.push("s_wft_" + (_0x1a98d3.g / 9 * 1000 + _0x566478) + "_" + (_0x10eded[_0x5b7c19].length - _0x424211));
                   }
                   ;
                   _0x561cc1.skinArrayDict.push(_0x45c1a2);
@@ -16579,9 +16579,9 @@ function f3(_0x75c76a) {
                   glow: _0x10eded[_0x5b7c19]
                 };
                 for (var _0x424211 = 0; _0x424211 < _0x10eded[_0x5b7c19].length; _0x424211++) {
-                  _0x45c1a2.base.push("s_wup_" + _0x45c1a2.id + "_" + (_0x10eded[_0x5b7c19].length - _0x424211));
-                  _0x561cc1.regionDict["s_wup_" + _0x45c1a2.id + "_" + (_0x424211 + 1)] = {
-                    texture: "t_wup_" + _0x45c1a2.id,
+                  _0x45c1a2.base.push("s_wft_" + _0x45c1a2.id + "_" + (_0x10eded[_0x5b7c19].length - _0x424211));
+                  _0x561cc1.regionDict["s_wft_" + _0x45c1a2.id + "_" + (_0x424211 + 1)] = {
+                    texture: "t_wft_" + _0x45c1a2.id,
                     h: 96,
                     w: 96,
                     x: (_0x424211 || 0) * 99,
@@ -16644,7 +16644,7 @@ function f3(_0x75c76a) {
               body: JSON.stringify(_0x30d875)
             }).then(async function (_0x75a66b) {
               _0x75a66b = await _0x75a66b.json();
-              _0x561cc1.textureDict["t_wup_" + _0x1f35b4["0"] + "_skin_g"] = {
+              _0x561cc1.textureDict["t_wft_" + _0x1f35b4["0"] + "_skin_g"] = {
                 custom: true,
                 relativePath: _0x75a66b.csg["1"]["0"]
               };
@@ -16675,9 +16675,9 @@ function f3(_0x75c76a) {
                   glow: _0x34dcdf[_0x3dcbb3]
                 };
                 for (var _0x24df61 = 0; _0x24df61 < _0x34dcdf[_0x3dcbb3].length; _0x24df61++) {
-                  _0x380896.base.push("s_wup_" + _0x380896.id + "_" + (_0x34dcdf[_0x3dcbb3].length - _0x24df61));
-                  _0x561cc1.regionDict["s_wup_" + _0x380896.id + "_" + (_0x24df61 + 1)] = {
-                    texture: "t_wup_" + _0x1f35b4["0"] + "_skin_g",
+                  _0x380896.base.push("s_wft_" + _0x380896.id + "_" + (_0x34dcdf[_0x3dcbb3].length - _0x24df61));
+                  _0x561cc1.regionDict["s_wft_" + _0x380896.id + "_" + (_0x24df61 + 1)] = {
+                    texture: "t_wft_" + _0x1f35b4["0"] + "_skin_g",
                     h: 96,
                     w: 96,
                     x: (_0x24df61 || 0) * 99,
@@ -16706,7 +16706,7 @@ function f3(_0x75c76a) {
       s_h.pause();
     }
     (function (_0x4d08d5) {
-      _0x4d08d5.fn.wupsle = function (_0x408544) {
+      _0x4d08d5.fn.wftsle = function (_0x408544) {
         if (_0x576c7e[_0x408544]) {
           return _0x576c7e[_0x408544].apply(this, Array.prototype.slice.call(arguments, 1));
         } else if (typeof _0x408544 != "object" && _0x408544) {
@@ -17051,7 +17051,7 @@ function f3(_0x75c76a) {
         _0x2414e9.dispatchEvent(_0x2d432f);
         if (typeof vO14 !== "undefined") {
           vO14.zigzag = _0x50e902;
-          localStorage.setItem("SaveGamewup", JSON.stringify(vO14));
+          localStorage.setItem("SaveGamewft", JSON.stringify(vO14));
           localStorage.setItem("selectedZigzag", _0x50e902);
           if (window.bbs && window.bbsConfig) {
             window.bbsConfig.zigzag = _0x50e902;
