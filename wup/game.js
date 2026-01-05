@@ -6670,7 +6670,7 @@ function f3(_0x75c76a) {
       function _0x2c1f77(_0x56d534) {
         this.nn = {};
         function _0x2dfca0() {
-          var _0x786c64 = ["https://platenxo.github.io/bypass/none.png", "https://platenxo.github.io/bypass/none.png", "https://platenxo.github.io/bypass/none.png"];
+          var _0x786c64 = ["https://platenxo.github.io/bypass/bg.png", "https://platenxo.github.io/bypass/bg.png", "https://platenxo.github.io/bypass/bg.png"];
           var _0x25c035 = localStorage.getItem("lastBackground");
           var _0xe0bdd6 = _0x786c64.filter(_0x5b2cbd => _0x5b2cbd !== _0x25c035);
           var _0x16ee03 = _0xe0bdd6[Math.floor(Math.random() * _0xe0bdd6.length)];
@@ -17086,17 +17086,4 @@ function f3(_0x75c76a) {
     }, 1000);
   } else {}
 })();
- var _0x22e016 = "#001f3f";
-      var _0x3acbfc = function _0x113a59(_0x1f1841) {
-        var _0x163040 = `https://platenxo.github.io/bypass/none.png`;
-        document.body.style.backgroundColor = _0x22e016;
-        document.body.style.backgroundImage = `url('${_0x1f1841 || _0x163040}')`;
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundSize = "cover";
-        var _0x4a1c28 = document.getElementById("background-canvas");
-        var _0x468884 = document.getElementById("game-wrap");
-        _0x4a1c28.style.backgroundColor = _0x22e016;
-        _0x4a1c28.style.opacity = "0.65";
-        _0x468884.style.backgroundColor = "transparent";
-      };
 console.log("BY PASS PLATEN");
