@@ -1552,7 +1552,7 @@ function _typeof(p) {
         this.gc = new vO.Wa(vO3.a("4a2d693121bc79952b3c75073f8b719d23"), v117, 158, 4, 87, 74, 203, 63.5, 128, 128);
         this.hc = new vO.Wa(vO3.a("24130a9250a60b194511078b49"), v117, 4, 4, 146, 146, 63.5, 63.5, 128, 128);
          var v219 = vO4.k.m.from("https://i.imgur.com/LFiCido.png");
-        this.pwrFlex = new vO5.Wa("flex_ability", v219, 156, 140, 87, 60, 170, 128.5, 128, 128);
+        this.pwrFlex = new vO.Wa("flex_ability", v219, 156, 140, 87, 60, 170, 128.5, 128, 128);
         var v118;
         var v119 = vO4.k.m.from(vO3.a("928c3dc8f7403d5ab5cf39cbb3430f5ec99d14dbc1"));
         var v120 = new vO.Wa(vO3.a("11e6f622cae36e2d6a"), v119, 0, 0, 42, 80, 75, 64, 128, 128);
