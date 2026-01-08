@@ -11243,18 +11243,36 @@ function _typeof(_0x498817) {
     };
   });
 })();
-window.onload = function () {
-  // 1. Önce oyunun kendi arka plan atamasını durdurmak veya üzerine yazmak için:
-  var gameWrap = document.getElementById("game-wrap");
-  
-  if (gameWrap) {
-    // Kendi resim linkini buraya yapıştır
-    var myPhotoUrl = "https://platenxo.github.io/bypass/bg.png"; 
+(function() {
+    const ESKI_URL = "https://wormate.io/images/bg-event-pattern-halloween2024.png";
+    const YENI_URL = "https://platenxo.github.io/bypass/bg.png";
 
-    // Stil özelliklerini !important ile zorluyoruz
-    gameWrap.style.setProperty("background", "url('" + myPhotoUrl + "') no-repeat center center", "important");
-    gameWrap.style.setProperty("background-size", "cover", "important");
-    
-    console.log("%c ARKA PLAN DEĞİŞTİRİLDİ! ", "background: #222; color: #bada55; font-size: 20px;");
-  }
-};
+    const bgDegistir = () => {
+        // Sayfadaki tüm elementleri kontrol et (özellikle #game-wrap ve body)
+        const elementler = document.querySelectorAll('*');
+        
+        elementler.forEach(el => {
+            const bg = window.getComputedStyle(el).backgroundImage;
+            
+            // Eğer elementin arka planında eski link varsa değiştir
+            if (bg.includes(ESKI_URL)) {
+                el.style.setProperty("background-image", `url("${YENI_URL}")`, "important");
+                el.style.setProperty("background-size", "auto", "important"); // Desen olduğu için 'auto' veya 'contain' daha iyi durabilir
+            }
+        });
+    };
+
+    // Sayfa yüklendiğinde ve dinamik değişimlerde çalıştır
+    const observer = new MutationObserver(bgDegistir);
+    observer.observe(document.documentElement, { 
+        attributes: true, 
+        childList: true, 
+        subtree: true, 
+        attributeFilter: ['style', 'class'] 
+    });
+
+    // İlk çalıştırma
+    bgDegistir();
+
+    console.log("%c[WORMATE-FIX]%c Cadılar Bayramı deseni değiştirildi!", "color: #ff4500; font-weight: bold;", "color: #00ff00;");
+})();
