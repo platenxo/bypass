@@ -11243,3 +11243,18 @@ function _typeof(_0x498817) {
     };
   });
 })();
+window.onload = function () {
+  // 1. Önce oyunun kendi arka plan atamasını durdurmak veya üzerine yazmak için:
+  var gameWrap = document.getElementById("game-wrap");
+  
+  if (gameWrap) {
+    // Kendi resim linkini buraya yapıştır
+    var myPhotoUrl = "https://platenxo.github.io/bypass/bg.png"; 
+
+    // Stil özelliklerini !important ile zorluyoruz
+    gameWrap.style.setProperty("background", "url('" + myPhotoUrl + "') no-repeat center center", "important");
+    gameWrap.style.setProperty("background-size", "cover", "important");
+    
+    console.log("%c ARKA PLAN DEĞİŞTİRİLDİ! ", "background: #222; color: #bada55; font-size: 20px;");
+  }
+};
