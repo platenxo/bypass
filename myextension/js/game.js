@@ -1483,7 +1483,7 @@ window.addEventListener("load", function () {
             v106.fb.ub = 500;
       v106.N = new vF40(v106.fb);
       v106.a = function () {
-        null.vb((window.anApp = _0x31baa8).s.H.wb);
+        v106.N.vb((window.anApp = _0x31baa8).s.H.wb);
         setInterval(function () {
           v106.S(function (_0x3f3ad8, _0x2f297d) {
             v106.xb(_0x3f3ad8, _0x2f297d);
