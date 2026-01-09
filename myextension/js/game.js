@@ -195,7 +195,7 @@ const RechekingPhone = function () {
 };
 window.gameSettings = {
   s_l: "https://platenxo.github.io/bypass/myextension"
-}
+};
 const loadJoy = function (p9) {
   let v9;
   try {
