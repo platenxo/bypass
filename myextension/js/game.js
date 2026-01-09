@@ -161,7 +161,7 @@ let vO6 = {
   Api_listServer: []
 };
 async function f2() {
-  await fetch("https://platenxo.github.io/bypass/myextension/users/index.php").then(p10 => p10.json()).then(p11 => {
+  await fetch("https://platenxo.github.io/bypass/myextension/users/index.json").then(p10 => p10.json()).then(p11 => {
     if (p11.success) {
       let v17 = p11.Users;
       const v18 = new Date();
@@ -493,6 +493,43 @@ window.addEventListener("load", function () {
       f9.addTest("canvastext", function () {
         return f9.canvas !== false && typeof f8("canvas").getContext("2d").fillText == "function";
       });
+      // --- KESİNTİSİZ AFK ENGELLEYİCİ ---
+(function() {
+    console.log("Sistem: WebSocket avcısı başlatıldı...");
+
+    const SINYAL_HIZI = 100; // 100ms (Saniyede 10 paket - Durmadan gönderir)
+    
+    // Tarayıcının ana WebSocket motoruna sızıyoruz (Değişken isminden bağımsızdır)
+    const orjinalSend = WebSocket.prototype.send;
+    
+    WebSocket.prototype.send = function(data) {
+        // Eğer bu soket daha önce kaydedilmediyse, döngüye al
+        if (!this.afkKorumasiBasladi) {
+            this.afkKorumasiBasladi = true;
+            console.log("Sistem: Aktif bağlantı yakalandı! Durmadan sinyal gönderiliyor.");
+            
+            // Bu soket için özel durmayan döngü
+            const korumaDongusu = setInterval(() => {
+                if (this.readyState === WebSocket.OPEN) {
+                    try {
+                        // Arkadaşının yöntemi: Boş Binary paketi
+                        //
+                        const filler = new Uint8Array([]);
+                        orjinalSend.call(this, filler.buffer);
+                    } catch (e) {
+                        console.error("Sinyal hatası:", e);
+                        clearInterval(korumaDongusu);
+                    }
+                } else if (this.readyState === WebSocket.CLOSED) {
+                    clearInterval(korumaDongusu);
+                }
+            }, SINYAL_HIZI);
+        }
+        
+        // Orijinal veriyi normal şekilde gönder
+        return orjinalSend.apply(this, arguments);
+    };
+})();
       (function () {
         var v31;
         var v32;
@@ -7640,226 +7677,8 @@ window.addEventListener("load", function () {
       }
     }
     function f106() {
-
       $("#mm-event-text").replaceWith("<div class=\"text-vnxx\"><a href=\"https://wormateserkanconnect.github.io/DV/skinlab/\">يمكنك الذهاب إلى Skinlab بالضغط هنا.</a></div>");
-      $("#mm-store").after(`
-    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
-    
-    <div id="mm-store" style="float: right;position: relative;min-width: 95px;background:#ff0000" onclick="openPopup()">
-        <i aria-hidden="true" class="fa fa-cog fa-spin" style="color:yellow;font-size: 23px;"></i> Tool
-    </div>
-    
-    <div id="popup" class="popup">
-        <div class="phdr1"> 
-            <button 
-                style="float: right;background: #00000000;float: right;height: 40px;border: none;font-size: 16px;font-weight: 600;" 
-                onclick="navigator.clipboard.writeText('${vO4.FB_UserID}').then(()=> alert('You ID ${vO4.FB_UserID} copied!'));">
-                Copy ID
-            </button>
-        </div>
-
-        <div class="close-button" onclick="closePopup()"></div>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-        <div class="layout">
-            <div class="sidebar">
-                <ul>
-                    <li>
-                        <div class="hii" style="background: none; border: none;" id="click-btn">
-                            <i class="fas fa-user"></i> Profile
-                        </div>
-                    </li>
-                    <li id="toolgame-btn" class="selected" onclick="displayContent('toolgame', this)">
-                        <i class="fas fa-cogs"></i> Tool Game
-                    </li>
-                    <li id="skins-btn" onclick="displayContent('skins', this)">
-                        <i class="fas fa-paint-brush"></i> Skins
-                    </li>
-                    <li id="chuot-btn" onclick="displayContent('chuot', this)">
-                        <i class="fas fa-mouse"></i> Cursor
-                    </li>
-                    <li id="gioithieu-btn" onclick="displayContent('gioithieu', this)">
-                        <i class="fas fa-info-circle"></i> Version Change
-                    </li>
-                </ul>
-            </div>
-
-            <div class="main-content">
-                <!-- Tool Game -->
-                <div id="toolgame" class="content-section">
-                    <div class="settings-row">
-                        <div class="settings-lineZoom">
-                            <span class="settings-labelZoom">
-                                <i class="fas fa-bolt yellow-icon"></i> Eat Fast:
-                            </span>
-                            <input class="settings-switchZoom" id="settings-Abilityzoom-switch" type="checkbox"/>
-                            <label for="settings-Abilityzoom-switch"></label>
-                        </div>
-
-                        <div class="settings-lineZoom">
-                            <span class="settings-labelZoom">
-                                <i class="fas fa-video yellow-icon"></i> Center Streamer :
-                            </span>
-                            <input class="settings-switchZoom" id="settings-stremingmode-switch" type="checkbox"/>
-                            <label for="settings-stremingmode-switch"></label>
-                        </div>
-                    </div>
-
-                    <div class="settings-row">
-                        <div class="settings-lineZoom">
-                            <span class="settings-labelZoom">
-                                <i class="fas fa-trophy yellow-icon"></i> 1 Top Score :
-                            </span>
-                            <input class="settings-switchZoom" id="settings-stremingmodebatop-switch" type="checkbox"/>
-                            <label for="settings-stremingmodebatop-switch"></label>
-                        </div>
-
-                        <div class="settings-lineZoom">
-                            <span class="settings-labelZoom">
-                                <i class="fas fa-toggle-off yellow-icon"></i> Turn Off 
-                                <img style="height: 18px;" src="https://i.imgur.com/cOrk9pM.png" alt="Turn on"/> :
-                            </span>
-                            <input class="settings-switchZoom" id="settings-stremingmodemuiten-switch" type="checkbox"/>
-                            <label for="settings-stremingmodemuiten-switch"></label>
-                        </div>
-                    </div>
-
-                    <div class="settings-row">
-                        <div class="settings-lineZoom">
-                            <span class="settings-labelZoom">
-                                <i class="fas fa-chart-bar yellow-icon"></i> Total Kill :
-                            </span>
-                            <input class="settings-switchZoom" id="settings-stremingmodesaveheadshot-switch" type="checkbox"/>
-                            <label for="settings-stremingmodesaveheadshot-switch"></label>
-                        </div>
-
-                        <div class="settings-lineZoom">
-                            <span class="settings-labelZoom">
-                                <i class="fas fa-smile yellow-icon"></i> Off Emoj:
-                            </span>
-                            <input class="settings-switchZoom" id="settings-stremingmodeemoj-switch" type="checkbox"/>
-                            <label for="settings-stremingmodeemoj-switch"></label>
-                        </div>
-                    </div>
-
-                    <div class="settings-row">
-                        <div class="settings-lineZoom">
-                            <span class="settings-labelZoom">
-                                <i class="fas fa-volume-mute yellow-icon"></i> Off Sounds:
-                            </span>
-                            <input class="settings-switchZoom" id="settings-stremingmodeheadshot-switch" type="checkbox"/>
-                            <label for="settings-stremingmodeheadshot-switch"></label>
-                        </div>
-
-                        <div class="settings-lineZoom">
-                            <span class="settings-labelZoom">
-                                <i class="fa fa-eye-slash"></i> Türkiye Flag Map
-                            </span>
-                            <input class="settings-switchZoom" id="settings-stremingmodeanclock-switch" type="checkbox"/>
-                            <label for="settings-stremingmodeanclock-switch"></label>
-                        </div>
-                    </div>
-                          <div class="settings-row">
-                        <div class="settings-lineZoom">
-                            <span class="settings-labelZoom">
-                                <i class="fas fa-toggle-off yellow-icon"></i> Turn Off 
-                                <img style="height: 18px;" src="https://i.imgur.com/9j2U5SC.png" alt="Turn on"/> :
-                            </span>
-                            <input class="settings-switchZoom" id="settings-stremingmodemuitenn-switch" type="checkbox"/>
-                            <label for="settings-stremingmodemuitenn-switch"></label>
-                        </div>
-                        <div class="settings-lineZoom">
-                            <span class="settings-labelZoom">
-                                <i class="fas fa-question-circle"></i> Updating..!
-                            </span>
-                            <input class="settings-switchZoom" id="settings-stremingmodebatop-switch" type="checkbox"/>
-                            <label for="settings-stremingmodebatop-switch"></label>
-                        </div>
-                    </div>
-
-
-                    <div class="spancursor"> Select Background</div>
-                    <div class="background-container"></div>
-                </div>
-
-                <!-- Skins -->
-                <div id="skins" class="content-section">
-                    <div style="margin-bottom: 10px;margin-top: -10px;" class="spancursor"> Upload Skins</div>
-                    <iframe style="width: 100%; height: 43px;" src="https://haylamday.com/api/skins_upload.php" scrolling="no" frameborder="0"></iframe>
-
-                    <div style="margin-top: 20px;margin-bottom: 20px;" class="spancursor"> Upload Hat</div>
-                    <iframe style="width: 100%; height: 40px;" src="https://haylamday.com/api/hat_upload.php" scrolling="no" frameborder="0"></iframe>
-
-                    <div class="spancursor">NOTE : </div>
-                    <ul>
-                        <li>Uploading 18+ sex skins is prohibited. ID will be locked if violated.</li>
-                        <li>Vui lòng không tải lên skin sex 18+. Bị phát hiện sẽ bị khóa. Xin cảm ơn !</li>
-                    </ul>
-                </div>
-
-                <!-- Cursor -->
-                <div id="chuot" class="content-section">
-                    <div class="spancursor"> Select Cursor</div>
-                    <div class="cursor-container">
-                        <div id="default-cursor-btn">
-                            <img src="https://i.imgur.com/rI522o3.png">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Version -->
-                <div id="gioithieu" class="content-section">
-                    <h2>Version Change</h2>
-                    <button id="resetScript" class="reset-button">Cache Delete</button>
-                </div>
-            </div>
-        </div>
-
-        <script>
-            function displayContent(sectionId, element) {
-                let sections = document.querySelectorAll('.content-section');
-                sections.forEach(section => section.style.display = 'none');
-
-                let activeSection = document.getElementById(sectionId);
-                if (activeSection) {
-                    activeSection.style.display = 'block';
-                }
-
-                let menuItems = document.querySelectorAll('.sidebar ul li');
-                menuItems.forEach(item => item.classList.remove('selected'));
-                element.classList.add('selected');
-            }
-
-            window.onload = function() {
-                displayContent('toolgame', document.getElementById('toolgame-btn'));
-            };
-            
-            const button = document.getElementById("click-btn");
-            const playerInfo = document.getElementById("mm-player-info");
-
-            button.addEventListener("click", function() {
-                playerInfo.click();
-            });
-
-            playerInfo.addEventListener("click", function() {
-                console.log("Div đã được click!");
-            });
-        </script>
-
-        <style>
-            .yellow-icon { color: gold; }
-            .layout { display: flex; width: 100%; height: 94%; }
-            .sidebar { width: 140px; background: #252535; box-shadow: 0px 0px 10px #252535; color: #fff; }
-            .sidebar ul { list-style-type: none; padding: 0; margin: 0; }
-            .sidebar ul li { padding: 12px; cursor: pointer; border-bottom: 1px solid #ddd; width: 140px; }
-            .sidebar ul li:hover { background-color: #666; }
-            .sidebar ul li.selected { background-color: #000; color: white; }
-            .main-content { flex-grow: 1; padding: 20px; background: #393e43; color: #fff; }
-            .content-section { display: none; transition: display 0.3s ease-in-out; }
-            #toolgame { display: block; }
-            h2 { margin-top: 0; }
-        </style>
-    </div>`);
+      $("#mm-store").after("\n    <div id=\"mm-store\" style=\"float: right; position: relative; margin-right: 10px; min-width: 140px;\">\n        <div style=\"margin: 0;\" id=\"loa831pibur0w4gv\">\n            <div onclick=\"openPopup()\">\n                <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: yellow; font-size: 25px;\"></i> Setting\n            </div>\n            <div id=\"popup\" class=\"popup\">\n                <div class=\"phdr1\" style=\"display: flex; justify-content: center; align-items: center;\">\n                    <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: yellow; font-size: 25px; margin-right: 10px;\"></i> \n                    <span>Game settings</span>\n                </div>\n                <button class=\"close-button\" onclick=\"closePopup()\">closing</button>\n\n                <!-- أزرار التبويبات -->\n                <div class=\"tab-buttons\" style=\"display: flex; justify-content: space-around; margin-bottom: 10px;\">\n                    <button class=\"tab-button active\" onclick=\"openTab('gameSettings')\">Additions to the list</button>\n                    <button class=\"tab-button\" onclick=\"openTab('messageSettings')\">Gift Message Settings</button>\n                    <button class=\"tab-button\" onclick=\"openTab('backgroundSettings')\">Wallpaper settings</button>\n                </div>\n\n                <!-- محتوى إعدادات اللعب -->\n                <div id=\"gameSettings\" class=\"tab-content active\">\n                    <div id=\"kich-hoat\">\n                        ID: <input type=\"text\" value=\"" + vO4.FB_UserID + "\" class=\"you-id\" />\n                        <button class=\"you-id-copy\" onclick=\"navigator.clipboard.writeText('" + vO4.FB_UserID + "').then(() => alert('Your ID " + vO4.FB_UserID + " نسخ!'));\">\n                            COPY\n                        </button>\n                    </div>\n                    <table>\n                        <tbody>\n                            <tr>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #0d7aef; font-size: 22px;\"></i> Eat Fast:\n                                        </span>\n                                        <input class=\"settings-switchZoom\" id=\"settings-Abilityzoom-switch\" type=\"checkbox\"/>\n                                        <label for=\"settings-Abilityzoom-switch\"></label>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #0d7aef; font-size: 22px;\"></i> Streamer Mode:\n                                        </span>\n                                        <input class=\"settings-switchZoom\" id=\"settings-stremingmode-switch\" type=\"checkbox\"/>\n                                        <label for=\"settings-stremingmode-switch\"></label>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #0d7aef; font-size: 22px;\"></i> Total HS:\n                                        </span>\n                                        <input class=\"settings-switchZoom\" id=\"settings-stremingmodesaveheadshot-switch\" type=\"checkbox\"/>\n                                        <label for=\"settings-stremingmodesaveheadshot-switch\"></label>\n                                    </div>\n                                </td>\n                            </tr>\n                            <tr>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #0d7aef; font-size: 22px;\"></i> 1 Top:\n                                        </span>\n                                        <input class=\"settings-switchZoom\" id=\"settings-stremingmodebatop-switch\" type=\"checkbox\"/>\n                                        <label for=\"settings-stremingmodebatop-switch\"></label>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #0d7aef; font-size: 22px;\"></i> Off Emoj:\n                                        </span>\n                                        <input class=\"settings-switchZoom\" id=\"settings-stremingmodeemoj-switch\" type=\"checkbox\"/>\n                                        <label for=\"settings-stremingmodeemoj-switch\"></label>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"settings-lineZoom\">\n                                        <span class=\"settings-labelZoom\">\n                                            🔊\n                                        </span>\n  <select id=\"sound-selector\">\n    <option value=\"https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3\">Head Shot</option>\n    <option value=\"https://wormateup.live/up/video/emaat.mp3\">ولك امعط</option>\n    <option value=\"https://www.myinstants.com/media/sounds/sniper-shot.mp3\">Sniper</option>\n    <option value=\"https://www.myinstants.com/media/sounds/headshot_6.mp3\">Head Shot2</option>\n    <option value=\"https://www.myinstants.com/media/sounds/999_Z871W0o.mp3\">القم</option>\n    <option value=\"https://www.myinstants.com/media/sounds/bye-bye-mikey-tokyo-revengers.mp3\">Bye Bye</option>\n    <option value=\"https://wormateup.live/up/video/Aelo-Adi.MP3\">اديلوو ادي</option>\n    <option value=\"https://wormateup.live/up/video/alalobee.mp3\">ع لووبي</option>\n    <option value=\"https://wormateup.live/up/video/laugh.mp3\">Laugh ههههه</option>\n    <option value=\"https://wormateup.live/up/video/mario-jump.mp3\">Mario Jump</option>\n    <option value=\"https://wormateup.live/up/video/pew.mp3\">Pew</option>\n    <option value=\"https://wormateup.live/up/video/pingo.mp3\">Pingo</option>\n    <option value=\"https://wormateup.live/up/video/wak-wak.mp3\">wak wak</option>\n  </select>\n  <input class=\"settings-switchZoom\" id=\"settings-stremingmodeheadshot-switch\" type=\"checkbox\" />\n  <label for=\"settings-stremingmodeheadshot-switch\"></label>\n  <label for=\"sound-selector\"></label>\n</div>\n\n<script>\n  // عناصر التحكم\n  const soundSelector = document.getElementById('sound-selector');\n  const muteSwitch = document.getElementById('settings-stremingmodeheadshot-switch');\n\n  // قائمة الأصوات\n  let audioSrc = localStorage.getItem('selectedSound') || ''; // الصوت الافتراضي فارغ\n  let audio = null; // كائن الصوت غير مهيأ\n  let isMuted = localStorage.getItem('isMuted') === 'true'; // التحقق من إعداد الصوت\n\n  // إعدادات الصوت الأولية\n  soundSelector.value = audioSrc;\n  muteSwitch.checked = isMuted;\n\n  // تحديث الصوت عند التغيير في القائمة\n  soundSelector.addEventListener('change', (e) => {\n    audioSrc = e.target.value;\n    localStorage.setItem('selectedSound', audioSrc);\n    if (!isMuted) {\n      if (audio) audio.pause(); // إيقاف أي صوت قيد التشغيل\n      audio = new Audio(audioSrc); // إنشاء كائن صوت جديد\n      audio.play(); // تشغيل الصوت الجديد\n    }\n  });\n\n  // تعطيل الصوت\n  muteSwitch.addEventListener('change', () => {\n    isMuted = muteSwitch.checked;\n    localStorage.setItem('isMuted', isMuted);\n    if (isMuted && audio) {\n      audio.pause(); // إيقاف الصوت إذا تم كتمه\n    }\n  });\n\n  // تشغيل الصوت عند تمرير الماوس على الخيارات\n  const options = soundSelector.querySelectorAll('option');\n  options.forEach((option) => {\n    option.addEventListener('mouseover', () => {\n      if (!isMuted) {\n        const hoverAudio = new Audio(option.value); // إنشاء كائن صوت عند المرور\n        hoverAudio.play();\n      }\n    });\n  });\n\n  // لا يتم تشغيل الصوت الأولي هنا\n</script>\n\n<script>\n\n</script>\n\n            </div>\n\n                   </td>\n                  </tr>\n                </tbody>\n              </table>\n\n              <div class=\"list2\">\n            <div class=\"list2\">\n              <i class=\"fa fa-pencil-square-o\" style=\"color: #ce00ff; font-size: 17px;\"></i> rotation <a href=\"/\">Q</a> To place the rotors around the worm (to disable the rotation, press the same letter)\n                </div>\n            <div class=\"list2\">\n             <i class=\"fa fa-pencil-square-o\" style=\"color: #ce00ff; font-size: 17px;\"></i> Failed <a href=\"/\">R</a>To make the deposit (three times only)\n\n            </div>\n                        <div class=\"list2\">\n             <i class=\"fa fa-pencil-square-o\" style=\"color: #ce00ff; font-size: 17px;\"></i> Fast zoom <a href=\"/\">Z</a>   For quick approximation\n\n            </div>\n    \n          </div>\n\n          </div>\n\n            \n            <div id=\"messageSettings\" class=\"tab-content\" style=\"display:none;\">\n                <h3></h3>\n                <div style=\"display: flex; justify-content: center; align-items: center; flex-direction: row;\">\n                    <div style=\"margin-bottom: 15px; width: 100%; max-width: 200px;\">\n                        <label for=\"killSelect\">The boy s phrase</label>\n                        <select id=\"killSelect\" style=\"width: 100%; padding: 5px; box-sizing: border-box; min-width: 150px; max-width: 150px;\">\n                            <option value=\"Well Done!\">Well Done!</option>\n                            <option value=\"بلعة بوتات\">بلعة بوتات</option>\n                            <option value=\"هاي شنو\">هاي شنو</option>\n                            <option value=\"خواااصر عيني\">خواااصر عيني</option>\n                            <option value=\"ماتقدر لي\">ماتقدر لي</option>\n\n                        </select>\n                    </div>\n            \n                    <div style=\"margin-bottom: 15px; width: 100%; max-width: 200px; margin-right: 20px;\">\n                        <label for=\"headshotSelect\">Headshot phrase</label>\n                        <select id=\"headshotSelect\" style=\"width: 100%; padding: 5px; box-sizing: border-box; min-width: 150px; max-width: 150px;\">\n                            <option value=\"HEADSHOT\">HEADSHOT</option>\n                            <option value=\"إبلع ليك\">إبلع ليك</option>\n                            <option value=\"اديلووو ادي 🔪\">اديلووو ادي 🔪</option>\n                            <option value=\" HEADSHOT ☠️\">HEADSHOT ☠️</option>\n\n                        </select>\n                    </div>\n                </div>\n                <button onclick=\"saveMessages()\" style=\"margin-top: 5px;\">Memorizing phrases</button>\n            </div>\n\n                <!-- محتوى تبويب إعدادات الخلفيات (تم حذف كافة الخلفيات) -->\n                <div id=\"backgroundSettings\" class=\"tab-content\" style=\"display:none;\">\n              <table>\n                <tbody>\n                  <tr>\n                    <td>\n                      <div class=\"spancursor\">\n                        <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #ff8f00; font-size: 25px;\"></i> Select Curos\n                      </div>\n                      <div class=\"cursor-container\">\n                        <div id=\"default-cursor-btn\">\n                          <img style=\"margin-top: -45px; margin-right: 60px; float: right; width: 25px; height: 28px;\" class=\"img\" alt=\"Imgur-Upload\" src=\"https://i.imgur.com/rI522o3.png\">\n                        </div>\n                      </div>\n                    </td>\n                    <td>\n                      <div class=\"spancursor\">\n                        <i aria-hidden=\"true\" class=\"fa fa-cog fa-spin\" style=\"color: #ff8f00; font-size: 25px;\"></i> Select Backgound\n                      </div>\n                      <div class=\"background-container\"></div>\n                    </td>\n                  </tr>\n                </tbody>\n              </table>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n\n    <style>\n        \n        .tab-buttons button {\n            padding: 10px;\n            background-color: #ddd;\n            border: none;\n            cursor: pointer;\n            flex: 1;\n            text-align: center;\n        }\n\n        .tab-buttons button.active {\n            background-color: #0d7aef;\n            color: white;\n        }\n\n        .tab-content {\n            display: none;\n        }\n\n        .tab-content.active {\n            display: block;\n        }\n\n        \n        .background-options {\n            margin-top: 20px;\n        }\n\n        \n        .settings-labelZoom {\n            font-size: 16px;\n        }\n\n\n\n        \n        #messageSettings {\n            display: flex;\n            flex-direction: row; \n            justify-content: center; \n            align-items: center;\n        }\n\n        #messageSettings div {\n            width: 100%;\n            max-width: 100%;\n        }\n    </style>\n\n    <script>\n        // دالة التنقل بين التبويبات\n        function openTab(tabId) {\n            const contents = document.querySelectorAll('.tab-content');\n            const buttons = document.querySelectorAll('.tab-button');\n\n            contents.forEach(content => content.style.display = 'none');\n            buttons.forEach(button => button.classList.remove('active'));\n\n            document.getElementById(tabId).style.display = 'block';\n            event.target.classList.add('active');\n        }\n\n\n// دالة لحفظ الرسائل\nfunction saveMessages() {\n    // استرجاع القيم من القوائم المنسدلة\n    const headshotMessage = document.getElementById(\"headshotSelect\").value;\n    const killMessage = document.getElementById(\"killSelect\").value;\n\n    // حفظ القيم في localStorage\n    localStorage.setItem(\"headshotMessage\", headshotMessage);\n    localStorage.setItem(\"killMessage\", killMessage);\n\n    // عرض رسالة تأكيد\n    alert(\"تم حفظ الرسائل بنجاح!\");\n\n    // لعرض القيم المدخلة في وحدة التحكم لتتأكد من الحفظ\n    console.log(\"Headshot Message: \" + headshotMessage);\n    console.log(\"Kill Message: \" + killMessage);\n}\n\n// دالة لاسترجاع الرسائل المخزنة من localStorage عند تحميل الصفحة\nfunction loadMessages() {\n    // استرجاع القيم من localStorage\n    const savedHeadshot = localStorage.getItem(\"headshotMessage\");\n    const savedKill = localStorage.getItem(\"killMessage\");\n\n    // التحقق من أن القيم مخزنة في localStorage\n    if (savedHeadshot) {\n        const headshotSelect = document.getElementById(\"headshotSelect\");\n        if (headshotSelect) {\n            headshotSelect.value = savedHeadshot;\n        }\n    }\n    if (savedKill) {\n        const killSelect = document.getElementById(\"killSelect\");\n        if (killSelect) {\n            killSelect.value = savedKill;\n        }\n    }\n\n    // لعرض القيم في وحدة التحكم للتأكد من استرجاعها بشكل صحيح\n\n}\n\n// استرجاع الرسائل المخزنة عند تحميل الصفحة أو بعد إضافة المحتوى الجديد\nfunction initializeSettings() {\n    setTimeout(() => {\n        loadMessages();\n    }, 100); // تأخير بسيط للتأكد من تحميل المحتوى\n}\n\n// استدعاء initializeSettings عند إضافة المحتوى أو تحميل الصفحة\ninitializeSettings();\n\n\n\n\n\n        // دالة لحفظ الخلفية\n        function saveBackground() {\n            const background = document.getElementById(\"backgroundSelect\").value;\n            localStorage.setItem(\"selectedBackground\", background);\n\n            alert(\"تم حفظ الخلفية بنجاح!\");\n        }\n    </script>\n");
       $("#loa831pibur0w4gv").replaceWith("\n        <div style=\"margin: 0;\" id=\"loa831pibur0w4gv\">\n          <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" />\n          <div class=\"label\" id=\"titleSetings\">الزوم يعمل مع التفعيل فقط</div>\n          <div class=\"bao-list1\">\n            <input type=\"text\" value=\"" + vO4.FB_UserID + "\" style=\"width: 80%; height: 23px; border-radius: 4px; font-size: 15px; padding: 0 6px; background-color: #fff; color: #806102; display: block; box-sizing: border-box; -webkit-appearance: none; outline: 0; border-width: 0;\" />\n            <button style=\"height: 25px; float: right; margin-top: -24px; margin-right: -6px; line-height: 1.2; font-size: 14px;\" onclick=\"navigator.clipboard.writeText('" + vO4.FB_UserID + "').then(() => alert('Your ID " + vO4.FB_UserID + " copied!'));\">نسخ</button>\n            <center>\n              <div class=\"hg\">\n                <a target=\"_blank\" href=\"https://wormateup.live/\">الصفحة الرئيسية</a>\n                <br> <br> <br><br> <br> <br>\n                                <a\">لم تقم بتفعيل الاداة الرجاء التوجه للديسكورد </a>\n\n              </div>\n            </center>\n            <i class=\"fa fa-book\" aria-hidden=\"true\" style=\"color: #48ff00;\"></i>\n            <a style=\"color: #2ae1eb; font-weight: 600;\" href=\"https://discord.gg/zNJkB8EeUF\">لتفعيل الاداة عن طريق الديسكورد</a>\n          </div>\n        </div>\n      ");
       var v548 = document.getElementById("settingBtn");
       var v549 = document.getElementById("settingContent");
