@@ -59,7 +59,7 @@ var theoKzObjects = {
   FB_UserID: "",
   smoothCamera: 0.5,
   eat_animation: 0.0025,
-  flag: gameSettins.s_l + "/images/flag.png",
+  flag: window.vps.s_l + "/images/flag.png",
   PortionSize: localStorage.PotenciadorSize || 2,
   PortionAura: localStorage.PotenciadorAura || 1.2,
   PortionTransparent: 0.8,
@@ -193,15 +193,9 @@ const RechekingPhone = function () {
   v6 = v8.some((p8) => v7.toLowerCase().includes(p8));
   return v6;
 };
-let gameSettins = {
-  s_l: "https://platenxo.github.io/bypass/myextension",
-  c_1: "Platen",
-  c_2: "TeamTR",
-  c_3: "Platenwormate.io",
-  c_4: "wormate.io",
-  c_5: "please don't copy my code"
-
-};
+window.vps = {
+  s_l: "https://platenxo.github.io/bypass/myextension"
+}
 const loadJoy = function (p9) {
   let v9;
   try {
@@ -252,7 +246,7 @@ let servers = {
   Api_listServer: [],
 };
 async function loadUsers() {
-  await fetch(gameSettins.s_l + "/users/index.php")
+  await fetch(window.vps.s_l + "/users/index.php")
     .then((p12) => p12.json())
     .then((p13) => {
       if (p13.success) {
@@ -302,7 +296,7 @@ async function fetchServersWithRetry(p16, p17 = 3, p18 = 2000) {
 async function loadServers() {
   try {
     const v18 = await fetchServersWithRetry(
-      gameSettins.s_l + "/servers/index.php"
+      window.vps.s_l + "/servers/index.php"
     );
     if (v18.success) {
       let v19 = v18.servers;
@@ -394,7 +388,7 @@ const ctx = {
     }
   };
 ctx.clock = PIXI.Sprite.fromImage(
- gameSettins.s_l + "/images/clock.png"
+ window.vps.s_l + "/images/clock.png"
 );
 ctx.clock.width = 100;
 ctx.clock.height = 100;
@@ -405,7 +399,7 @@ const app = new PIXI.Application({
   height: window.innerHeight,
 });
 ctx.clockan = PIXI.Sprite.fromImage(
-gameSettins.s_l + "/images/clocktr.png"
+window.vps.s_l + "/images/clocktr.png"
 );
 if (theoKzObjects.ModeStremeranclock) {
   ctx.clockan.width = 0x64;
@@ -419,15 +413,15 @@ if (theoKzObjects.ModeStremeranclock) {
   ctx.clockan.y = -0x32;
 }
 document.body.appendChild(app.view);
-ctx.hoisinhnhanh = PIXI.Sprite.from("gameSettins.s_l + /images/hoisinhnhanh.png");
+ctx.hoisinhnhanh = PIXI.Sprite.from("window.vps.s_l + /images/hoisinhnhanh.png");
 ctx.hoisinhnhanh.width = 23;
 ctx.hoisinhnhanh.height = 23;
-ctx.top10sv = PIXI.Sprite.fromImage("gameSettins.s_l + /images/top10sv.png");
+ctx.top10sv = PIXI.Sprite.fromImage("window.vps.s_l + /images/top10sv.png");
 ctx.top10sv.height = 25;
 ctx.top10sv.width = 100;
 ctx.top10sv.x = 60;
 ctx.top10sv.y = -50;
-ctx.quaytron = PIXI.Sprite.from("gameSettins.s_l + /images/quaytron.png");
+ctx.quaytron = PIXI.Sprite.from("window.vps.s_l + /images/quaytron.png");
 ctx.quaytron.width = -23;
 ctx.quaytron.height = -23;
 app.stage.addChild(ctx.hoisinhnhanh);
@@ -481,8 +475,8 @@ ctx.containerCountInfo.addChild(ctx.value2_hs);
 ctx.containerCountInfo.addChild(ctx.label_kill);
 ctx.containerCountInfo.addChild(ctx.value1_kill);
 ctx.containerCountInfo.addChild(ctx.value2_kill);
-ctx.imgServerbase = PIXI.Texture.fromImage(gameSettins.s_l + "/images/flag.png");
-ctx.borderurl = PIXI.Texture.fromImage(gameSettins.s_l + "/images/none.png");
+ctx.imgServerbase = PIXI.Texture.fromImage(window.vps.s_l + "/images/flag.png");
+ctx.borderurl = PIXI.Texture.fromImage(window.vps.s_l + "/images/none.png");
 ctx.onclickServer = PIXI.Texture.fromImage(theoKzObjects.flag);
 ctx.containerImgS = new PIXI.Sprite(ctx.imgServerbase);
 ctx.containerImgS.anchor.set(0.5);
@@ -2841,11 +2835,11 @@ window.addEventListener("load", function () {
             const v232 = new Audio();
             if (v231 % 10 === 9) {
               v232.src =
-              gameSettins.s_l + "/sounds/10hskahkaha.mp3";
+              window.vps.s_l + "/sounds/10hskahkaha.mp3";
             } else {
               v232.src =
                 localStorage.getItem("selectedSound") ||
-              gameSettins.s_l + "/sounds/hs_2.mp3";
+              window.vps.s_l + "/sounds/hs_2.mp3";
             }
             if (localStorage.getItem("isMuted") !== "true") {
               v232.play().catch(function (p283) {
@@ -4449,10 +4443,10 @@ window.addEventListener("load", function () {
         );
         this.Af = new vF._b(vF.$b.from("/images/lens.png"));
         var v426 = vF.$b.from("/images/wear-ability.png");
-        var v427 = vF.$b.from(gameSettins.s_l + "/images/emoj1.png");
-        var v428 = vF.$b.from(gameSettins.s_l + "/images/emoj2.png");
-        var v429 = vF.$b.from(gameSettins.s_l + "/images/none2.png");
-        var v430 = vF.$b.from(gameSettins.s_l + "/images/zigzagability.png");
+        var v427 = vF.$b.from(window.vps.s_l + "/images/emoj1.png");
+        var v428 = vF.$b.from(window.vps.s_l + "/images/emoj2.png");
+        var v429 = vF.$b.from(window.vps.s_l + "/images/none2.png");
+        var v430 = vF.$b.from(window.vps.s_l + "/images/zigzagability.png");
         this.X_x5 = new vF32(v430, 158, 4, 87, 74, 203, 63.5, 128, 128);
         this.Id_mobileguia = new vF32(v429, 0, 0, 87, 74, 350, 63, 128, 128);
         this.emoji_headshot = new vF32(
@@ -7801,7 +7795,7 @@ window.addEventListener("load", function () {
           let vF102 = f10(this.nl.name);
           if (this.nl.img) {
             var v652 = '<img src="';
-            v652 = v652 + gameSettins.s_l + "/images/paths/" + this.nl.img;
+            v652 = v652 + window.vps.s_l + "/images/paths/" + this.nl.img;
             vF102 = v652 = v652 + '" height="43" width="220" />';
           }
           return vF102;
@@ -8535,7 +8529,7 @@ window.addEventListener("load", function () {
     vUndefined2.v();
     if (PhoneChecked()) {
       f13(
-        gameSettins.s_l + "/js/joy.min.js",
+        window.vps.s_l + "/js/joy.min.js",
         "mobileconfig",
         function () {
           vF86();
@@ -9784,7 +9778,7 @@ $("#loa831pibur0w4gv").replaceWith(
       function (p650) {
         v760 = p650;
         $.ajax({
-          url: gameSettins.s_l + "/skins",
+          url: window.vps.s_l + "/skins",
           method: "GET",
           dataType: "json",
           success: function (p651) {
@@ -10281,7 +10275,7 @@ window.addEventListener("keydown", (p670) => {
 var TIME = new Date().getTime();  // getTime() zaman damgasını alır
 
 // Dinamik CSS dosyası linki oluşturuluyor (zaman ile ilişkili)
-var linkCSS = gameSettins.s_l + "/css/style.css?v=" + TIME;
+var linkCSS = window.vps.s_l + "/css/style.css?v=" + TIME;
 
 // CSS dosyasını sayfaya ekleyen fonksiyon
 var addCSS = function() {
