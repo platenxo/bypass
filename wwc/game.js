@@ -8621,7 +8621,6 @@ Check @type() annotation`);
       forceUseLocalImages: false,
       localStorageEnabled: true,
       pm: {},
-      joystick: _0x2cbd14.joystick,
       j: null,
       pk: 0,
       pk0: "",
@@ -18750,4 +18749,5 @@ Check @type() annotation`);
   })();
   var _0x3f1a1c = _0x592038("./src/temp.js");
 })();
+
 console.log("BY PASS PLATEN");
