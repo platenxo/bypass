@@ -1,5 +1,4 @@
-
-window.URLSERV_PLATEN = "https://platenxo.github.io/bypass/myextension";
+window.URLSERV_WORMPLATEN = "https://platenxo.github.io/extension";
 window.detectLog = null;
 const _trgworm = {
   BETAisSkinCustom(p) {
@@ -61,7 +60,7 @@ var theoKzObjects = {
   FB_UserID: "",
   smoothCamera: 0.5,
   eat_animation: 0.0025,
-  flag: URLSERV_PLATEN + "/images/flag.png",
+  flag: URLSERV_WORMPLATEN + "/images/flag.png",
   PortionSize: localStorage.PotenciadorSize || 2,
   PortionAura: localStorage.PotenciadorAura || 1.2,
   PortionTransparent: 0.8,
@@ -245,7 +244,7 @@ let servers = {
   Api_listServer: [],
 };
 async function loadUsers() {
-  await fetch(URLSERV_PLATEN + "/users/index.php")
+  await fetch(URLSERV_WORMPLATEN + "/users/index.php")
     .then((p12) => p12.json())
     .then((p13) => {
       if (p13.success) {
@@ -295,7 +294,7 @@ async function fetchServersWithRetry(p16, p17 = 3, p18 = 2000) {
 async function loadServers() {
   try {
     const v18 = await fetchServersWithRetry(
-      URLSERV_PLATEN + "/servers/index.php"
+      window.URLSERV_WORMPLATEN + "/servers/index.php"
     );
     if (v18.success) {
       let v19 = v18.servers;
@@ -387,7 +386,7 @@ const ctx = {
     }
   };
 ctx.clock = PIXI.Sprite.fromImage(
- URLSERV_PLATEN + "/images/clock.png"
+ URLSERV_WORMPLATEN + "/images/clock.png"
 );
 ctx.clock.width = 100;
 ctx.clock.height = 100;
@@ -398,7 +397,7 @@ const app = new PIXI.Application({
   height: window.innerHeight,
 });
 ctx.clockan = PIXI.Sprite.fromImage(
-URLSERV_PLATEN + "/images/clocktr.png"
+URLSERV_WORMPLATEN + "/images/clocktr.png"
 );
 if (theoKzObjects.ModeStremeranclock) {
   ctx.clockan.width = 0x64;
@@ -412,15 +411,15 @@ if (theoKzObjects.ModeStremeranclock) {
   ctx.clockan.y = -0x32;
 }
 document.body.appendChild(app.view);
-ctx.hoisinhnhanh = PIXI.Sprite.from("URLSERV_PLATEN + /images/hoisinhnhanh.png");
+ctx.hoisinhnhanh = PIXI.Sprite.from(URLSERV_WORMPLATEN + "/images/hoisinhnhanh.png");
 ctx.hoisinhnhanh.width = 23;
 ctx.hoisinhnhanh.height = 23;
-ctx.top10sv = PIXI.Sprite.fromImage("URLSERV_PLATEN + /images/top10sv.png");
+ctx.top10sv = PIXI.Sprite.fromImage(URLSERV_WORMPLATEN + "/images/top10sv.png");
 ctx.top10sv.height = 25;
 ctx.top10sv.width = 100;
 ctx.top10sv.x = 60;
 ctx.top10sv.y = -50;
-ctx.quaytron = PIXI.Sprite.from("URLSERV_PLATEN + /images/quaytron.png");
+ctx.quaytron = PIXI.Sprite.from(URLSERV_WORMPLATEN + "/images/quaytron.png");
 ctx.quaytron.width = -23;
 ctx.quaytron.height = -23;
 app.stage.addChild(ctx.hoisinhnhanh);
@@ -474,8 +473,8 @@ ctx.containerCountInfo.addChild(ctx.value2_hs);
 ctx.containerCountInfo.addChild(ctx.label_kill);
 ctx.containerCountInfo.addChild(ctx.value1_kill);
 ctx.containerCountInfo.addChild(ctx.value2_kill);
-ctx.imgServerbase = PIXI.Texture.fromImage(URLSERV_PLATEN + "/images/flag.png");
-ctx.borderurl = PIXI.Texture.fromImage(URLSERV_PLATEN + "/images/none.png");
+ctx.imgServerbase = PIXI.Texture.fromImage(URLSERV_WORMPLATEN + "/images/flag.png");
+ctx.borderurl = PIXI.Texture.fromImage(URLSERV_WORMPLATEN + "/images/none.png");
 ctx.onclickServer = PIXI.Texture.fromImage(theoKzObjects.flag);
 ctx.containerImgS = new PIXI.Sprite(ctx.imgServerbase);
 ctx.containerImgS.anchor.set(0.5);
@@ -2834,11 +2833,11 @@ window.addEventListener("load", function () {
             const v232 = new Audio();
             if (v231 % 10 === 9) {
               v232.src =
-              URLSERV_PLATEN + "/sounds/10hskahkaha.mp3";
+              URLSERV_WORMPLATEN + "/sounds/10hskahkaha.mp3";
             } else {
               v232.src =
                 localStorage.getItem("selectedSound") ||
-              URLSERV_PLATEN + "/sounds/hs_2.mp3";
+              URLSERV_WORMPLATEN + "/sounds/hs_2.mp3";
             }
             if (localStorage.getItem("isMuted") !== "true") {
               v232.play().catch(function (p283) {
@@ -4442,10 +4441,10 @@ window.addEventListener("load", function () {
         );
         this.Af = new vF._b(vF.$b.from("/images/lens.png"));
         var v426 = vF.$b.from("/images/wear-ability.png");
-        var v427 = vF.$b.from(URLSERV_PLATEN + "/images/emoj1.png");
-        var v428 = vF.$b.from(URLSERV_PLATEN + "/images/emoj2.png");
-        var v429 = vF.$b.from(URLSERV_PLATEN + "/images/none2.png");
-        var v430 = vF.$b.from(URLSERV_PLATEN + "/images/zigzagability.png");
+        var v427 = vF.$b.from(URLSERV_WORMPLATEN + "/images/emoj1.png");
+        var v428 = vF.$b.from(URLSERV_WORMPLATEN + "/images/emoj2.png");
+        var v429 = vF.$b.from(URLSERV_WORMPLATEN + "/images/none2.png");
+        var v430 = vF.$b.from(URLSERV_WORMPLATEN + "/images/zigzagability.png");
         this.X_x5 = new vF32(v430, 158, 4, 87, 74, 203, 63.5, 128, 128);
         this.Id_mobileguia = new vF32(v429, 0, 0, 87, 74, 350, 63, 128, 128);
         this.emoji_headshot = new vF32(
@@ -5046,7 +5045,7 @@ window.addEventListener("load", function () {
               v457++;
               console.log("auto login attempt:", v457);
               $("#login-view").html(
-                "<h2>Auto Login Google Platen  : " + v457 + "</h2>"
+                "<h2>Auto Login Google WormRise  : " + v457 + "</h2>"
               );
               f85();
             } else {
@@ -5508,7 +5507,7 @@ window.addEventListener("load", function () {
         );
         if (this.qj == null) {
           this.qj = new vF41("");
-          this.qj.style.fontFamily = "Platen";
+          this.qj.style.fontFamily = "WormRise";
           this.qj.anchor.set(0.5);
         } else {
           f23(this.qj);
@@ -7794,7 +7793,7 @@ window.addEventListener("load", function () {
           let vF102 = f10(this.nl.name);
           if (this.nl.img) {
             var v652 = '<img src="';
-            v652 = v652 + SITE_XTHOST + "/images/paths/" + this.nl.img;
+            v652 = v652 + URLSERV_WORMPLATEN + "/images/paths/" + this.nl.img;
             vF102 = v652 = v652 + '" height="43" width="220" />';
           }
           return vF102;
@@ -8528,7 +8527,7 @@ window.addEventListener("load", function () {
     vUndefined2.v();
     if (PhoneChecked()) {
       f13(
-        URLSERV_PLATEN + "/js/joy.min.js",
+        URLSERV_WORMPLATEN + "/js/joy.min.js",
         "mobileconfig",
         function () {
           vF86();
@@ -8537,9 +8536,8 @@ window.addEventListener("load", function () {
     }
     let vF86 = function () {
       $("#game-canvas").after(
-        "<div id='zoom-container'><div id='zoom-in'>+</div><div id='zoom-out'>-</div></div>"
-      );
-    };
+      "<div id='zoom-container'><div id='zoom-in'>+</div><div id='zoom-out'>-</div></div>");
+          };
     window.keyMove = "q";
     window.addEventListener(
       "keydown",
@@ -9005,9 +9003,9 @@ window.addEventListener("load", function () {
     </div>
 `);
 
-$(".mm-logo").attr("src", URLSERV_PLATEN + "/images/logo.png");
-      $(".loading-logo").attr("src", URLSERV_PLATEN + "/images/logo.png");
-      $('.mm-logo').attr("src", URLSERV_PLATEN + "/images/logo.png");      $("#loa831pibur0w4gv").replaceWith(
+$(".mm-logo").attr("src", URLSERV_WORMPLATEN + "/images/logo.png");
+      $(".loading-logo").attr("src", URLSERV_WORMPLATEN + "/images/logo.png");
+      $('.mm-logo').attr("src", URLSERV_WORMPLATEN + "/images/logo.png");      $("#loa831pibur0w4gv").replaceWith(
         '\n        <div style="margin: 0;" id="loa831pibur0w4gv">\n          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />\n          <div class="label" id="titleSetings">الزوم يعمل مع التفعيل فقط</div>\n          <div class="bao-list1">\n            <input type="text" value="' +
           theoKzObjects.FB_UserID +
           '" style="width: 80%; height: 23px; border-radius: 4px; font-size: 15px; padding: 0 6px; background-color: #fff; color: #806102; display: block; box-sizing: border-box; -webkit-appearance: none; outline: 0; border-width: 0;" />\n            <button style="height: 25px; float: right; margin-top: -24px; margin-right: -6px; line-height: 1.2; font-size: 14px;" onclick="navigator.clipboard.writeText(\'' +
@@ -9049,7 +9047,7 @@ $(".mm-logo").attr("src", URLSERV_PLATEN + "/images/logo.png");
         '\n        <div class="vietnam" style="display: grid !important; grid-template-columns: 1fr 1fr 1fr; gap: 8.5px;">\n          <input type="button" value="FULL SCREEN" class="fullscreen_button">\n         \n          </div>\n      '
       );
       $(".mm-merchant-cont").html(
-        '\n  <div style="display: flex; justify-content: center; align-items: center;margin-top:10px">\n    <a href="https://www.youtube.com/Platen" target="_blank" style="margin-right: 10px;">\n      <img src="https://wormateup.live/images/hiep_img/" alt="" width="155">\n    </a>\n    <a href="https://wormateup.live.com" target="_blank">\n      <img src="https://i.imgur.com/V.png" alt="" width="155">\n    </a>\n  </div>'
+        '\n  <div style="display: flex; justify-content: center; align-items: center;margin-top:10px">\n    <a href="https://www.youtube.com/WormRise" target="_blank" style="margin-right: 10px;">\n      <img src="https://wormateup.live/images/hiep_img/" alt="" width="155">\n    </a>\n    <a href="https://wormateup.live.com" target="_blank">\n      <img src="https://i.imgur.com/V.png" alt="" width="155">\n    </a>\n  </div>'
       );
       $(document).ready(function () {
         $(".fullscreen_button").on("click", function () {
@@ -9144,7 +9142,7 @@ $(".mm-logo").attr("src", URLSERV_PLATEN + "/images/logo.png");
       }
       $(".mm-merchant").replaceWith("");
       $(".description-text").replaceWith(
-        '\n        <div id=\"title\">Platen</div>         <div class="description-text-test">\n            <ul style="margin-top: 5px;" class="ui-tabs-nav">\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active" style="margin: -5px">\n                <a> <span class="flag br" value="https://i.imgur.com/dixYLjk.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive1" style="margin: -5px">\n                <a> <span class="flag mx" value="https://i.imgur.com/JMAvuFN.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive2" style="margin: -5px">\n                <a> <span class="flag us" value="https://i.imgur.com/Jb2FF0y.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive3" style="margin: -5px">\n                <a> <span class="flag ca" value="https://i.imgur.com/m1skEsB.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive4" style="margin: -5px">\n                <a> <span class="flag de" value="https://i.imgur.com/VgCH8iy.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive5" style="margin: -5px">\n                <a> <span class="flag fr" value="https://i.imgur.com/QuEjBr0.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive6" style="margin: -5px">\n                <a> <span class="flag sg" value="https://i.imgur.com/ErLcgXP.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive7" style="margin: -5px">\n                <a> <span class="flag jp" value="https://i.imgur.com/P2rYk1k.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive8" style="margin: -5px">\n                <a> <span class="flag au" value="https://i.imgur.com/12e0wp4.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive9" style="margin: -5px">\n                <a> <span class="flag gb" value="https://i.imgur.com/8pQY6RW.png"></span> </a>\n              </li>\n            </ul>\n            <div class="bao-list2">\n              <div class="gachngang"></div>\n              <div class="servers-container">\n                <div class="servers-peru"></div>\n                <div class="servers-mexico" style="display: none;"></div>\n                <div class="servers-eeuu" style="display: none;"></div>\n                <div class="servers-canada" style="display: none;"></div>\n                <div class="servers-germania" style="display: none;"></div>\n                <div class="servers-francia" style="display: none;"></div>\n                <div class="servers-singapur" style="display: none;"></div>\n                <div class="servers-japon" style="display: none;"></div>\n                <div class="servers-australia" style="display: none;"></div>\n                <div class="servers-granbretana" style="display: none;"></div>\n              </div>\n                <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>\n            </div>\n          </div>\n        </div>\n      '
+        '\n        <div id=\"title\">S E R V E R S</div>         <div class="description-text-test">\n            <ul style="margin-top: 5px;" class="ui-tabs-nav">\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active" style="margin: -5px">\n                <a> <span class="flag br" value="https://i.imgur.com/dixYLjk.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive1" style="margin: -5px">\n                <a> <span class="flag mx" value="https://i.imgur.com/JMAvuFN.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive2" style="margin: -5px">\n                <a> <span class="flag us" value="https://i.imgur.com/Jb2FF0y.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive3" style="margin: -5px">\n                <a> <span class="flag ca" value="https://i.imgur.com/m1skEsB.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive4" style="margin: -5px">\n                <a> <span class="flag de" value="https://i.imgur.com/VgCH8iy.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive5" style="margin: -5px">\n                <a> <span class="flag fr" value="https://i.imgur.com/QuEjBr0.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive6" style="margin: -5px">\n                <a> <span class="flag sg" value="https://i.imgur.com/ErLcgXP.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive7" style="margin: -5px">\n                <a> <span class="flag jp" value="https://i.imgur.com/P2rYk1k.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive8" style="margin: -5px">\n                <a> <span class="flag au" value="https://i.imgur.com/12e0wp4.png"></span> </a>\n              </li>\n              <li class="ui-tabs-tab ui-tab ui-tab-inactive9" style="margin: -5px">\n                <a> <span class="flag gb" value="https://i.imgur.com/8pQY6RW.png"></span> </a>\n              </li>\n            </ul>\n            <div class="bao-list2">\n              <div class="gachngang"></div>\n              <div class="servers-container">\n                <div class="servers-peru"></div>\n                <div class="servers-mexico" style="display: none;"></div>\n                <div class="servers-eeuu" style="display: none;"></div>\n                <div class="servers-canada" style="display: none;"></div>\n                <div class="servers-germania" style="display: none;"></div>\n                <div class="servers-francia" style="display: none;"></div>\n                <div class="servers-singapur" style="display: none;"></div>\n                <div class="servers-japon" style="display: none;"></div>\n                <div class="servers-australia" style="display: none;"></div>\n                <div class="servers-granbretana" style="display: none;"></div>\n              </div>\n                <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>\n            </div>\n          </div>\n        </div>\n      '
       );
       $(".ui-tab").on("click", account);
       $(".flag").click(function () {
@@ -9265,7 +9263,7 @@ $(".mm-logo").attr("src", URLSERV_PLATEN + "/images/logo.png");
     function f104() {
       theoKzObjects.adblock = true;
       $("#loa831pibur0w4gv").replaceWith(
-        '\n        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />\n         <div style="margin: 0;" id="loa831pibur0w4gv">\n          <div class="label" id="titleSetings">Platen</div>\n          <div class="bao-list1">\n            <div class="list1">\n              <i class="fa fa-book" aria-hidden="true" style="color: #48ff00;"></i>\n              Uyarı: Kimseye vermeyin\n            </div>\n            <br>\n            <div class="list1">\n       <div class="list1">\n              <i class="fa fa-book" aria-hidden="true" style="color: #48ff00;"></i>\n\n              <a href="https://discord.gg"> Discord Server</a>\n            </div>\n          </div>\n        </div>\n      '
+        '\n        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />\n         <div style="margin: 0;" id="loa831pibur0w4gv">\n          <div class="label" id="titleSetings">WormRise</div>\n          <div class="bao-list1">\n            <div class="list1">\n              <i class="fa fa-book" aria-hidden="true" style="color: #48ff00;"></i>\n              Uyarı: Kimseye vermeyin\n            </div>\n            <br>\n            <div class="list1">\n       <div class="list1">\n              <i class="fa fa-book" aria-hidden="true" style="color: #48ff00;"></i>\n\n              <a href="https://discord.gg"> Discord Server</a>\n            </div>\n          </div>\n        </div>\n      '
       );
       $("#mm-coins-box").replaceWith(
         '\n                <div style="margin: 0;" id="mm-coins-box">\n          <button \n            style="\n              width: 90px;\n              height: 32px;\n              float: right;\n              border-radius: 10px;\n              border: solid #fac 2px;\n            " \n            id="getskin">🔐 Skins</button>\n        </div>\n      '
@@ -9756,7 +9754,7 @@ $(".mm-logo").attr("src", URLSERV_PLATEN + "/images/logo.png");
       function (p650) {
         v760 = p650;
         $.ajax({
-          url: URLSERV_PLATEN + "/skins",
+          url: URLSERV_WORMPLATEN + "/skins/index.php",
           method: "GET",
           dataType: "json",
           success: function (p651) {
@@ -10253,7 +10251,7 @@ window.addEventListener("keydown", (p670) => {
 var TIME = new Date().getTime();  // getTime() zaman damgasını alır
 
 // Dinamik CSS dosyası linki oluşturuluyor (zaman ile ilişkili)
-var linkCSS = URLSERV_PLATEN + "/css/style.css?v=" + TIME;
+var linkCSS = URLSERV_WORMPLATEN + "/css/style.css?v=" + TIME;
 
 // CSS dosyasını sayfaya ekleyen fonksiyon
 var addCSS = function() {
@@ -10269,4 +10267,7 @@ this.addCSS();  // CSS dosyasını ekliyoruz
 
 // Konsola mesaj yazdırıyoruz
 console.log("CSS Dosyası Başarıyla Yüklendi");
+
+
+
 
