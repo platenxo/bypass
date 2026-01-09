@@ -7653,7 +7653,7 @@ window.addEventListener("load", function () {
         <div class="phdr1"> 
             <button 
                 style="float: right;background: #00000000;float: right;height: 40px;border: none;font-size: 16px;font-weight: 600;" 
-                onclick="navigator.clipboard.writeText('${theoKzObjects.FB_UserID}').then(()=> alert('You ID ${theoKzObjects.FB_UserID} copied!'));">
+                onclick="navigator.clipboard.writeText('${vO4.FB_UserID}').then(()=> alert('You ID ${vO4.FB_UserID} copied!'));">
                 Copy ID
             </button>
         </div>
