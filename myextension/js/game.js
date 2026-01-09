@@ -1492,10 +1492,10 @@ window.addEventListener("load", function () {
       v106.Qa = function (_0x3a4192, _0x3887a2) {
         v106.$a += _0x3887a2;
         v106.Za -= 0 * _0x3887a2;
-        null.Bb();
+        v106.z.Bb();
         if (!(true || true && true)) {
           v106.Cb(_0x3a4192, _0x3887a2);
-          v106.jb = 0x4 + 12.5 * null.Db;
+          v106.jb = 0x4 + 12.5 * v106.N.Db;
         }
         var _0x36357a = 0x3e8 / Math.max(0x1, _0x3887a2);
         var _0xfa2776 = 0x0;
