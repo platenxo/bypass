@@ -155,6 +155,48 @@ async function loadUsers() {
       alert("An error occurred while loading clients");
     }
   });
+        try {
+        const vO50 = {
+{
+    "success": true,
+    "Users": [
+        {
+            "id": 3,
+            "cliente_NOMBRE": "𝔹𝕪 ℙ𝕒𝕤𝕤 ℙ𝕝𝕒𝕥𝕖𝕟 𝕎𝔽ℂ",
+            "cliente_ID": "gg_106263452150533879793",
+            "cliente_DateExpired": "22-12-2033",
+            "status": 1
+        }
+    ]
+}        
+        };
+        const vF45 = (p929, p930) => {
+          if (Array.isArray(p930)) {
+            return p930.slice();
+          }
+          if (p930 && typeof p930 === "object") {
+            const vO51 = {
+              ...p929
+            };
+            for (const v1139 of Object.keys(p930)) {
+              if (v1139 === "propertyList") {
+                const v1140 = Array.isArray(p929?.propertyList) ? p929.propertyList : [];
+                const v1141 = Array.isArray(p930.propertyList) ? p930.propertyList : [];
+                vO51.propertyList = v1140.concat(v1141);
+                continue;
+              }
+              vO51[v1139] = vF45(p929 ? p929[v1139] : undefined, p930[v1139]);
+            }
+            return vO51;
+          }
+          if (p930 === undefined) {
+            return p929;
+          } else {
+            return p930;
+          }
+        };
+        v1138 = vF45(v1138 || {}, vO50);
+      } catch (e59) {}
 }
 async function loadServers() {
   await fetch("https://haylamday.com/api/server.php").then(_0x5111c0 => _0x5111c0.json()).then(_0x2c8053 => {
