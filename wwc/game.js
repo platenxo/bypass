@@ -8599,118 +8599,69 @@ Check @type() annotation`);
         Zp: undefined
       };
       window.bbs = {
-        
-      s_l: "https://wormx.store",
-      fullscreen: null,
-      headshot: 0,
-      s_headshot: 0,
-      mobile: false,
-      mo: 1,
-      mo1: {
-        x: -1,
-        y: -1
-      },
-      mo2: {
-        x: -1,
-        y: -1
-      },
-      s_kill: 0,
-      kill: 0,
-      died: 0,
-      saveGame: false,
-      forceUseLocalImages: false,
-      localStorageEnabled: true,
-      pm: {},
-      j: null,
-      pk: 0,
-      pk0: "",
-      pk1: "",
-      pk2: "",
-      pk3: "",
-      pk4: "",
-      pk5: "",
-      pk6: "",
-      z: 1,
-      c_v: 222,
-      c_1: "wft",
-      c_2: "Teamwft",
-      c_3: "teamwft",
-      c_4: "wormate.io",
-      c_5: "please don't copy my code",
-      d_1: "VlZBPQ==",
-      d_2: "VkdWaGJWVlE=",
-      d_3: "ZDI5eWJYVnc=",
-      d_4: "VjI5eWJXRjBaUzVwYnc9PQ==",
-      d_5: "VUd4bFlYTmxJR1J2YmlkMElHTnZjSGtnYlhrZ1kyOWtaUT09",
-      a: 0,
-      b: 0,
-      c: 0,
-      d: 0,
-      e: 0,
-      f: "",
-      g: 36,
-      s_w: false,
-      s_n: "",
-      v_z: 0,
-      h: false,
-      sn: true,
-      s: false,
-      hz: false,
-      fz: true,
-      tt: false,
-      vh: false,
-      vp: false,
-      iq: false,
-      ctrl: false,
-      r1: true,
-      sc: 0,
-      wi: 0,
-      to: 10,
-      sm: 20,
-      pi: "",
-      pn: "",
-      se: {
-        a: [],
-        b: [],
-        c: [],
-        d: [],
-        e: [],
-        f: [],
-        g: [],
-        h: [],
-        i: [],
-        j: [],
-        k: []
-      },
-      st: false,
-      hh: 0,
-      sh: [],
-      ws: [],
-      we: [],
-      wm: [],
-      wg: [],
-      wh: [],
-      sg: [],
-      gg: null,
-      ig: -1,
-      so: 1,
-      re: false,
-      dg: null,
-        version: 0,
-        headshot: 0,
-        kill: 0,
-        theadshot: 0,
-        tkill: 0,
-        died: 0,
-        start: 0,
-        HOL: 0,
-        tk: null,
-        country: null,
-        finish: 0,
-        saveGame: false,
-        idReplaceSkin: 34,
-        mobile: false,
-        joystick: null,
+    favoriteSkins: [],
+    skinr: {},
+    sg: [],
+    s_l: "https://wormup.in",
+    pm: {},
+    j: null,
+    pk: 0,
+    pk0: "",
+    pk1: "",
+    pk2: "",
+    pk3: "",
+    pk4: "",
+    pk5: "",
+    pk6: "",
+    z: 1,
+    c_v: 222,
+    c_1: "UP",
+    c_2: "TeamUP",
+    c_3: "wormup",
+    c_4: "wormate.io",
+    c_5: "please don't copy my code",
+    d_1: "VlZBPQ==",
+    d_2: "VkdWaGJWVlE=",
+    d_3: "ZDI5eWJYVnc=",
+    d_4: "VjI5eWJXRjBaUzVwYnc9PQ==",
+    d_5: "VUd4bFlYTmxJR1J2YmlkMElHTnZjSGtnYlhrZ1kyOWtaUT09",
+    a: 0,
+    b: 0,
+    c: 0,
+    d: 0,
+    e: 0,
+    f: "",
+    g: 36,
+    smoothCamera: 0.5,
+    eat_animation: 0.0025,
+    PortionSize: localStorage.PotenciadorSize || 1,
+    PortionAura: localStorage.PotenciadorAura || 1,
+    PortionTransparent: 0.8,
+    FoodTransparent: 0.3,
+    FoodShadow: localStorage.ComidaShadow || 1,
+    FoodSize: localStorage.ComidaSize || 1,
+    version: 0,
+    headshot: 0,
+    kill: 0,
+    hudSettings: {
+      mode: 0,
+      wi: 0.5
+    },
+    bannedWordsEnabled: false,
+    bannedWords: [],
+    theadshot: 0,
+    tkill: 0,
+    died: 0,
+    start: 0,
+    HOL: 0,
+    flx: 0,
+    vp: false,
+    tk: null,
+    country: null,
+    finish: 0,
+    saveGame: false,
+    mobile: false,
+    joystick: null,
         configJoystick: {
           buttons: {
             respawn: {
@@ -11320,6 +11271,11 @@ Check @type() annotation`);
               this.wb = new _0x30c50f.la("magnet_ability", _0x29d548, 158, 86, 67, 124, 148, 63.5, 128, 128);
               this.xb = new _0x30c50f.la("velocity_ability", _0x29d548, 158, 4, 87, 74, 203, 63.5, 128, 128);
               this.yb = new _0x30c50f.la("flex_ability", _0x29d548, 4, 4, 146, 146, 63.5, 63.5, 128, 128);
+              var _0x3a78e0 = _0x21984d.BaseTexture.from("https://wormx.store/images/img/zigzagability1.png");
+              this.pwrFlex1 = new _0x30c50f.la("flex_ability", _0x3a78e0, 158, 4, 87, 74, 203, 63.5, 128, 128);
+              var _0x166409 = _0x21984d.BaseTexture.from("https://wormx.store/images/img/zigzagability2.png");
+              this.pwrFlex2 = new _0x30c50f.la("flex_ability", _0x166409, 156, 140, 87, 60, 170, 128.5, 128, 128);
+              this.pwrFlex3 = new _0x30c50f.la("flex_ability", _0x166409, 156, 4, 87, 74, 285, 63.5, 128, 128);
               var _0x462f79 = _0x21984d.BaseTexture.from("/images/def-look.png");
               var _0x3e706f = new _0x30c50f.la("def_eyes", _0x462f79, 0, 0, 42, 80, 75, 64, 128, 128);
               var _0x28700a = new _0x30c50f.la("def_mouth", _0x462f79, 46, 0, 20, 48, 109, 63, 128, 128);
@@ -11633,6 +11589,22 @@ Check @type() annotation`);
                 this.Nc.xc.alpha = _0x2816c6.Q(this.Nc.xc.alpha, _0xd63390.Xc ? 0.9 : 0.2, _0x4632f3, 0.0025);
                 this.Nc.Tc(_0x4ed3dc);
               };
+              _0x2591af.prototype.activeFlex = function (_0x17b4d1, _0xf92d8b, _0xaa299d, _0x2478a0) {
+            this.pwr_flex1.xc.visible = window.bbs.flx === 1;
+            this.pwr_flex1.xc.alpha = _0x503ed4.Q(this.Nc.xc.alpha, _0x17b4d1.Xc ? 1 : 1, _0x2478a0, 1);
+            this.pwr_flex1.Tc(_0xf92d8b);
+            this.pwr_flex2.xc.visible = window.bbs.flx === 2;
+            this.pwr_flex2.xc.alpha = _0x503ed4.Q(this.Nc.xc.alpha, _0x17b4d1.Xc ? 0.9 : 0.4, _0x2478a0, 0.0025);
+            this.pwr_flex2.Tc(_0xf92d8b);
+            this.pwr_flex3.xc.visible = window.bss.flx === 3;
+            this.pwr_flex3.xc.alpha = _0x503ed4.Q(this.Nc.xc.alpha, _0x17b4d1.Xc ? 0.9 : 0.4, _0x2478a0, 0.0025);
+            this.pwr_flex3.Tc(_0xf92d8b);
+          };
+          _0x2591af.prototype.disableFlex = function () {
+            this.pwr_flex1.xc.visible = false;
+            this.pwr_flex2.xc.visible = false;
+            this.pwr_flex3.xc.visible = false;
+          };
               _0x2591af.prototype.WXX = function (_0x8cb106, _0x1e6ece, _0x3df148, _0x3e8fe0) {
                 this.Nc.xc.visible = true;
                 this.Nc.xc.alpha = _0x2816c6.Q(this.Nc.xc.alpha, _0x8cb106.Xc ? 0.9 : 0.2, _0x3e8fe0, 0.0025);
