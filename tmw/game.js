@@ -10490,17 +10490,17 @@ function f(p) {
               window.bbs.zigzag = vO6.zigzag;
               localStorage.setItem("selectedZigzag", vO6.zigzag);
               if (ooo && ooo.Xg && ooo.Xg.Kf && ooo.Xg.Kf.Wg && ooo.Xg.Kf.Wg.Ah) {
-                const _0x31198a = ooo.Xg.Kf.Wg.Ah;
-                if (_0x31198a && _0x31198a.Vj) {
+                const vO = ooo.Xg.Kf.Wg.Ah;
+                if (vO && vO.Vj) {
                   const _0x313c0c = {
                     0: 0,
                     1: 1,
                     2: 2,
                     3: 3
                   };
-                  _0x31198a.Vj = _0x313c0c[vO6.zigzag] || 0;
-                  if (_0x31198a.Zi) {
-                    _0x31198a.Zi(_0x31198a.ki);
+                  vO.Vj = _0x313c0c[vO6.zigzag] || 0;
+                  if (vO.Zi) {
+                    vO.Zi(vO.ki);
                   }
                 }
               }
@@ -11335,4 +11335,5 @@ function f(p) {
   console.log("%c[WORMATE-FIX]%c Cadılar Bayramı deseni değiştirildi!", "color: #ff4500; font-weight: bold;", "color: #00ff00;");
 
 })();
+
 
