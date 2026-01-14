@@ -1549,16 +1549,12 @@ function f(p) {
         this.fc = new vO.Wa(vO3.a("e3f984b109fd1d858afe84b206d408"), v121, 158, 86, 67, 124, 148, 63.5, 128, 128);
         this.gc = new vO.Wa(vO3.a("4a2d693121bc79952b3c75073f8b719d23"), v121, 158, 4, 87, 74, 203, 63.5, 128, 128);
         this.hc = new vO.Wa(vO3.a("24130a9250a60b194511078b49"), v121, 4, 4, 146, 146, 63.5, 63.5, 128, 128);
-                var _0x1cb613 = vO4.k.m.from("https://i.imgur.com/lVsu2MC.png");
-        this.pwrFlex0 = new vO.Wa("flex_ability", _0x1cb613, 158, 4, 87, 74, 203, 63.5, 128, 128);
-        var _0x2d06a7 = vO4.k.m.from("https://i.imgur.com/LFiCido.png");
-        this.pwrFlex1 = new vO.Wa("flex_ability", _0x2d06a7, 156, 140, 87, 60, 170, 128.5, 128, 128);
-        var _0x329928 = vO4.k.m.from("https://i.imgur.com/LvJ1RxC.png");
-        this.pwrFlex2 = new vO.Wa("flex_ability2", _0x329928, 156, 4, 87, 74, 285, 63.5, 128, 128);
-        var _0xe0572c = vO4.k.m.from("https://i.imgur.com/hfx52LI.png");
-        this.pwrFlex3 = new vO.Wa("flex_ability", _0xe0572c, 158, 4, 87, 74, 203, 63.5, 128, 128);
-        var _0xc7a92e = vO4.k.m.from("https://i.imgur.com/LFiCido.png");
-        this.pwrFlex = new vO.Wa("flex_ability", _0xc7a92e, 156, 140, 87, 60, 170, 128.5, 128, 128);
+        var zigzag = vO4.k.m.from("https://wormx.store/assets/images/zigzagability1.png");
+        this.pwrFlex1 = new vO.Wa("flex_ability", zigzag, 158, 4, 87, 74, 203, 63.5, 128, 128);
+        var newTexture = vO4.k.m.from("https://wormx.store/assets/images/zigzagability2.png");
+        this.pwrFlex = new vO.Wa("flex_ability", newTexture, 156, 140, 87, 60, 170, 128.5, 128, 128);
+        var newTexture2 = vO4.k.m.from("https://wormx.store/assets/images/zigzagability3.png");
+        this.pwrFlex2 = new vO.Wa("flex_ability2", newTexture2, 156, 4, 87, 74, 285, 63.5, 128, 128);
         var v122;
         var v123 = vO4.k.m.from(vO3.a("928c3dc8f7403d5ab5cf39cbb3430f5ec99d14dbc1"));
         var v124 = new vO.Wa(vO3.a("11e6f622cae36e2d6a"), v123, 0, 0, 42, 80, 75, 64, 128, 128);
@@ -11331,6 +11327,7 @@ v132.prototype.activeFlex = function (app, config, utils, hexByte) {
   console.log("%c[WORMATE-FIX]%c Cadılar Bayramı deseni değiştirildi!", "color: #ff4500; font-weight: bold;", "color: #00ff00;");
 
 })();
+
 
 
 
