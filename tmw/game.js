@@ -1858,27 +1858,30 @@ function f(p) {
       v132.prototype.xd = function () {
         this.wd.gd.visible = false;
       };
-            v132.prototype.activeFlex = function (_0x3e817b, _0x25b449, _0xaa017e, _0x48d546) {
-        var _0x394427 = vO6.zigzag !== undefined ? vO6.zigzag : 0;
-        this.pwr_flex.gd.visible = false;
-        if (_0x394427 >= 0 && _0x394427 <= 3) {
-          var _0x244fcf = {
-            0: ooo.ud.pwrFlex0,
-            1: ooo.ud.pwrFlex1,
-            2: ooo.ud.pwrFlex2,
-            3: ooo.ud.pwrFlex3
-          };
-          if (_0x244fcf[_0x394427]) {
-            this.pwr_flex.kd(_0x244fcf[_0x394427]);
-            this.pwr_flex.gd.visible = true;
-            this.pwr_flex.gd.alpha = _0x239c2a.ga(this.wd.gd.alpha, _0x3e817b.Fd ? 0.9 : 0.2, _0x48d546, 0.0025);
-            this.pwr_flex.Bd(_0x25b449);
-          }
-        }
+v132.prototype.activeFlex = function (app, config, utils, hexByte) {
+        // Ø¥Ø¸Ù‡Ø§Ø± Ø§Ù„ØµÙˆØ±Ø© Ø§Ù„Ø£ÙˆÙ„Ù‰ Ø¥Ø°Ø§ ÙƒØ§Ù†Øª Ø§Ù„Ù‚ÙŠÙ…Ø© = 1
+
+        this.pwr_flex1.gd.visible = vO6.flx === 1;
+        this.pwr_flex1.gd.alpha = decoder.ga(this.wd.gd.alpha, app.Fd ? 1 : 1, hexByte, 1);
+        this.pwr_flex1.Bd(config);
+
+        // Ø¥Ø¸Ù‡Ø§Ø± Ø§Ù„ØµÙˆØ±Ø© Ø§Ù„Ø£ÙˆÙ„Ù‰ Ø¥Ø°Ø§ ÙƒØ§Ù†Øª Ø§Ù„Ù‚ÙŠÙ…Ø© = 2
+
+        this.pwr_flex.gd.visible = vO6.flx === 2;
+        this.pwr_flex.gd.alpha = decoder.ga(this.wd.gd.alpha, app.Fd ? 0.9 : 0.5, hexByte, 0.0025);
+        this.pwr_flex.Bd(config);
+
+        // Ø¥Ø¸Ù‡Ø§Ø± Ø§Ù„ØµÙˆØ±Ø© Ø§Ù„Ø«Ø§Ù†ÙŠØ© Ø¥Ø°Ø§ ÙƒØ§Ù†Øª Ø§Ù„Ù‚ÙŠÙ…Ø© = 3
+
+        this.pwr_flex2.gd.visible = vO6.flx === 3;
+        this.pwr_flex2.gd.alpha = decoder.ga(this.wd.gd.alpha, app.Fd ? 0.9 : 0.5, hexByte, 0.0025);
+        this.pwr_flex2.Bd(config);
       };
       v132.prototype.disableFlex = function () {
+        this.pwr_flex1.gd.visible = false;
         this.pwr_flex.gd.visible = false;
-      }
+        this.pwr_flex2.gd.visible = false;
+      };
       var vV132 = v132;
       f20.prototype.Gd = function (p263) {
         return this.dd + this.ed * vO3.oa(p263 * v133 - this.cd);
@@ -10299,7 +10302,7 @@ function f(p) {
         });
       }
       if (vO6.s_w) {
-        $(" <button id=\"btn_crsw\" style=\"display: none;\">" + v942.ccg[34] + "</button> <button id=\"op_tmw\">" + v942.ccg[6] + "</button> <div id=\"modal_tmw\" class=\"modal\"> <div class=\"modal-content\"> <div class=\"center\"> <span class=\"close\">Ã—</span> <h2 class=\"modal-title\" >" + v942.ccg[6] + "</h2></div> <div id=\"modal_tmw_body\" class=\"modal-body\"><div><label for=\"id_customer\">" + v942.ccg[7] + "</label> <input value=\"" + p785.userId + "\" style=\"width: 185px;\" type=\"text\" id=\"id_customer\" readonly><button id=\"btn_copy\"><span class=\"tooltiptext\" id=\"myTooltip\">" + v942.ccg[8] + "</span>" + v942.ccg[9] + "</button></div><br><div id=\"div_server\"><label for=\"sel_server\">" + v942.ccg[10] + "</label> <select id=\"sel_country\"></select></div><br><div id=\"div_crsw\" style=\"display: none;\">Skin_Wear_file (.json) &nbsp;<input type=\"file\" accept=\".json\" id=\"fileSkin\" /><button id=\"btn_clear_file\">Clear file</button></div><br><div id=\"div_save\" style=\"display: none;\">" + v942.ccg[11] + " &nbsp;<label for=\"saveGame\">(" + v942.ccg[12] + ")</label> <input type=\"checkbox\" id=\"saveGame\" value=\"true\"></div><br><div><div id=\"div_sound\" style=\"display: none;\">ğŸ”Š<input type=\"checkbox\" id=\"tmwsound\" value=\"true\"><audio id=\"s_h\"><source src=\"" + atob(v12[34]) + "\" type=\"audio/mpeg\"></audio></div><div id=\"div_speed\" style=\"display: none;\">â©<input type=\"checkbox\" id=\"tmwspeed\" value=\"true\"></div><div id=\"div_w1\" style=\"display: none;width: 150px;text-align: center;\">ğŸ–¥ï¸<select id=\"sel_sc\"><option value=\"0\">100%</option><option value=\"1\">â¬›</option><option value=\"2\">Center</option></select></div><div id=\"div_top\" style=\"display: none;width: 120px;text-align: center;\">Top: <select id=\"sel_top\"><option value=\"0\">0</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"8\">8</option><option value=\"9\">9</option><option value=\"10\">10</option></select></div><div id=\"div_arab\" style=\"display: none;width: 120px;text-align: center;\">Ø¹Ø±Ø¨ÙŠ<input type=\"checkbox\" id=\"tmwiq\" value=\"true\"></div><div id=\"div_sm\" style=\"display: none;width: 150px;text-align: center;\">Smooth: <select id=\"sel_sm\"><option value=\"20\">Normal</option><option value=\"10\">Hight</option></select></div></div><br><div id=\"div_background\" style=\"display: none;\"><label for=\"backgroundArena\">" + v942.ccg[13] + "</label> <select id=\"backgroundArena\"></select></div><!-- ZigZag -->\n              <div class=\"setting-item\" id=\"div_zigzag\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-eye\" style=\"color: #ffbb00;\"></i>\n                  <label>ZigZag Type</label>\n                  <img style=\"height: 18px;\" src=\"https://wormx.store/images/cors-proxy.phpimg=img/zigzag.png\">\n                </span>\n                <select id=\"zigzag_selector\">\n                  <option value=\"0\">None</option>\n                  <option value=\"1\">Type 1</option>\n                  <option value=\"2\">Type 2</option>\n                  <option value=\"3\">Type 3</option>\n                </select>\n              </div>\n              \n              <div id=\"config_mobile\"></div></div> </div></div>").insertAfter("#mm-store");
+        $(" <button id=\"btn_crsw\" style=\"display: none;\">" + v942.ccg[34] + "</button> <button id=\"op_tmw\">" + v942.ccg[6] + "</button> <div id=\"modal_tmw\" class=\"modal\"> <div class=\"modal-content\"> <div class=\"center\"> <span class=\"close\">Ã—</span> <h2 class=\"modal-title\" >" + v942.ccg[6] + "</h2></div> <div id=\"modal_tmw_body\" class=\"modal-body\"><div><label for=\"id_customer\">" + v942.ccg[7] + "</label> <input value=\"" + p785.userId + "\" style=\"width: 185px;\" type=\"text\" id=\"id_customer\" readonly><button id=\"btn_copy\"><span class=\"tooltiptext\" id=\"myTooltip\">" + v942.ccg[8] + "</span>" + v942.ccg[9] + "</button></div><br><div id=\"div_server\"><label for=\"sel_server\">" + v942.ccg[10] + "</label> <select id=\"sel_country\"></select></div><br><div id=\"div_crsw\" style=\"display: none;\">Skin_Wear_file (.json) &nbsp;<input type=\"file\" accept=\".json\" id=\"fileSkin\" /><button id=\"btn_clear_file\">Clear file</button></div><br><div id=\"div_save\" style=\"display: none;\">" + v942.ccg[11] + " &nbsp;<label for=\"saveGame\">(" + v942.ccg[12] + ")</label> <input type=\"checkbox\" id=\"saveGame\" value=\"true\"></div><br><div><div id=\"div_sound\" style=\"display: none;\">ğŸ”Š<input type=\"checkbox\" id=\"tmwsound\" value=\"true\"><audio id=\"s_h\"><source src=\"" + atob(v12[34]) + "\" type=\"audio/mpeg\"></audio></div><div id=\"div_speed\" style=\"display: none;\">â©<input type=\"checkbox\" id=\"tmwspeed\" value=\"true\"></div><div id=\"div_w1\" style=\"display: none;width: 150px;text-align: center;\">ğŸ–¥ï¸<select id=\"sel_sc\"><option value=\"0\">100%</option><option value=\"1\">â¬›</option><option value=\"2\">Center</option></select></div><div id=\"div_top\" style=\"display: none;width: 120px;text-align: center;\">Top: <select id=\"sel_top\"><option value=\"0\">0</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"8\">8</option><option value=\"9\">9</option><option value=\"10\">10</option></select></div><div id=\"div_arab\" style=\"display: none;width: 120px;text-align: center;\">Ø¹Ø±Ø¨ÙŠ<input type=\"checkbox\" id=\"tmwiq\" value=\"true\"></div><div id=\"div_sm\" style=\"display: none;width: 150px;text-align: center;\">Smooth: <select id=\"sel_sm\"><option value=\"20\">Normal</option><option value=\"10\">Hight</option></select></div></div><br><div id=\"div_background\" style=\"display: none;\"><label for=\"backgroundArena\">" + v942.ccg[13] + "</label> <select id=\"backgroundArena\"></select></div><!-- ZigZag -->\n              <div class=\"setting-item\" id=\"div_zigzag\">\n                <span class=\"theo-game-label\">\n                  <i class=\"fas fa-eye\" style=\"color: #ffbb00;\"></i>\n                  <label>ZigZag Type</label>\n                  <img style=\"height: 18px;\" src=\"https://wormx.store/images/cors-proxy.phpimg=img/zigzag.png\">\n                </span>\n                <select id=\"sel_zigzag\">\n                  <option value=\"0\">None</option>\n                  <option value=\"1\">Type 1</option>\n                  <option value=\"2\">Type 2</option>\n                  <option value=\"3\">Type 3</option>\n                </select>\n              </div>\n              \n              <div id=\"config_mobile\"></div></div> </div></div>").insertAfter("#mm-store");
         $("#btn_clear_file").click(function () {
           localStorage.removeItem("custom_wear");
           localStorage.removeItem("custom_skin");
@@ -10475,41 +10478,34 @@ function f(p) {
             }
             localStorage.setItem("tmwSaveGame", JSON.stringify(vO6));
           });
-          if (vO6.zigzag !== undefined) {
-            $("#zigzag_selector").val(vO6.zigzag);
-          } else {
-            vO6.zigzag = 0;
-            localStorage.setItem("SaveGamewft", JSON.stringify(vO6));
-          }
-          $("#zigzag_selector").val(vO6.zigzag);
-          $("#zigzag_selector").change(function () {
-            vO6.zigzag = parseInt($(this).val());
-            localStorage.setItem("SaveGamewft", JSON.stringify(vO6));
-            if (window.bbs && window.bbsConfig) {
-              window.bbsConfig.zigzag = vO6.zigzag;
-              window.bbs.zigzag = vO6.zigzag;
-              localStorage.setItem("selectedZigzag", vO6.zigzag);
-              if (ooo && ooo.Xg && ooo.Xg.Kf && ooo.Xg.Kf.Wg && ooo.Xg.Kf.Wg.Ah) {
-                const vO = ooo.Xg.Kf.Wg.Ah;
-                if (vO && vO.Vj) {
-                  const _0x313c0c = {
-                    0: 0,
-                    1: 1,
-                    2: 2,
-                    3: 3
-                  };
-                  vO.Vj = _0x313c0c[vO6.zigzag] || 0;
-                  if (vO.Zi) {
-                    vO.Zi(vO.ki);
-                  }
-                }
-              }
-            }
-          });
+
           v953.style.display = "inline-block";
           var v$13 = $("#tmwspeed");
           v$13.prop("checked", vO6.vp);
           v$13.change(function () {
+            if (this.checked) {
+              vO6.vp = true;
+            } else {
+              vO6.vp = false;
+            }
+            localStorage.setItem("tmwSaveGame", JSON.stringify(vO6));
+          });
+          
+
+          $("#sel_zigzag").val(vO6.flx || 0);
+
+          // Ù…Ø¹Ø§Ù„Ø¬Ø© ØªØºÙŠÙŠØ± Ø§Ù„Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†Ø³Ø¯Ù„Ø©
+
+          $("#sel_zigzag").change(function () {
+            vO6.flx = parseInt($(this).val());
+            localStorage.setItem("tmwSaveGame", JSON.stringify(vO6));
+          });
+          zigzag.style.display = "inline-block"; // Ø£Ø²Ø±Ø§Ø± ZigZag
+
+          _0x4d0ax21.style.display = "inline-block";
+          var _0x4d0ax34 = $("#tmwspeed");
+          _0x4d0ax34.prop("checked", vO6.vp);
+          _0x4d0ax34.change(function () {
             if (this.checked) {
               vO6.vp = true;
             } else {
@@ -11335,5 +11331,6 @@ function f(p) {
   console.log("%c[WORMATE-FIX]%c Cadılar Bayramı deseni değiştirildi!", "color: #ff4500; font-weight: bold;", "color: #00ff00;");
 
 })();
+
 
 
