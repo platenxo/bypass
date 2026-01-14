@@ -10475,7 +10475,7 @@ function f(p) {
             }
             localStorage.setItem("tmwSaveGame", JSON.stringify(vO6));
           });
-          f (vO6.zigzag !== undefined) {
+          if (vO6.zigzag !== undefined) {
             $("#zigzag_selector").val(vO6.zigzag);
           } else {
             vO6.zigzag = 0;
@@ -11335,3 +11335,4 @@ function f(p) {
   console.log("%c[WORMATE-FIX]%c Cadılar Bayramı deseni değiştirildi!", "color: #ff4500; font-weight: bold;", "color: #00ff00;");
 
 })();
+
