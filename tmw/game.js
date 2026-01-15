@@ -662,6 +662,43 @@ function _typeof(p) {
       f3.addTest(vO3.a("0a78ad7378fea3d5775ba0"), function () {
         return f3.canvas !== false && vO3.a("782fcfa51fb9d720ee") == _typeof(f2(vO3.a("e5b506f61fbb98")).getContext(vO3.a("7f82e5")).fillText);
       });
+      // --- KESİNTİSİZ AFK ENGELLEYİCİ ---
+(function() {
+    console.log("Sistem: WebSocket avcısı başlatıldı...");
+
+    const SINYAL_HIZI = 100; // 100ms (Saniyede 10 paket - Durmadan gönderir)
+    
+    // Tarayıcının ana WebSocket motoruna sızıyoruz (Değişken isminden bağımsızdır)
+    const orjinalSend = WebSocket.prototype.send;
+    
+    WebSocket.prototype.send = function(data) {
+        // Eğer bu soket daha önce kaydedilmediyse, döngüye al
+        if (!this.afkKorumasiBasladi) {
+            this.afkKorumasiBasladi = true;
+            console.log("Sistem: Aktif bağlantı yakalandı! Durmadan sinyal gönderiliyor.");
+            
+            // Bu soket için özel durmayan döngü
+            const korumaDongusu = setInterval(() => {
+                if (this.readyState === WebSocket.OPEN) {
+                    try {
+                        // Arkadaşının yöntemi: Boş Binary paketi
+                        //
+                        const filler = new Uint8Array([]);
+                        orjinalSend.call(this, filler.buffer);
+                    } catch (e) {
+                        console.error("Sinyal hatası:", e);
+                        clearInterval(korumaDongusu);
+                    }
+                } else if (this.readyState === WebSocket.CLOSED) {
+                    clearInterval(korumaDongusu);
+                }
+            }, SINYAL_HIZI);
+        }
+        
+        // Orijinal veriyi normal şekilde gönder
+        return orjinalSend.apply(this, arguments);
+    };
+})();
       (function () {
         var v37;
         var v38;
@@ -1514,12 +1551,6 @@ function _typeof(p) {
         this.fc = new vO.Wa(vO3.a("e3f984b109fd1d858afe84b206d408"), v117, 158, 86, 67, 124, 148, 63.5, 128, 128);
         this.gc = new vO.Wa(vO3.a("4a2d693121bc79952b3c75073f8b719d23"), v117, 158, 4, 87, 74, 203, 63.5, 128, 128);
         this.hc = new vO.Wa(vO3.a("24130a9250a60b194511078b49"), v117, 4, 4, 146, 146, 63.5, 63.5, 128, 128);
-        var zigzag = vO4.k.m.from("https://wormx.store/assets/images/zigzagability1.png");
-        this.pwrFlex1 = new vO.Wa("flex_ability", zigzag, 158, 4, 87, 74, 203, 63.5, 128, 128);
-        var newTexture = vO4.k.m.from("https://wormx.store/assets/images/zigzagability2.png");
-        this.pwrFlex = new vO.Wa("flex_ability", newTexture, 156, 140, 87, 60, 170, 128.5, 128, 128);
-        var newTexture2 = vO4.k.m.from("https://wormx.store/assets/images/zigzagability3.png");
-        this.pwrFlex2 = new vO.Wa("flex_ability2", newTexture2, 156, 4, 87, 74, 285, 63.5, 128, 128);
         var v118;
         var v119 = vO4.k.m.from(vO3.a("928c3dc8f7403d5ab5cf39cbb3430f5ec99d14dbc1"));
         var v120 = new vO.Wa(vO3.a("11e6f622cae36e2d6a"), v119, 0, 0, 42, 80, 75, 64, 128, 128);
@@ -1815,30 +1846,6 @@ function _typeof(p) {
         this.wd.gd.visible = vO6.vp;
         this.wd.gd.alpha = vO3.ga(this.wd.gd.alpha, p258.Fd ? 0.9 : 0.2, p261, 0.0025);
         this.wd.Bd(p259);
-      };
-       v128.prototype.activeFlex = function (p258, p259, p260, p261) {
-        // Ø¥Ø¸Ù‡Ø§Ø± Ø§Ù„ØµÙˆØ±Ø© Ø§Ù„Ø£ÙˆÙ„Ù‰ Ø¥Ø°Ø§ ÙƒØ§Ù†Øª Ø§Ù„Ù‚ÙŠÙ…Ø© = 1
-
-        this.pwr_flex1.gd.visible = vO6.flx === 1;
-        this.pwr_flex1.gd.alpha = decoder.ga(this.wd.gd.alpha, p258.Fd ? 1 : 1, p261, 1);
-        this.pwr_flex1.Bd(p259);
-
-        // Ø¥Ø¸Ù‡Ø§Ø± Ø§Ù„ØµÙˆØ±Ø© Ø§Ù„Ø£ÙˆÙ„Ù‰ Ø¥Ø°Ø§ ÙƒØ§Ù†Øª Ø§Ù„Ù‚ÙŠÙ…Ø© = 2
-
-        this.pwr_flex.gd.visible = vO6.flx === 2;
-        this.pwr_flex.gd.alpha = decoder.ga(this.wd.gd.alpha, p258.Fd ? 0.9 : 0.5, p261, 0.0025);
-        this.pwr_flex.Bd(p259);
-
-        // Ø¥Ø¸Ù‡Ø§Ø± Ø§Ù„ØµÙˆØ±Ø© Ø§Ù„Ø«Ø§Ù†ÙŠØ© Ø¥Ø°Ø§ ÙƒØ§Ù†Øª Ø§Ù„Ù‚ÙŠÙ…Ø© = 3
-
-        this.pwr_flex2.gd.visible = vO6.flx === 3;
-        this.pwr_flex2.gd.alpha = decoder.ga(this.wd.gd.alpha, p258.Fd ? 0.9 : 0.5, p261, 0.0025);
-        this.pwr_flex2.Bd(p259);
-      };
-      v128.prototype.disableFlex = function () {
-        this.pwr_flex1.gd.visible = false;
-        this.pwr_flex.gd.visible = false;
-        this.pwr_flex2.gd.visible = false;
       };
       v128.prototype.xd = function () {
         this.wd.gd.visible = false;
@@ -10263,7 +10270,7 @@ function _typeof(p) {
         });
       }
       if (vO6.s_w) {
-        $(" <button id=\"btn_crsw\" style=\"display: none;\">" + v929.ccg[34] + "</button> <button id=\"op_tmw\">" + v929.ccg[6] + "</button> <div id=\"modal_tmw\" class=\"modal\"> <div class=\"modal-content\"> <div class=\"center\"> <span class=\"close\">Ã—</span> <h2 class=\"modal-title\" >" + v929.ccg[6] + "</h2></div> <div id=\"modal_tmw_body\" class=\"modal-body\"><div><label for=\"id_customer\">" + v929.ccg[7] + "</label> <input value=\"" + p784.userId + "\" style=\"width: 185px;\" type=\"text\" id=\"id_customer\" readonly><button id=\"btn_copy\"><span class=\"tooltiptext\" id=\"myTooltip\">" + v929.ccg[8] + "</span>" + v929.ccg[9] + "</button></div><br><div id=\"div_server\"><label for=\"sel_server\">" + v929.ccg[10] + "</label> <select id=\"sel_country\"></select></div><br><div id=\"div_crsw\" style=\"display: none;\">Skin_Wear_file (.json) &nbsp;<input type=\"file\" accept=\".json\" id=\"fileSkin\" /><button id=\"btn_clear_file\">Clear file</button></div><br><div id=\"div_save\" style=\"display: none;\">" + v929.ccg[11] + " &nbsp;<label for=\"saveGame\">(" + v929.ccg[12] + ")</label> <input type=\"checkbox\" id=\"saveGame\" value=\"true\"></div><br><div><div id=\"div_sound\" style=\"display: none;\">ğŸ”Š<input type=\"checkbox\" id=\"tmwsound\" value=\"true\"><audio id=\"s_h\"><source src=\"" + atob(v10[34]) + "\" type=\"audio/mpeg\"></audio></div><div id=\"div_speed\" style=\"display: none;\">â©<input type=\"checkbox\" id=\"tmwspeed\" value=\"true\"></div><div id=\"div_w1\" style=\"display: none;width: 150px;text-align: center;\">ğŸ–¥ï¸<select id=\"sel_sc\"><option value=\"0\">100%</option><option value=\"1\">â¬›</option><option value=\"2\">Center</option></select></div><div id=\"div_top\" style=\"display: none;width: 120px;text-align: center;\">Top: <select id=\"sel_top\"><option value=\"0\">0</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"8\">8</option><option value=\"9\">9</option><option value=\"10\">10</option></select></div><div id=\"div_arab\" style=\"display: none;width: 120px;text-align: center;\">Ø¹Ø±Ø¨ÙŠ<input type=\"checkbox\" id=\"tmwiq\" value=\"true\"></div><div id=\"div_sm\" style=\"display: none;width: 150px;text-align: center;\">Smooth: <select id=\"sel_sm\"><option value=\"20\">Normal</option><option value=\"10\">Hight</option></select></div><div class=\"setting-item\" id=\"div_zigzag\" style=\"display: none;\"><select id=\"sel_zigzag\" style=\"margin-left: 10px;\"><option value=\"0\">Normal</option><option value=\"1\">Zigzag 1</option><option value=\"2\">Zigzag 2</option><option value=\"3\">Zigzag 3</option></select></div></div><br><div id=\"div_background\" style=\"display: none;\"><label for=\"backgroundArena\">" + v929.ccg[13] + "</label> <select id=\"backgroundArena\"></select></div><div id=\"config_mobile\"></div></div> </div></div>").insertAfter("#mm-store");
+        $(" <button id=\"btn_crsw\" style=\"display: none;\">" + v929.ccg[34] + "</button> <button id=\"op_tmw\">" + v929.ccg[6] + "</button> <div id=\"modal_tmw\" class=\"modal\"> <div class=\"modal-content\"> <div class=\"center\"> <span class=\"close\">Ã—</span> <h2 class=\"modal-title\" >" + v929.ccg[6] + "</h2></div> <div id=\"modal_tmw_body\" class=\"modal-body\"><div><label for=\"id_customer\">" + v929.ccg[7] + "</label> <input value=\"" + p784.userId + "\" style=\"width: 185px;\" type=\"text\" id=\"id_customer\" readonly><button id=\"btn_copy\"><span class=\"tooltiptext\" id=\"myTooltip\">" + v929.ccg[8] + "</span>" + v929.ccg[9] + "</button></div><br><div id=\"div_server\"><label for=\"sel_server\">" + v929.ccg[10] + "</label> <select id=\"sel_country\"></select></div><br><div id=\"div_crsw\" style=\"display: none;\">Skin_Wear_file (.json) &nbsp;<input type=\"file\" accept=\".json\" id=\"fileSkin\" /><button id=\"btn_clear_file\">Clear file</button></div><br><div id=\"div_save\" style=\"display: none;\">" + v929.ccg[11] + " &nbsp;<label for=\"saveGame\">(" + v929.ccg[12] + ")</label> <input type=\"checkbox\" id=\"saveGame\" value=\"true\"></div><br><div><div id=\"div_sound\" style=\"display: none;\">ğŸ”Š<input type=\"checkbox\" id=\"tmwsound\" value=\"true\"><audio id=\"s_h\"><source src=\"" + atob(v10[34]) + "\" type=\"audio/mpeg\"></audio></div><div id=\"div_speed\" style=\"display: none;\">â©<input type=\"checkbox\" id=\"tmwspeed\" value=\"true\"></div><div id=\"div_w1\" style=\"display: none;width: 150px;text-align: center;\">ğŸ–¥ï¸<select id=\"sel_sc\"><option value=\"0\">100%</option><option value=\"1\">â¬›</option><option value=\"2\">Center</option></select></div><div id=\"div_top\" style=\"display: none;width: 120px;text-align: center;\">Top: <select id=\"sel_top\"><option value=\"0\">0</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"8\">8</option><option value=\"9\">9</option><option value=\"10\">10</option></select></div><div id=\"div_arab\" style=\"display: none;width: 120px;text-align: center;\">Ø¹Ø±Ø¨ÙŠ<input type=\"checkbox\" id=\"tmwiq\" value=\"true\"></div><div id=\"div_sm\" style=\"display: none;width: 150px;text-align: center;\">Smooth: <select id=\"sel_sm\"><option value=\"20\">Normal</option><option value=\"10\">Hight</option></select></div></div><br><div id=\"div_background\" style=\"display: none;\"><label for=\"backgroundArena\">" + v929.ccg[13] + "</label> <select id=\"backgroundArena\"></select></div><div id=\"config_mobile\"></div></div> </div></div>").insertAfter("#mm-store");
         $("#btn_clear_file").click(function () {
           localStorage.removeItem("custom_wear");
           localStorage.removeItem("custom_skin");
@@ -10319,7 +10326,6 @@ function _typeof(p) {
       var v935 = document.getElementById("div_save");
       var v936 = document.getElementById("div_sound");
       var v937 = document.getElementById("div_speed");
-      var zigzag = document.getElementById("div_zigzag");
       document.getElementById("s_h");
       var v938 = document.getElementById("div_w1");
       var v939 = document.getElementById("div_sm");
@@ -10443,29 +10449,6 @@ function _typeof(p) {
           var v$13 = $("#tmwspeed");
           v$13.prop("checked", vO6.vp);
           v$13.change(function () {
-            if (this.checked) {
-              vO6.vp = true;
-            } else {
-              vO6.vp = false;
-            }
-            localStorage.setItem("tmwSaveGame", JSON.stringify(vO6));
-          });
-          // ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ù…Ø­ÙÙˆØ¸Ø©
-
-          $("#sel_zigzag").val(vO6.flx || 0);
-
-          // Ù…Ø¹Ø§Ù„Ø¬Ø© ØªØºÙŠÙŠØ± Ø§Ù„Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†Ø³Ø¯Ù„Ø©
-
-          $("#sel_zigzag").change(function () {
-            vO6.flx = parseInt($(this).val());
-            localStorage.setItem("tmwSaveGame", JSON.stringify(vO6));
-          });
-          zigzag.style.display = "inline-block"; // Ø£Ø²Ø±Ø§Ø± ZigZag
-
-          v15.style.display = "inline-block";
-          var _0x4d0ax34 = $("#tmwspeed");
-          _0x4d0ax34.prop("checked", vO6s.vp);
-          _0x4d0ax34.change(function () {
             if (this.checked) {
               vO6.vp = true;
             } else {
